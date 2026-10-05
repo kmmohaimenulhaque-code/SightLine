@@ -1,0 +1,55 @@
+# E-001 — Single-frame localisation and scoring error of the deterministic baseline (synthetic)
+
+**Status: SIMULATED** (synthetic frames with exact ground truth; not real-world measurement).
+Created 2026-10-05T14:14:57+00:00 · commit `1a3418c46fc9e5fed34092aa716b03e5a1fd3d88` · runtime 60.3 s on CPU (2 cores; no GPU) · 150 trials per cell.
+
+| Preset | Condition | Method | Detected % | Vector p50 / p95 / max (mm) | Radial p95 (mm) | Bias x, y (mm) | Decimal exact % | Integer exact % | Centre p95 (px) | MEA-01 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| wide_1080p | good_light | moments | 100.0 | 0.130 / 0.249 / 0.406 | 0.194 | -0.006, +0.030 | 92.0 | 99.3 | 0.027 | PASS |
+| wide_1080p | good_light | edges | 100.0 | 0.271 / 0.521 / 0.776 | 0.498 | -0.001, -0.024 | 63.3 | 99.3 | 0.032 | fail |
+| wide_1080p | good_light | hybrid | 100.0 | 0.119 / 0.227 / 0.325 | 0.179 | -0.001, +0.016 | 93.3 | 100.0 | 0.027 | PASS |
+| wide_1080p | dim_light | moments | 100.0 | 0.353 / 0.722 / 1.270 | 0.569 | -0.003, -0.023 | 77.3 | 98.0 | 0.081 | fail |
+| wide_1080p | dim_light | edges | 100.0 | 0.311 / 0.681 / 0.889 | 0.627 | +0.009, +0.009 | 69.3 | 98.7 | 0.062 | fail |
+| wide_1080p | dim_light | hybrid | 100.0 | 0.297 / 0.612 / 0.965 | 0.481 | +0.007, -0.031 | 75.3 | 98.0 | 0.081 | fail |
+| wide_1080p | good_light_motion | moments | 100.0 | 0.139 / 0.315 / 0.423 | 0.255 | -0.012, -0.003 | 82.7 | 98.0 | 0.029 | PASS |
+| wide_1080p | good_light_motion | edges | 100.0 | 0.308 / 0.548 / 0.660 | 0.520 | +0.003, +0.014 | 58.7 | 96.0 | 0.038 | fail |
+| wide_1080p | good_light_motion | hybrid | 100.0 | 0.123 / 0.234 / 0.275 | 0.186 | -0.012, -0.005 | 87.3 | 98.7 | 0.029 | PASS |
+| wide_1080p | good_light_jpeg60 | moments | 100.0 | 0.208 / 0.419 / 0.692 | 0.351 | -0.000, -0.005 | 76.0 | 96.0 | 0.042 | fail |
+| wide_1080p | good_light_jpeg60 | edges | 100.0 | 0.336 / 0.675 / 0.983 | 0.663 | -0.028, +0.025 | 64.0 | 98.7 | 0.053 | fail |
+| wide_1080p | good_light_jpeg60 | hybrid | 100.0 | 0.213 / 0.418 / 0.644 | 0.336 | +0.007, +0.016 | 80.7 | 98.7 | 0.042 | fail |
+| wide_2160p | good_light | moments | 100.0 | 0.061 / 0.128 / 0.168 | 0.099 | -0.002, +0.005 | 96.0 | 100.0 | 0.031 | PASS |
+| wide_2160p | good_light | edges | 100.0 | 0.079 / 0.140 / 0.184 | 0.130 | +0.002, -0.003 | 92.7 | 100.0 | 0.024 | PASS |
+| wide_2160p | good_light | hybrid | 100.0 | 0.056 / 0.108 / 0.142 | 0.092 | -0.004, +0.003 | 96.0 | 100.0 | 0.031 | PASS |
+| wide_2160p | dim_light | moments | 100.0 | 0.143 / 0.347 / 0.516 | 0.255 | +0.002, +0.006 | 88.0 | 97.3 | 0.084 | PASS |
+| wide_2160p | dim_light | edges | 100.0 | 0.108 / 0.221 / 0.273 | 0.174 | +0.008, +0.003 | 90.0 | 97.3 | 0.046 | PASS |
+| wide_2160p | dim_light | hybrid | 100.0 | 0.132 / 0.323 / 0.479 | 0.246 | +0.003, +0.001 | 86.0 | 98.0 | 0.084 | PASS |
+| wide_2160p | good_light_motion | moments | 100.0 | 0.076 / 0.183 / 0.261 | 0.126 | +0.002, +0.005 | 94.0 | 100.0 | 0.032 | PASS |
+| wide_2160p | good_light_motion | edges | 100.0 | 0.095 / 0.159 / 0.226 | 0.156 | -0.004, +0.005 | 90.7 | 98.7 | 0.023 | PASS |
+| wide_2160p | good_light_motion | hybrid | 100.0 | 0.053 / 0.126 / 0.147 | 0.099 | +0.002, -0.002 | 94.0 | 100.0 | 0.032 | PASS |
+| wide_2160p | good_light_jpeg60 | moments | 100.0 | 0.093 / 0.226 / 0.310 | 0.150 | -0.001, +0.016 | 94.0 | 98.0 | 0.049 | PASS |
+| wide_2160p | good_light_jpeg60 | edges | 100.0 | 0.070 / 0.173 / 0.215 | 0.143 | +0.004, +0.012 | 94.0 | 99.3 | 0.034 | PASS |
+| wide_2160p | good_light_jpeg60 | hybrid | 100.0 | 0.085 / 0.207 / 0.271 | 0.154 | -0.003, +0.017 | 93.3 | 98.7 | 0.049 | PASS |
+| wide_12mp | good_light | moments | 100.0 | 0.060 / 0.120 / 0.182 | 0.092 | -0.005, +0.003 | 95.3 | 100.0 | 0.030 | PASS |
+| wide_12mp | good_light | edges | 100.0 | 0.052 / 0.117 / 0.161 | 0.112 | +0.001, +0.002 | 96.0 | 99.3 | 0.021 | PASS |
+| wide_12mp | good_light | hybrid | 100.0 | 0.054 / 0.113 / 0.121 | 0.093 | -0.004, -0.001 | 95.3 | 100.0 | 0.030 | PASS |
+| wide_12mp | dim_light | moments | 100.0 | 0.170 / 0.321 / 0.538 | 0.243 | -0.007, +0.016 | 84.0 | 96.7 | 0.080 | PASS |
+| wide_12mp | dim_light | edges | 100.0 | 0.089 / 0.198 / 0.265 | 0.175 | +0.001, +0.011 | 91.3 | 99.3 | 0.044 | PASS |
+| wide_12mp | dim_light | hybrid | 100.0 | 0.149 / 0.274 / 0.423 | 0.217 | -0.011, +0.014 | 88.7 | 98.0 | 0.080 | PASS |
+| wide_12mp | good_light_motion | moments | 100.0 | 0.057 / 0.151 / 0.210 | 0.111 | +0.001, -0.002 | 98.7 | 100.0 | 0.028 | PASS |
+| wide_12mp | good_light_motion | edges | 100.0 | 0.079 / 0.140 / 0.171 | 0.135 | -0.009, +0.005 | 93.3 | 99.3 | 0.020 | PASS |
+| wide_12mp | good_light_motion | hybrid | 100.0 | 0.047 / 0.098 / 0.139 | 0.085 | +0.001, -0.000 | 98.0 | 100.0 | 0.028 | PASS |
+| wide_12mp | good_light_jpeg60 | moments | 100.0 | 0.088 / 0.200 / 0.261 | 0.150 | -0.006, +0.001 | 94.7 | 99.3 | 0.049 | PASS |
+| wide_12mp | good_light_jpeg60 | edges | 100.0 | 0.065 / 0.131 / 0.154 | 0.107 | +0.015, -0.006 | 94.0 | 100.0 | 0.035 | PASS |
+| wide_12mp | good_light_jpeg60 | hybrid | 100.0 | 0.087 / 0.171 / 0.212 | 0.126 | -0.008, -0.001 | 94.7 | 98.7 | 0.049 | PASS |
+| tele3x_1080p | good_light | moments | 100.0 | 0.038 / 0.075 / 0.102 | 0.061 | -0.000, +0.002 | 96.0 | 99.3 | 0.028 | PASS |
+| tele3x_1080p | good_light | edges | 100.0 | 0.032 / 0.067 / 0.096 | 0.060 | -0.001, +0.004 | 95.3 | 99.3 | 0.016 | PASS |
+| tele3x_1080p | good_light | hybrid | 100.0 | 0.030 / 0.070 / 0.102 | 0.056 | -0.001, -0.000 | 97.3 | 100.0 | 0.028 | PASS |
+| tele3x_1080p | dim_light | moments | 100.0 | 0.111 / 0.237 / 0.356 | 0.181 | +0.002, +0.001 | 89.3 | 98.0 | 0.078 | PASS |
+| tele3x_1080p | dim_light | edges | 100.0 | 0.054 / 0.110 / 0.137 | 0.092 | -0.008, -0.006 | 98.0 | 100.0 | 0.037 | PASS |
+| tele3x_1080p | dim_light | hybrid | 100.0 | 0.098 / 0.184 / 0.214 | 0.155 | +0.002, -0.002 | 92.0 | 98.7 | 0.078 | PASS |
+| tele3x_1080p | good_light_motion | moments | 100.0 | 0.052 / 0.114 / 0.235 | 0.073 | -0.000, -0.000 | 95.3 | 100.0 | 0.029 | PASS |
+| tele3x_1080p | good_light_motion | edges | 100.0 | 0.045 / 0.091 / 0.121 | 0.089 | -0.001, +0.000 | 88.7 | 99.3 | 0.020 | PASS |
+| tele3x_1080p | good_light_motion | hybrid | 100.0 | 0.036 / 0.072 / 0.106 | 0.057 | -0.004, -0.002 | 96.0 | 100.0 | 0.029 | PASS |
+| tele3x_1080p | good_light_jpeg60 | moments | 100.0 | 0.069 / 0.141 / 0.208 | 0.110 | +0.000, +0.002 | 93.3 | 99.3 | 0.048 | PASS |
+| tele3x_1080p | good_light_jpeg60 | edges | 100.0 | 0.041 / 0.080 / 0.138 | 0.060 | -0.001, -0.004 | 95.3 | 100.0 | 0.030 | PASS |
+| tele3x_1080p | good_light_jpeg60 | hybrid | 100.0 | 0.054 / 0.120 / 0.186 | 0.102 | +0.004, -0.005 | 92.7 | 99.3 | 0.048 | PASS |
