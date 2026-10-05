@@ -1,0 +1,34 @@
+{
+  "experiment_id": "E-001",
+  "title": "Single-frame localisation and scoring error of the deterministic baseline (synthetic)",
+  "status_label": "SIMULATED",
+  "master_seed": 20261005,
+  "trials_per_cell": 150,
+  "methods": ["moments", "edges", "hybrid"],
+  "scene": {
+    "impact_radius_mm": 20.0,
+    "distance_range_mm": [9950.0, 10050.0],
+    "max_tilt_deg": 10.0,
+    "max_roll_deg": 3.0
+  },
+  "presets": {
+    "wide_1080p":   {"width": 1920, "height": 1080, "hfov_deg": 67.0, "note": "ASSUMPTION: ~26 mm-equivalent main camera, video"},
+    "wide_2160p":   {"width": 3840, "height": 2160, "hfov_deg": 67.0, "note": "ASSUMPTION"},
+    "wide_12mp":    {"width": 4032, "height": 3024, "hfov_deg": 67.0, "note": "ASSUMPTION: still frame"},
+    "tele3x_1080p": {"width": 1920, "height": 1080, "hfov_deg": 25.0, "note": "ASSUMPTION: ~77 mm-equivalent telephoto, video"}
+  },
+  "conditions": {
+    "good_light":        {"electrons_per_unit": 3000.0, "read_noise_e": 2.0, "psf_sigma_px": 0.7, "jpeg_quality": 90, "aim_speed_mm_s": 0.0},
+    "dim_light":         {"electrons_per_unit": 300.0,  "read_noise_e": 3.0, "psf_sigma_px": 0.7, "jpeg_quality": 90, "aim_speed_mm_s": 0.0},
+    "good_light_motion": {"electrons_per_unit": 3000.0, "read_noise_e": 2.0, "psf_sigma_px": 0.7, "jpeg_quality": 90, "aim_speed_mm_s": 300.0},
+    "good_light_jpeg60": {"electrons_per_unit": 3000.0, "read_noise_e": 2.0, "psf_sigma_px": 0.7, "jpeg_quality": 60, "aim_speed_mm_s": 0.0}
+  },
+  "exposure_s": 0.016667,
+  "design_targets": {
+    "MEA-01_p95_vector_error_mm": 0.4,
+    "MEA-02_integer_agreement_pct": 99.0,
+    "MEA-03_abs_bias_mm": 0.1,
+    "MEA-04_detection_pct": 99.5
+  },
+  "notes": "Electron counts, PSF, JPEG quality and aim speeds are ASSUMPTIONS chosen to bracket indoor phone video. Orientation uses the ideal gravity reference from ground truth (up_direction_px); radial error is orientation-free."
+}
