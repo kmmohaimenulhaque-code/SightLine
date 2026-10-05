@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "sightline/sample_record.schema.json",
+  "title": "SIGHTLINE sample provenance record",
+  "description": "One JSON object per line in data/manifests/*.jsonl. Enforced in code by ml/datasets/provenance.py (validate_record). See DATASET_SPEC.md section 2.",
+  "type": "object",
+  "required": ["sample_id", "category", "created_utc", "source", "files", "licence", "parents", "parameters"],
+  "properties": {
+    "sample_id": {"type": "string", "minLength": 1},
+    "category": {"enum": ["EXTERNAL", "TEAM_COLLECTED", "SYNTHETIC", "DERIVED", "MODEL_OUTPUT", "SIMULATION_OUTPUT"]},
+    "created_utc": {"type": "string", "description": "ISO-8601 UTC timestamp"},
+    "source": {"type": "object", "description": "Generator {name, version, git_commit, ...}, capture session, or external dataset reference"},
+    "files": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["path", "sha256", "media_type"],
+        "properties": {
+          "path": {"type": "string"},
+          "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+          "media_type": {"type": "string"}
+        }
+      }
+    },
+    "licence": {"type": "string", "description": "SIGHTLINE-internal for team and synthetic data until ARCHITECTURE.md D-013 is decided; the exact external licence for EXTERNAL samples"},
+    "parents": {"type": "array", "items": {"type": "string"}, "description": "Required non-empty for DERIVED samples"},
+    "parameters": {"type": "object"},
+    "ground_truth": {"type": "object"},
+    "notes": {"type": "string"}
+  }
+}
