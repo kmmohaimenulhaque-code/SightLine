@@ -11,6 +11,9 @@ and quantifies hold and trigger control.
 * **Not a firearm, air gun or launcher.** No component stores energy to propel anything; the grip is a passive phone
   and sensor holder (REQUIREMENTS.md SAF-01, SAF-02).
 * **Not an ISSF-approved electronic scoring target** and not for competition scoring.
+* **Not an optical replica of open sights.** The on-screen sight is an *Alignment Trainer — a simulated visual
+  alignment and hold-training interface*. It does not reproduce the optical behaviour of physical ISSF open sights
+  (ARCHITECTURE.md D-011; experiment E-006 is planned for later).
 * **Not "DLSS for shooting".** "DLSS-like computational vision" is an internal analogy only; SIGHTLINE is not
   affiliated with AMD, NVIDIA or their products.
 
@@ -70,7 +73,7 @@ whether reconstruction (temporal or ML) measurably improves it.
 
 | Risk | Impact | Mitigation |
 |---|---|---|
-| Phone stabilisation (OIS/EIS) moves the image relative to the body | Scores and traces corrupted | CAL-EXP-1, device support matrix, Android OIS-sample compensation |
+| Phone stabilisation (OIS/EIS) moves the image relative to the body — **principal technical risk**; "Off" must not be assumed to disable the iPhone Main camera's sensor-shift OIS | Scores and traces corrupted | E-004a (= CAL-EXP-1) and E-004b before anything else; device support matrix; Android OIS-sample compensation; candidate vision + gyroscope split (D-019) |
 | Trigger-time uncertainty | Decimal-level errors for fast-moving holds | Device timestamps, clock sync, EXP-HW-1 |
 | ISP processing (tone mapping, sharpening) | Biased sub-pixel estimates | Minimal-processing capture modes; real-data validation |
 | Sight alignment not trained by a video see-through design | Product claim overstated | Stated limitation; eye-tracking research option (D-011) |

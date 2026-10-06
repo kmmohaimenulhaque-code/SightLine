@@ -42,3 +42,24 @@ Check local rules before transporting or demonstrating prototypes in public.
 | G1 ergonomic prototype | Hand fit, grip angle range, trigger reach | User trials with ≥ 3 shooters; questionnaire + hold-stability baseline |
 | G2 instrumented prototype | BLE trigger + IMU integrated | EXP-HW-1 passes |
 | G3 research prototype | Mass/COM adjustable, calibration references | Mass and COM within targets; CAL-EXP-1..3 pass on the reference phone |
+
+## 4. CAD gate after Mission 2 (2026-10-06): closed — no final grip CAD
+
+Test devices named by the owner for the experiments: iPhone 15 and one Android phone. Whether the iPhone 15 is also
+the **reference phone for the grip** is still an owner decision; E-004a may change the answer (a phone whose
+stabiliser cannot be controlled or compensated is a poor reference).
+
+| Quantity | Known now | Label | Still needed before CAD |
+|---|---|---|---|
+| iPhone 15 body | 147.6 × 71.6 × 7.80 mm, 171 g | VERIFIED from Apple's specification as quoted in the Mission 2 research report (Q1) | Caliper measurement of the actual unit, with and without case |
+| iPhone 15 camera positions | Candidate coordinates read from the text of Apple's dimensional drawing; lens assignment and datum uncertain | UNVERIFIED interpretation (research report Q1) | Read the drawing visually; measure the phone |
+| Camera keep-out cones | 121.83° and 75.55° (rear), diameters at cover glass 9.11 / 6.90 mm | VERIFIED text of the drawing (research report) | Confirm which lens is which |
+| Materials near the camera/compass | No magnetic or permeable material in the marked areas; cases must not interfere with OIS | VERIFIED (drawing) / SECONDARY (guideline wording) | Check every fastener and insert against the keep-outs |
+| Which camera the grip must leave unobstructed | Unknown: Main, Ultra Wide or both depends on E-004a | UNVERIFIED | E-004a |
+| Re-seating repeatability requirement (< 0.05 px, G0) | Not measured | UNVERIFIED | E-002 re-seating clip, then a G0 mule |
+| Android phone dimensions and camera position | Model not recorded | UNVERIFIED | E-004b records the model; then measure |
+| Eye-to-screen distance, sight geometry numbers | Not measured | ASSUMED (700 mm in examples) | E-006 |
+| Gyroscope axis convention relative to the phone body | Not measured | UNVERIFIED | CAL-EXP-6 axis logs |
+| Mass and centre-of-mass targets | ≤ 1500 g limit VERIFIED; working band ASSUMED | — | Component masses |
+
+A jig for E-004a (board, two rods, shims) is an inert laboratory fixture, not a grip prototype.
