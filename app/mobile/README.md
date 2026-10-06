@@ -1,6 +1,7 @@
 # app/mobile
 
-The phone application. **Not started** (Phase 6).
+The phone application. **Not started** (Phase 6). The only code here is `android-probe/`: a measurement-only
+Camera2 capability probe and OIS / gyroscope logger for experiment E-004b (compiled; not yet run on a device).
 
 ## Platform decision — PROPOSED, needs owner approval (ARCHITECTURE.md D-012)
 

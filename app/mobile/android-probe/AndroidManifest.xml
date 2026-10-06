@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- SIGHTLINE Camera2 capability probe (experiment E-004b). Reads camera characteristics and, on request, logs
+     per-frame OIS samples and gyroscope data for a few seconds. Stores nothing unless the user saves a file;
+     has no network permission. -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.sightline.probe"
+    android:versionCode="1"
+    android:versionName="0.1.0">
+
+    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="34" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.HIGH_SAMPLING_RATE_SENSORS" />
+    <uses-feature android:name="android.hardware.camera.any" android:required="false" />
+
+    <application android:label="SIGHTLINE Probe" android:allowBackup="false">
+        <activity android:name=".MainActivity" android:exported="true" android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|keyboardHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
