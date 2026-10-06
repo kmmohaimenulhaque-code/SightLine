@@ -1,5 +1,53 @@
 # Changelog
 
+## 0.2.0 — 2026-10-06 — Mission 2 experimental validation (branch `mission-2-experimental-validation`)
+
+No physical experiment has been run in this version. It adds the means to run them, and one theoretical result.
+
+### Added
+* **E-004a** harness (`ml/evaluation/e004a_ois_transfer.py`): response of the image to known rotation — static,
+  step, ramp, oscillation; Main vs Ultra Wide comparison with written decision rules; expected-displacement table
+  (DERIVED); synthetic sanity check (SIMULATED, 44/44 harness checks).
+* Angular ground truth with uncertainty and pivot parallax (`app/calibration/angular.py`); per-frame target tracker
+  with four estimators (`app/vision/motion.py`); video reader with presentation timestamps (`app/vision/video.py`);
+  time-series analysis (`app/analytics/timeseries.py`).
+* **E-004b**: Android Camera2 probe app (`app/mobile/android-probe/`, Java, no libraries; compiles and signs, not
+  run on a device) and off-device analysis (`ml/evaluation/e004b_android_probe.py`).
+* **E-002 / E-003** harnesses; image characterisation (`app/vision/characterise.py`).
+* **E-005**: Cramér–Rao bound (`ml/evaluation/crlb.py`, `e005_localisation_limit.py`) — run; results committed.
+* **CAL-EXP-6**: gyroscope log loading and characterisation (`app/imu/gyro.py`, `ml/evaluation/cal_exp6_gyro.py`).
+* Capture manifests (`ml/datasets/capture.py`); experiment status vocabulary and evidence-class guard
+  (`ml/evaluation/status.py`); synthetic sequences (`ml/datasets/synthetic_sequence.py`).
+* Physical protocols and the Mission 2 experimental report (`docs/experiments/`); printable true-scale target.
+* 71 new tests (142 in total). `.gitignore`.
+
+### Changed
+* Synthetic renderer 0.1.0 → 0.1.1: `expected_canvas` (noise-free model image) and a fixed canvas window
+  (`bounds`). Verified bit-identical to 0.1.0 on 37 renders (images and ground truth, SHA-256) before and after.
+* Experiment numbering follows the Mission 2 brief (ARCHITECTURE.md D-017). The E-001 entry is unchanged.
+* VALIDATION.md: status set extended with REFUTED; "EXPERIMENTAL" now means measured on physical data.
+* C-010 (touch scoring rule): now cites the rule text quoted in the Mission 2 research report.
+
+### Findings (all DERIVED or SIMULATED — none experimental)
+* Step and ramp tests measure the settled response only; a re-centring stabiliser reads like none (C-052). The
+  oscillation test against an independent gyroscope is the decisive one.
+* A lens ahead of the rotation pivot adds parallax: 300 mm at 5 m = +6 % (C-053).
+* Simulated inter-frame encoders repeat static picture content, so static scatter from compressed video can
+  understate noise (C-054).
+* The baseline is 1.5–3.1× above the Cramér–Rao bound; per-frame JPEG explains little of it (C-055, C-056).
+
+### Development findings (fixed before release)
+* Tracking lost the target when it jumped by more than its radius between frames; the tracker now re-detects in the
+  same frame before declaring it invalid.
+* Automatic step segmentation split a still interval on a sub-step codec glitch (libx265); the stillness floor is now
+  25 % of the smallest expected step. A plateau-count mismatch makes the run INVALID rather than being guessed.
+* The first version of the comparison rule called a low ratio with a large uncertainty "tracks"; "tracks" now also
+  requires enough precision to exclude suppression.
+
+### Not done
+* No `LICENSE` file (owner plans Apache-2.0; D-013). No ML. No grip CAD. No sensor fusion. No still-image analysis.
+  No image recorder for the Android OIS-sample comparison (gated on the probe result).
+
 ## 0.1.0 — 2026-10-05
 
 ### Added

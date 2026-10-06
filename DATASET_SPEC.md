@@ -29,7 +29,21 @@ Implementation: `ml/datasets/provenance.py` (records and validation), `ml/datase
 | `ground_truth` | no | Ground-truth geometry when known (synthetic, or reference-rig captures) |
 | `notes` | no | Free text |
 
-## 3. Synthetic sample content (implemented, generator v0.1.0)
+### 2a. Capture manifests for physical recordings (implemented 2026-10-06)
+
+One JSON file per clip in `data/manifests/captures/`, validated by `ml/datasets/capture.py`. It is a sample record of
+category `TEAM_COLLECTED` whose `parameters` must contain: capture id, experiment, test, operator, local time,
+device, OS version, camera, zoom readout, capture app, resolution, frame rate, codec, file format, stabilisation
+mode, HDR state, focus, exposure, ISO, white balance, lighting, orientation, distance `{value, sigma}`, target
+(print id, **measured** black diameter `{value, sigma}`, card size, printer, paper), physical setup and processing
+version; the file checksum sits in `files`. E-004a adds the jig geometry (steps) or the gyroscope log (oscillation).
+`null` never validates; `"UNKNOWN"` is accepted only for fields that genuinely cannot always be known. Raw video,
+stills and sensor logs are not committed — manifests and checksums are (`.gitignore`).
+
+Provenance classes are the six categories of §1. The evidence class of any result is derived from them
+(`ml/evaluation/status.py`): only `TEAM_COLLECTED` can be EXPERIMENTAL.
+
+## 3. Synthetic sample content (implemented, generator v0.1.1 — output bit-identical to v0.1.0)
 
 * **Image:** 8-bit grayscale, gamma-encoded (power 1/2.2), optionally JPEG-compressed; either the full frame or a
   region of interest (ROI) around the target with its origin recorded.
@@ -41,6 +55,9 @@ Implementation: `ml/datasets/provenance.py` (records and validation), `ml/datase
   reflectance, read noise, ADC bits, gamma, JPEG quality), seed.
 
 ## 4. Team-collected capture protocol (to be executed — Phase 4/5)
+
+First executions are specified step by step in `docs/experiments/` (E-004a, E-004b, E-002/E-003, CAL-EXP-6); the
+general plan below remains the target for the full dataset.
 
 **Devices:** ≥ 3 phone models (≥ 1 Android passing CAL-EXP-1, ≥ 1 iPhone), every usable camera (wide, tele) and
 mode (1080p/2160p video, still).

@@ -6,15 +6,22 @@ quantify hold and trigger control. Nothing in SIGHTLINE launches, or can be adap
 
 SIGHTLINE is not affiliated with AMD, NVIDIA, ISSF or any manufacturer, and is not an ISSF-approved scoring target.
 
-## Status — v0.1.0 (2026-10-05): research foundation + deterministic baseline
+## Status — v0.2.0 (2026-10-06): Mission 2 experimental validation — harnesses ready, physical data required
 
-Project readiness ≈ **35 %** (planning estimate; see `ARCHITECTURE.md` §20).
+Project readiness ≈ **38 %** (planning estimate; see `ARCHITECTURE.md` §20).
 
-* Phases 1–2 (reconnaissance, foundation): done, with listed open items.
-* Phase 3–4 (baseline, data): deterministic pipeline, synthetic generator and provenance implemented; 71 tests pass.
-* Experiment E-001 (SIMULATED): single-frame impact error p95 0.07–0.23 mm in good light across four camera modes
-  (EST-grade target 0.4 mm); 1080p in dim light fails (0.61 mm).
-* No real-device data, mobile app, hardware or ML yet.
+* Mission 1: deterministic pipeline, synthetic generator, provenance, experiment E-001 (SIMULATED).
+* Mission 2 research: report in the repository root. Principal risk: **iPhone "stabilisation Off" must not be assumed
+  to disable the Main camera's sensor-shift OIS.**
+* Mission 2 experimental validation (branch `mission-2-experimental-validation`): harnesses, protocols, a Camera2
+  probe app and a printable target for E-004a, E-004b, E-002, E-003 and the gyroscope experiment. 142 tests pass.
+* **No physical experiment has been run.** Every device experiment is PHYSICAL_DATA_REQUIRED
+  (`docs/experiments/MISSION_2_EXPERIMENTAL_REPORT.md` says exactly what has to be done physically).
+* E-005 (DERIVED / SIMULATED): Cramér–Rao bound on the impact 0.012–0.235 mm RMS in the synthetic model; the
+  baseline is 1.5–3.1× above it. Under idealised assumptions, sub-pixel target localisation corresponds to a
+  theoretical/derived spatial scale on the order of tenths of a millimetre at 10 m. Real-world accuracy remains
+  experimentally unresolved.
+* No mobile training app, hardware, sensor fusion or ML yet.
 
 ## Findings that changed the design
 
@@ -32,9 +39,21 @@ Project readiness ≈ **35 %** (planning estimate; see `ARCHITECTURE.md` §20).
 
 ```bash
 pip install -e ".[dev]"          # numpy, opencv-python-headless, pytest
-python -m pytest                 # 71 tests
+python -m pytest                 # 142 tests
 python -m ml.evaluation.e001_localisation_budget --config ml/configs/e001.json --out ml/evaluation/results/E-001
+python -m ml.evaluation.e005_localisation_limit          # Cramér–Rao bound (DERIVED / SIMULATED)
+python -m ml.evaluation.e004a_ois_transfer expected      # planning table (DERIVED)
+python -m ml.evaluation.e004a_ois_transfer synthetic-sanity   # harness check on simulated frames (several minutes)
 python scripts/generate_synthetic_samples.py
+```
+
+Physical experiments (after recording, see `docs/experiments/`):
+
+```bash
+python -m ml.datasets.capture new --experiment E-004a --test B_step --video clip.mov   # then fill in and validate
+python -m ml.evaluation.e004a_ois_transfer analyse --capture <manifest.json> --video clip.mov
+python -m ml.evaluation.e002_static_capture analyse --capture <manifest.json> --video clip.mov
+python -m ml.evaluation.e004b_android_probe capabilities sightline_probe_<model>.json
 ```
 
 Minimal use:
@@ -56,18 +75,20 @@ print(shot.score.decimal, shot.impact_xy_mm)             # 9.2 [-14.106 2.662]  
 | Start here | Then |
 |---|---|
 | `ARCHITECTURE.md` — memory of the project, decision log, progress | `VALIDATION.md` — every claim and its evidence status |
-| `PROJECT_SPEC.md`, `REQUIREMENTS.md` | `EXPERIMENT_LOG.md` — E-001 |
+| `PROJECT_SPEC.md`, `REQUIREMENTS.md` | `EXPERIMENT_LOG.md` — register and every experiment |
+| `docs/experiments/` — Mission 2 experimental report and physical protocols | Mission 2 research report (repository root) |
 | `docs/science/` — geometry, scoring, error budget | `research/` — AMD audits, research log |
 | `docs/calibration/`, `docs/computer-vision/`, `docs/ml/` | `docs/hardware/`, `docs/cad/` |
 | `DATASET_SPEC.md`, `DATASETS.md` | `SOURCES_AND_LICENSES.md`, `THIRD_PARTY_CODE.md` |
 
 ## Repository map
 
-`app/` reference implementation (scoring, calibration, vision; `mobile/` and `analytics/` not started) · `ml/`
-synthetic data, provenance, experiments · `data/` manifests and the synthetic reference set · `tests/` · `scripts/` ·
+`app/` reference implementation (scoring, calibration, vision, time-series analysis, gyroscope characterisation;
+`mobile/android-probe/` measurement-only probe) · `ml/` synthetic data, provenance, capture manifests, experiments · `data/` manifests and the synthetic reference set · `tests/` · `scripts/` ·
 `cad/`, `hardware/` (not started) · `docs/`, `research/`.
 
 ## Licence
 
-Undecided (ARCHITECTURE.md D-013). Until decided, all rights reserved. Dependencies: NumPy (BSD-style), OpenCV
+Planned: Apache-2.0 for the software (owner's stated intent, ARCHITECTURE.md D-013); CAD and datasets to be licensed
+separately. No `LICENSE` file has been added yet — until it is, all rights reserved. Dependencies: NumPy (BSD-style), OpenCV
 (Apache-2.0); no third-party source code is incorporated.

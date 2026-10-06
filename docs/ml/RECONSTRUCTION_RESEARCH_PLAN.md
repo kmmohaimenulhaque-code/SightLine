@@ -46,7 +46,7 @@ efficiency of smartphone shooting-training measurements under realistic camera l
 | Gate | Condition to pass | Status |
 |---|---|---|
 | G1 | Deterministic baseline characterised across presets/conditions | E-001 (first pass) |
-| G2 | CRLB computed per condition; gap between baseline and CRLB known | Not started |
+| G2 | CRLB computed per condition; gap between baseline and CRLB known | **Passed on the synthetic model (E-005, 2026-10-06):** baseline 1.5–3.1× above the bound in every cell. To be repeated with measured noise and blur |
 | G3 | TEMPORAL arm implemented and compared with single-frame RAW | Not started |
 | G4 | ML arm justified only if, in some realistic condition, the remaining error (after G3) is dominated by E1 **and** the baseline is ≥ 1.5× above the CRLB; the gain must survive on team-collected data | Not started |
 | G5 | On-device cost acceptable (latency, memory, power) — Phase 6 | Not started |
@@ -57,3 +57,25 @@ efficiency of smartphone shooting-training measurements under realistic camera l
 * ML training, if gated in: Kaggle NVIDIA T4 (free tier). AMD MI300X only for large sweeps or high-memory jobs, and
   only on free credits; every GPU run is logged in `EXPERIMENT_LOG.md` with GPU, runtime, VRAM, model, dataset,
   parameters, result and cost.
+
+## 6. ML gate after Mission 2 experimental work (2026-10-06): closed
+
+E-005 shows the "≥ 1.5× above the CRLB" half of gate G4 holds in simulation. The gate stays closed because:
+
+1. the other half is unknown — whether image localisation (E1) dominates the remaining error cannot be said while
+   stabilisation (E6), timing (E7) and ISP (E11) are unmeasured;
+2. the gap must first be attacked deterministically (a least-squares blurred-disc fit); ML has to beat *that*;
+3. nothing has been shown on team-collected data, because none exists.
+
+No training has been started. Any future ML component must be entered in this table before work begins, and must
+beat its deterministic baseline:
+
+| ML component | Deterministic baseline | Metric | Minimum improvement | Latency budget | Memory budget | Dataset requirement | Deployment target | Status |
+|---|---|---|---|---|---|---|---|---|
+| Target detection | `find_candidates` | detection rate, false detections per frame on cluttered real scenes | to be set from E-002 failure cases, if any | ≤ 1 frame at 60 fps (MOB-02) | open | real cluttered scenes (none yet) | on-device | Not justified — no real failure observed |
+| Target localisation | moments / edges / hybrid, then model-based fit | impact RMS vs CRLB | must beat the model-based fit, and survive on team data | as above | open | synthetic + team clips with known motion | on-device | Not justified |
+| Restoration / temporal denoising | none needed unless E-003 shows a harmful ISP effect | impact bias and RMS, never appearance | — | — | — | — | — | Not justified |
+| Motion estimation | per-frame centre + gyro | trajectory error vs commanded motion | — | — | — | E-004a-type clips | on-device | Not justified |
+| Learned confidence | `confidence` heuristic in `app/vision/motion.py` | calibration of predicted vs actual error | — | — | — | team clips with ground truth | on-device | Not justified |
+
+If deterministic computer vision is sufficient, it stays.

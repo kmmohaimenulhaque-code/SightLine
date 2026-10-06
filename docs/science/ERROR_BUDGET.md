@@ -59,3 +59,48 @@ dominate the uncertainty. The plan follows from that (§5).
 2. Image-domain ML reconstruction is justified only where E1 dominates **and** the deterministic estimator is far
    from the Cramér–Rao bound for that condition (`docs/ml/RECONSTRUCTION_RESEARCH_PLAN.md`, gate G2).
 3. Temporal estimation (multi-frame) attacks E1, E7 and E8 together, so it is the first "reconstruction" arm to build.
+
+## 6. Refinement after E-005 (2026-10-06): precision and accuracy kept apart
+
+**Precision** = repeatability of estimating the same target centre. **Accuracy** = distance between the estimate and
+the physical/projective truth. A static clip or a Cramér–Rao bound speaks only to precision. The two lists below are
+never to be added into one "accuracy" figure until the accuracy terms are measured.
+
+Numbers are millimetres at the target, RMS, for the simulated good-light condition at 3.45 mm/px (≈ a main camera at
+2160p, ASSUMED field of view) unless stated. Labels: ASSUMED / DERIVED / SIMULATED / UNVERIFIED.
+
+### 6.1 Precision terms
+
+| Contribution | Value | Label | Source |
+|---|---|---|---|
+| Pixel sampling + optical blur + sensor noise + target contrast (the information limit) | 0.024 (good light), 0.079 (dim); 0.074 / 0.235 at 6.9 mm/px; 0.012 / 0.043 at 2.31 mm/px | DERIVED from ASSUMED noise, blur and reflectances | E-005 bound |
+| Not knowing scale, tilt, levels and blur | × 1.15–1.26 on the above (already included) | DERIVED | E-005 |
+| Estimator inefficiency of the baseline | × 1.5–3.1 → 0.065 | SIMULATED | E-005 vs E-001 |
+| Motion blur during exposure (0.7–2.2 px, known kernel) | bound ≈ + 10–20 % (cells use different random scenes) | DERIVED | E-005 motion cells |
+| Per-frame JPEG 90 | hybrid RMS + 6–13 % | SIMULATED | E-005 decomposition |
+| Video codec (HEVC / H.264 inter-frame) | not quantified; simulated encoders repeat static content (C-054) | UNVERIFIED | E-002 |
+| Rolling shutter within the target | negligible (< 1 ms skew over the target) | DERIVED | term E9 |
+| Temporal ISP processing (denoising) | unknown | UNVERIFIED | E-003 (noise lag-1 correlation) |
+
+### 6.2 Accuracy terms (biases)
+
+| Contribution | Value | Label | Source |
+|---|---|---|---|
+| Estimator bias | ≤ 0.031 | SIMULATED | E-001 |
+| Perspective bias of the ellipse centre | < 0.01 px | SIMULATED | `tests/test_rectify.py` |
+| Local-affine model with lens distortion (k1 = −0.1) | < 0.05 | SIMULATED | `tests/test_rectify.py` |
+| ISP sharpening / tone mapping moving the edge | unknown | UNVERIFIED | E-003 (halo, edge position) |
+| Focus (defocus changes blur → precision; focus breathing changes scale) | unknown | UNVERIFIED | CAL-EXP-5 |
+| Target print scale (pellet-radius term) | 0.07 for a 3 % scale error | DERIVED | term E12 |
+| Target print shape (non-circular black, ink spread) | unknown | UNVERIFIED | measure prints (CAL-EXP-4) |
+| Target placement (not plumb, tilted) | direction only: rotation ≈ yaw·pitch/2 without a gravity reference; radial score unaffected | DERIVED | D-015 |
+| Calibration of the bore pixel — **stabiliser moving the image relative to the body** | unknown; potentially the largest term | UNVERIFIED | **E-004a** |
+| Trigger timing | 0.02–0.43 (1σ) for 5–50 mm/s | DERIVED from ASSUMED speeds | term E7, EXP-HW-1 |
+| Rolling-shutter row time vs frame timestamp | up to the readout time × aim speed | UNVERIFIED | CAL-EXP-2 |
+
+### 6.3 Reading
+
+Under idealised assumptions, sub-pixel target localisation corresponds to a theoretical/derived spatial scale on the
+order of tenths of a millimetre at 10 m (hundredths for the bound itself). Real-world accuracy remains experimentally
+unresolved: every accuracy term that could be large is UNVERIFIED, and the largest candidate is the one E-004a
+exists to measure.
