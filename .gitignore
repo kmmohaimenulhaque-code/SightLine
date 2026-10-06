@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+# raw captures are never committed (manifest + sha256 only)
+data/raw/**/*.mov
+data/raw/**/*.MOV
+data/raw/**/*.mp4
+data/raw/**/*.heic
+data/raw/**/*.dng
+# Android probe build output
+app/mobile/android-probe/build/

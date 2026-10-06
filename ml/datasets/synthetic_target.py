@@ -11,6 +11,9 @@ Physical model (ARCHITECTURE.md D-014):
 * Sensor: shot noise (Poisson in electrons) + Gaussian read noise, ADC quantisation, power-law gamma, optional JPEG.
 
 Everything here is SIMULATED. Outputs must never be presented as real measurements (DATASET_SPEC.md §1).
+
+``expected_canvas`` exposes the noise-free model mean (used by the Cramer-Rao analysis, E-005) and ``bounds`` fixes
+the canvas window so that frame sequences share one pixel grid (used by the E-004a synthetic sanity check).
 """
 
 from __future__ import annotations
@@ -33,7 +36,7 @@ from app.scoring.issf import (
 )
 
 GENERATOR_NAME = "sightline.synthetic_target"
-GENERATOR_VERSION = "0.1.0"
+GENERATOR_VERSION = "0.1.1"  # 0.1.1: fixed canvas bounds + noise-free expectation; output bit-identical to 0.1.0
 
 
 @dataclass(frozen=True)
@@ -180,20 +183,28 @@ def _bbox(camera: CameraModel, pose: TargetPose, half_mm: float, margin_px: int)
     return u0, v0, u1, v1
 
 
-def render(
+def expected_canvas(
     spec: SceneSpec,
-    rng: np.random.Generator,
     mode: str = "roi",
     context_mm: float = 140.0,
     supersample: int = 4,
-) -> SyntheticSample:
-    """Render one synthetic frame. ``mode="roi"`` renders a canvas of +/- ``context_mm`` around the target (fast);
-    ``mode="full"`` renders the whole sensor frame."""
+    bounds: tuple[int, int, int, int] | None = None,
+) -> tuple[np.ndarray, TargetPose, tuple[int, int, int, int]]:
+    """Noise-free expected image in reflectance units (after PSF and motion blur, before the sensor model).
+
+    Returns ``(canvas, pose, (u0, v0, u1, v1))``. ``bounds`` fixes the canvas window in full-image pixel coordinates
+    (needed for frame sequences and for finite-difference derivatives, where the window must not move with the
+    target); when given it overrides ``mode``. This is the model mean used by the Cramer-Rao analysis (E-005).
+    """
     cam, app, deg = spec.camera, spec.appearance, spec.degradation
     pose = pose_from_aim(cam, spec.bore_px, spec.impact_xy_mm, spec.distance_mm,
                          spec.yaw_deg, spec.pitch_deg, spec.roll_deg)
     margin = int(math.ceil(4.0 * deg.psf_sigma_px + deg.motion_blur_px)) + 3
-    if mode == "full":
+    if bounds is not None:
+        u0, v0, u1, v1 = (int(b) for b in bounds)
+        if not (0 <= u0 < u1 <= cam.width and 0 <= v0 < v1 <= cam.height):
+            raise ValueError("bounds must lie inside the sensor and be non-empty")
+    elif mode == "full":
         u0, v0, u1, v1 = 0, 0, cam.width, cam.height
     elif mode == "roi":
         u0, v0, u1, v1 = _bbox(cam, pose, max(context_mm, app.card_half_mm), margin)
@@ -223,6 +234,21 @@ def render(
     kernel = _motion_kernel(deg.motion_blur_px, deg.motion_blur_angle_deg)
     if kernel is not None:
         canvas = cv2.filter2D(canvas, -1, kernel, borderType=cv2.BORDER_REPLICATE)
+    return canvas, pose, (u0, v0, u1, v1)
+
+
+def render(
+    spec: SceneSpec,
+    rng: np.random.Generator,
+    mode: str = "roi",
+    context_mm: float = 140.0,
+    supersample: int = 4,
+    bounds: tuple[int, int, int, int] | None = None,
+) -> SyntheticSample:
+    """Render one synthetic frame. ``mode="roi"`` renders a canvas of +/- ``context_mm`` around the target (fast);
+    ``mode="full"`` renders the whole sensor frame; ``bounds=(u0, v0, u1, v1)`` renders a fixed window (sequences)."""
+    cam, deg = spec.camera, spec.degradation
+    canvas, pose, (u0, v0, u1, v1) = expected_canvas(spec, mode, context_mm, supersample, bounds)
 
     electrons = rng.poisson(np.clip(canvas, 0.0, None) * deg.electrons_per_unit).astype(np.float64)
     electrons += rng.normal(0.0, deg.read_noise_e, size=electrons.shape)
@@ -256,6 +282,8 @@ def render(
     }
     params = spec.to_dict() | {"mode": mode, "context_mm": context_mm, "supersample": supersample,
                                "generator": {"name": GENERATOR_NAME, "version": GENERATOR_VERSION}}
+    if bounds is not None:
+        params["bounds_px"] = [u0, v0, u1, v1]
     return SyntheticSample(image, (u0, v0), (spec.bore_px[0] - u0, spec.bore_px[1] - v0), gt, params)
 
 
