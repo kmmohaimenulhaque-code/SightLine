@@ -90,3 +90,17 @@ Source IDs refer to `SOURCES_AND_LICENSES.md`.
 * **Date:** 2026-10-05
 * **Finding:** A summarising fetch of the Android `OisSample` page reported "API level 30"; the raw HTML of the same page states **"Added in API level 28"**. The summariser had filled a gap from its own assumptions.
 * **Decision:** API levels, licence terms and numeric specifications are verified against raw primary text, not tool summaries. Claims taken from summaries are marked Medium confidence (e.g. R-008).
+
+## R-013 — Mission 2 research report filed
+* **Date:** 2026-10-06 (report written in an earlier session; read in full before the experimental work)
+* **Question:** What do Apple and Android document about stabilisation control, per-frame metadata, timing and intrinsics for the iPhone 15 and Camera2; what are the theoretical localisation limits; what can a screen sight train; which licences fit?
+* **Sources:** `SIGHTLINE Mission 2_ iPhone 15 and Android Camera Stabilisation, Localisation Limits, Sight Geometry and Licensing.md` (repository root), with its own per-statement status labels.
+* **Findings used here:** no public Apple statement that stabilisation "off" disables the Main camera's sensor-shift OIS; OIS listed for the Main camera only; Android has an explicit OIS control and per-frame OIS samples on the sensor-timestamp clock (device-dependent); the "≈0.07–0.35 mm" figure is a derived precision scale; a camera overlay is a parallax-free sight, not open sights.
+* **Decision:** E-004a/b gate everything else. **Licence impact:** owner plans Apache-2.0 (D-013). **Confidence:** as labelled in the report.
+
+## R-014 — Design of the stabilisation experiment without laboratory equipment
+* **Date:** 2026-10-06
+* **Question:** How can a known sub-milliradian rotation, and a trustworthy dynamic reference, be produced with household means?
+* **Sources:** Geometry (`app/calibration/angular.py`, tests); synthetic sanity run of the harness.
+* **Findings:** (1) A lever of 400–1000 mm with shims of 0.04–0.8 mm spans 0.1–2 mrad; uncertainty is dominated by shim thickness. (2) The camera must sit over the pivot, or the parallax term (1 + ρ/L) must be applied. (3) Steps test the settled response only — a re-centring stabiliser passes them. (4) For the dynamic response the ground truth must be an independent gyroscope rigidly fixed to the same board (a rigid body has one angular velocity); the hand only excites. (5) Compressed video can freeze static noise.
+* **Decision:** D-020. **Implementation impact:** E-004a tests A–D; probe app gyroscope logger. **Licence impact:** none. **Confidence:** High for the geometry; the simulated findings need real data.
