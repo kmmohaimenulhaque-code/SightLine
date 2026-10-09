@@ -1,0 +1,592 @@
+{
+  "experiment": "E-004a",
+  "kind": "synthetic_sanity",
+  "banner": "SYNTHETIC SANITY CHECK - software verification on simulated frames. NOT a measurement of any phone and NOT experimental evidence.",
+  "status": {
+    "experiment_status": "PHYSICAL_DATA_REQUIRED",
+    "evidence_class": "SIMULATED",
+    "banner": "SYNTHETIC SANITY CHECK - software verification on simulated frames. NOT a measurement of any phone and NOT experimental evidence.",
+    "sanity_check_passed_analysis_checks": true
+  },
+  "created_utc": "2026-10-06T19:30:56+00:00",
+  "git_commit": "03ce07e5193aa98a572db52a988b721e408f4d53",
+  "codec": "libx264 crf 18",
+  "config": {
+    "note": "SIMULATED. Verifies the harness on frames with an injected, invented stabiliser. Not a model of any phone.",
+    "seed": 20261006,
+    "cameras": {
+      "main_scale": {
+        "width": 3840,
+        "height": 2160,
+        "f_px": 2890.0
+      },
+      "uw_scale": {
+        "width": 3840,
+        "height": 2160,
+        "f_px": 1445.0
+      }
+    },
+    "degradation": {
+      "psf_sigma_px": 0.7,
+      "electrons_per_unit": 3000.0,
+      "read_noise_e": 2.0
+    },
+    "codec": {
+      "enabled": true,
+      "encoder": "libx264",
+      "crf": 18
+    },
+    "fps": 30.0,
+    "static_s": 10.0,
+    "step_angles_mrad": [
+      0.0,
+      0.1,
+      0.25,
+      0.5,
+      1.0,
+      2.0
+    ],
+    "jig_radius_mm": 400.0,
+    "hold_s": 3.0,
+    "move_s": 1.0,
+    "hypotheses": {
+      "none": null,
+      "lock": {
+        "corner_hz": 0.0,
+        "gain": 0.7
+      },
+      "recentring": {
+        "corner_hz": 0.5,
+        "gain": 0.9
+      }
+    },
+    "step_hypotheses": [
+      "none",
+      "lock",
+      "recentring"
+    ],
+    "oscillation_hypotheses": [
+      "none",
+      "lock"
+    ],
+    "oscillation_fps": 60.0,
+    "oscillation_s": 20.0,
+    "tones_hz_mrad": [
+      [
+        0.9,
+        0.5
+      ],
+      [
+        1.4,
+        0.4
+      ],
+      [
+        3.1,
+        0.3
+      ],
+      [
+        4.2,
+        0.25
+      ],
+      [
+        6.3,
+        0.2
+      ],
+      [
+        8.7,
+        0.15
+      ]
+    ],
+    "bands_hz": [
+      [
+        0.5,
+        2.0
+      ],
+      [
+        2.0,
+        5.0
+      ],
+      [
+        5.0,
+        10.0
+      ]
+    ],
+    "gyro_rate_hz": 200.0,
+    "gyro_noise_rad_s": 0.0002,
+    "ratio_tolerance": 0.05,
+    "noise_floor_px": 0.02,
+    "gain_tolerance": 0.07
+  },
+  "rows": [
+    {
+      "camera": "main_scale",
+      "test": "A_static",
+      "hypothesis": "none",
+      "quantity": "RMS (px)",
+      "injected": 0.0,
+      "recovered": 0.008135747929317202,
+      "tolerance": null,
+      "pass": true
+    },
+    {
+      "camera": "main_scale",
+      "test": "B_step",
+      "hypothesis": "none",
+      "quantity": "settled ratio @ 0.10 mrad (0.29 px)",
+      "injected": 1.0,
+      "recovered": 1.0209662662158232,
+      "tolerance": 0.20730841827043253,
+      "pass": true,
+      "creep_px": 0.0030125579594937335
+    },
+    {
+      "camera": "main_scale",
+      "test": "B_step",
+      "hypothesis": "none",
+      "quantity": "settled ratio @ 0.25 mrad (0.72 px)",
+      "injected": 1.0,
+      "recovered": 0.9703474663412044,
+      "tolerance": 0.08292336585701408,
+      "pass": true,
+      "creep_px": -0.007504390245728132
+    },
+    {
+      "camera": "main_scale",
+      "test": "B_step",
+      "hypothesis": "none",
+      "quantity": "settled ratio @ 0.50 mrad (1.45 px)",
+      "injected": 1.0,
+      "recovered": 0.994197981309958,
+      "tolerance": 0.05,
+      "pass": true,
+      "creep_px": 0.006809307491778327
+    },
+    {
+      "camera": "main_scale",
+      "test": "B_step",
+      "hypothesis": "none",
+      "quantity": "settled ratio @ 1.00 mrad (2.89 px)",
+      "injected": 1.0,
+      "recovered": 0.9915323885567763,
+      "tolerance": 0.05,
+      "pass": true,
+      "creep_px": 0.005704330471758112
+    },
+    {
+      "camera": "main_scale",
+      "test": "B_step",
+      "hypothesis": "none",
+      "quantity": "settled ratio @ 2.00 mrad (5.79 px)",
+      "injected": 1.0,
+      "recovered": 0.9953206619336563,
+      "tolerance": 0.05,
+      "pass": true,
+      "creep_px": -0.00337164460941608
+    },
+    {
+      "camera": "main_scale",
+      "test": "B_step",
+      "hypothesis": "lock",
+      "quantity": "settled ratio @ 0.10 mrad (0.29 px)",
+      "injected": 0.30000000000000004,
+      "recovered": 0.32673141659578797,
+      "tolerance": 0.2072850511149615,
+      "pass": true,
+      "creep_px": 0.009601523204537443
+    },
+    {
+      "camera": "main_scale",
+      "test": "B_step",
+      "hypothesis": "lock",
+      "quantity": "settled ratio @ 0.25 mrad (0.72 px)",
+      "injected": 0.30000000000000004,
+      "recovered": 0.3176741053845173,
+      "tolerance": 0.08291401899498925,
+      "pass": true,
+      "creep_px": 0.011006789794549832
+    },
+    {
+      "camera": "main_scale",
+      "test": "B_step",
+      "hypothesis": "lock",
+      "quantity": "settled ratio @ 0.50 mrad (1.45 px)",
+      "injected": 0.30000000000000004,
+      "recovered": 0.3049434676586841,
+      "tolerance": 0.05,
+      "pass": true,
+      "creep_px": 0.00974937614432747
+    },
+    {
+      "camera": "main_scale",
+      "test": "B_step",
+      "hypothesis": "lock",
+      "quantity": "settled ratio @ 1.00 mrad (2.89 px)",
+      "injected": 0.30000000000000004,
+      "recovered": 0.2985932870204851,
+      "tolerance": 0.05,
+      "pass": true,
+      "creep_px": 0.009729313929028649
+    },
+    {
+      "camera": "main_scale",
+      "test": "B_step",
+      "hypothesis": "lock",
+      "quantity": "settled ratio @ 2.00 mrad (5.79 px)",
+      "injected": 0.30000000000000004,
+      "recovered": 0.29895947759790575,
+      "tolerance": 0.05,
+      "pass": true,
+      "creep_px": -0.000666314677033597
+    },
+    {
+      "camera": "main_scale",
+      "test": "B_step",
+      "hypothesis": "recentring",
+      "quantity": "settled ratio @ 0.10 mrad (0.29 px)",
+      "injected": 1.0,
+      "recovered": 1.006983017853741,
+      "tolerance": 0.20725961114471467,
+      "pass": true,
+      "creep_px": 0.1242598662163914
+    },
+    {
+      "camera": "main_scale",
+      "test": "B_step",
+      "hypothesis": "recentring",
+      "quantity": "settled ratio @ 0.25 mrad (0.72 px)",
+      "injected": 1.0,
+      "recovered": 0.9203928079545594,
+      "tolerance": 0.08290384300706859,
+      "pass": true,
+      "creep_px": 0.08936576620898506
+    },
+    {
+      "camera": "main_scale",
+      "test": "B_step",
+      "hypothesis": "recentring",
+      "quantity": "settled ratio @ 0.50 mrad (1.45 px)",
+      "injected": 1.0,
+      "recovered": 0.9663795064764792,
+      "tolerance": 0.05,
+      "pass": true,
+      "creep_px": 0.28193395784271047
+    },
+    {
+      "camera": "main_scale",
+      "test": "B_step",
+      "hypothesis": "recentring",
+      "quantity": "settled ratio @ 1.00 mrad (2.89 px)",
+      "injected": 1.0,
+      "recovered": 0.9939544540212508,
+      "tolerance": 0.05,
+      "pass": true,
+      "creep_px": 0.15974682097473192
+    },
+    {
+      "camera": "main_scale",
+      "test": "B_step",
+      "hypothesis": "recentring",
+      "quantity": "settled ratio @ 2.00 mrad (5.79 px)",
+      "injected": 1.0,
+      "recovered": 0.990306504522473,
+      "tolerance": 0.05,
+      "pass": true,
+      "creep_px": 0.20081597903919146
+    },
+    {
+      "camera": "main_scale",
+      "test": "D_oscillation",
+      "hypothesis": "none",
+      "quantity": "gain 0.5-2 Hz",
+      "injected": 1.0,
+      "recovered": 0.9959923930658039,
+      "tolerance": 0.07,
+      "pass": true
+    },
+    {
+      "camera": "main_scale",
+      "test": "D_oscillation",
+      "hypothesis": "none",
+      "quantity": "gain 2-5 Hz",
+      "injected": 1.0,
+      "recovered": 0.997696435538089,
+      "tolerance": 0.07,
+      "pass": true
+    },
+    {
+      "camera": "main_scale",
+      "test": "D_oscillation",
+      "hypothesis": "none",
+      "quantity": "gain 5-10 Hz",
+      "injected": 1.0,
+      "recovered": 1.0077595486613924,
+      "tolerance": 0.07,
+      "pass": true
+    },
+    {
+      "camera": "main_scale",
+      "test": "D_oscillation",
+      "hypothesis": "lock",
+      "quantity": "gain 0.5-2 Hz",
+      "injected": 0.30000000000000004,
+      "recovered": 0.2986764395034974,
+      "tolerance": 0.07,
+      "pass": true
+    },
+    {
+      "camera": "main_scale",
+      "test": "D_oscillation",
+      "hypothesis": "lock",
+      "quantity": "gain 2-5 Hz",
+      "injected": 0.30000000000000004,
+      "recovered": 0.29567444658044095,
+      "tolerance": 0.07,
+      "pass": true
+    },
+    {
+      "camera": "main_scale",
+      "test": "D_oscillation",
+      "hypothesis": "lock",
+      "quantity": "gain 5-10 Hz",
+      "injected": 0.30000000000000004,
+      "recovered": 0.2808007431625732,
+      "tolerance": 0.07,
+      "pass": true
+    },
+    {
+      "camera": "uw_scale",
+      "test": "A_static",
+      "hypothesis": "none",
+      "quantity": "RMS (px)",
+      "injected": 0.0,
+      "recovered": 0.010662722999008714,
+      "tolerance": null,
+      "pass": true
+    },
+    {
+      "camera": "uw_scale",
+      "test": "B_step",
+      "hypothesis": "none",
+      "quantity": "settled ratio @ 0.10 mrad (0.15 px)",
+      "injected": 1.0,
+      "recovered": 0.8987570483259549,
+      "tolerance": 0.41340219184756544,
+      "pass": true,
+      "creep_px": -0.01107446195845796
+    },
+    {
+      "camera": "uw_scale",
+      "test": "B_step",
+      "hypothesis": "none",
+      "quantity": "settled ratio @ 0.25 mrad (0.36 px)",
+      "injected": 1.0,
+      "recovered": 0.9592364684634828,
+      "tolerance": 0.16536087384521084,
+      "pass": true,
+      "creep_px": -0.0064368560425407395
+    },
+    {
+      "camera": "uw_scale",
+      "test": "B_step",
+      "hypothesis": "none",
+      "quantity": "settled ratio @ 0.50 mrad (0.73 px)",
+      "injected": 1.0,
+      "recovered": 1.0113171348323386,
+      "tolerance": 0.08268043175507789,
+      "pass": true,
+      "creep_px": 0.002040298139064589
+    },
+    {
+      "camera": "uw_scale",
+      "test": "B_step",
+      "hypothesis": "none",
+      "quantity": "settled ratio @ 1.00 mrad (1.45 px)",
+      "injected": 1.0,
+      "recovered": 0.9918239143796729,
+      "tolerance": 0.05,
+      "pass": true,
+      "creep_px": 0.004104897115894346
+    },
+    {
+      "camera": "uw_scale",
+      "test": "B_step",
+      "hypothesis": "none",
+      "quantity": "settled ratio @ 2.00 mrad (2.90 px)",
+      "injected": 1.0,
+      "recovered": 0.9954191426858948,
+      "tolerance": 0.05,
+      "pass": true,
+      "creep_px": -0.013693318698187795
+    },
+    {
+      "camera": "uw_scale",
+      "test": "B_step",
+      "hypothesis": "lock",
+      "quantity": "settled ratio @ 0.10 mrad (0.15 px)",
+      "injected": 0.30000000000000004,
+      "recovered": 0.294192153476855,
+      "tolerance": 0.41344123214382494,
+      "pass": true,
+      "creep_px": 0.0010715904875269189
+    },
+    {
+      "camera": "uw_scale",
+      "test": "B_step",
+      "hypothesis": "lock",
+      "quantity": "settled ratio @ 0.25 mrad (0.36 px)",
+      "injected": 0.30000000000000004,
+      "recovered": 0.28005093464097747,
+      "tolerance": 0.16537648996344137,
+      "pass": true,
+      "creep_px": -0.00964724893441371
+    },
+    {
+      "camera": "uw_scale",
+      "test": "B_step",
+      "hypothesis": "lock",
+      "quantity": "settled ratio @ 0.50 mrad (0.73 px)",
+      "injected": 0.30000000000000004,
+      "recovered": 0.28014657985116226,
+      "tolerance": 0.08268823981370513,
+      "pass": true,
+      "creep_px": 0.012119774106707837
+    },
+    {
+      "camera": "uw_scale",
+      "test": "B_step",
+      "hypothesis": "lock",
+      "quantity": "settled ratio @ 1.00 mrad (1.45 px)",
+      "injected": 0.30000000000000004,
+      "recovered": 0.29336387177475437,
+      "tolerance": 0.05,
+      "pass": true,
+      "creep_px": -0.001069641389761955
+    },
+    {
+      "camera": "uw_scale",
+      "test": "B_step",
+      "hypothesis": "lock",
+      "quantity": "settled ratio @ 2.00 mrad (2.90 px)",
+      "injected": 0.30000000000000004,
+      "recovered": 0.304836459681804,
+      "tolerance": 0.05,
+      "pass": true,
+      "creep_px": -0.012163972722646577
+    },
+    {
+      "camera": "uw_scale",
+      "test": "B_step",
+      "hypothesis": "recentring",
+      "quantity": "settled ratio @ 0.10 mrad (0.15 px)",
+      "injected": 1.0,
+      "recovered": 1.032294996125733,
+      "tolerance": 0.413333059671127,
+      "pass": true,
+      "creep_px": -0.06154235067462821
+    },
+    {
+      "camera": "uw_scale",
+      "test": "B_step",
+      "hypothesis": "recentring",
+      "quantity": "settled ratio @ 0.25 mrad (0.36 px)",
+      "injected": 1.0,
+      "recovered": 0.8900189461718032,
+      "tolerance": 0.16533322097511938,
+      "pass": true,
+      "creep_px": 0.11161894233507041
+    },
+    {
+      "camera": "uw_scale",
+      "test": "B_step",
+      "hypothesis": "recentring",
+      "quantity": "settled ratio @ 0.50 mrad (0.73 px)",
+      "injected": 1.0,
+      "recovered": 0.932898866593077,
+      "tolerance": 0.08266660532089631,
+      "pass": true,
+      "creep_px": 0.20590948216053562
+    },
+    {
+      "camera": "uw_scale",
+      "test": "B_step",
+      "hypothesis": "recentring",
+      "quantity": "settled ratio @ 1.00 mrad (1.45 px)",
+      "injected": 1.0,
+      "recovered": 0.9711270003774584,
+      "tolerance": 0.05,
+      "pass": true,
+      "creep_px": 0.13475223848431028
+    },
+    {
+      "camera": "uw_scale",
+      "test": "B_step",
+      "hypothesis": "recentring",
+      "quantity": "settled ratio @ 2.00 mrad (2.90 px)",
+      "injected": 1.0,
+      "recovered": 0.9880002738565835,
+      "tolerance": 0.05,
+      "pass": true,
+      "creep_px": 0.11446654396962685
+    },
+    {
+      "camera": "uw_scale",
+      "test": "D_oscillation",
+      "hypothesis": "none",
+      "quantity": "gain 0.5-2 Hz",
+      "injected": 1.0,
+      "recovered": 0.9975515711483716,
+      "tolerance": 0.07,
+      "pass": true
+    },
+    {
+      "camera": "uw_scale",
+      "test": "D_oscillation",
+      "hypothesis": "none",
+      "quantity": "gain 2-5 Hz",
+      "injected": 1.0,
+      "recovered": 0.9962624385711139,
+      "tolerance": 0.07,
+      "pass": true
+    },
+    {
+      "camera": "uw_scale",
+      "test": "D_oscillation",
+      "hypothesis": "none",
+      "quantity": "gain 5-10 Hz",
+      "injected": 1.0,
+      "recovered": 0.995421127317971,
+      "tolerance": 0.07,
+      "pass": true
+    },
+    {
+      "camera": "uw_scale",
+      "test": "D_oscillation",
+      "hypothesis": "lock",
+      "quantity": "gain 0.5-2 Hz",
+      "injected": 0.30000000000000004,
+      "recovered": 0.2916425521377514,
+      "tolerance": 0.07,
+      "pass": true
+    },
+    {
+      "camera": "uw_scale",
+      "test": "D_oscillation",
+      "hypothesis": "lock",
+      "quantity": "gain 2-5 Hz",
+      "injected": 0.30000000000000004,
+      "recovered": 0.28477055289848974,
+      "tolerance": 0.07,
+      "pass": true
+    },
+    {
+      "camera": "uw_scale",
+      "test": "D_oscillation",
+      "hypothesis": "lock",
+      "quantity": "gain 5-10 Hz",
+      "injected": 0.30000000000000004,
+      "recovered": 0.266277174363124,
+      "tolerance": 0.07,
+      "pass": true
+    }
+  ]
+}

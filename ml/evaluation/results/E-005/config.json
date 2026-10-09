@@ -1,0 +1,29 @@
+{
+  "experiment_id": "E-005",
+  "title": "Theoretical localisation limit: Cramer-Rao bound for the simulated impact, versus the deterministic baseline of E-001",
+  "status_label": "DERIVED (bound) / SIMULATED (comparison with E-001)",
+  "e001_config": "ml/configs/e001.json",
+  "e001_trials": "ml/evaluation/results/E-001/trials.csv",
+  "master_seed": 20261007,
+  "specs_per_cell": 12,
+  "decomposition_trials": 150,
+  "supersample": 6,
+  "conditions": [
+    "good_light",
+    "dim_light",
+    "good_light_motion"
+  ],
+  "region_radius_mm": 57.75,
+  "parameters": {
+    "impact_x_mm": 0.05,
+    "impact_y_mm": 0.05,
+    "distance_mm": 10.0,
+    "yaw_deg": 0.1,
+    "pitch_deg": 0.1,
+    "white": 0.01,
+    "black": 0.01,
+    "psf_sigma_px": 0.02
+  },
+  "notes": "Finite-difference steps per parameter. Pixels used: target-plane radius <= region_radius_mm (the outer edge of the baseline's annulus), so the card edge - whose position relative to the print is not controlled - carries no information. Roll is treated as known (gravity reference), as in E-001. Motion-blur length and direction are treated as known (optimistic). Quantisation, gamma and compression are not in the bound (they can only lose information). G4 threshold from docs/ml/RECONSTRUCTION_RESEARCH_PLAN.md.",
+  "g4_efficiency_threshold": 1.5
+}

@@ -1,0 +1,49 @@
+{
+  "experiment_id": "E-004a",
+  "title": "Image response to known camera rotation (OIS/EIS transfer function) - iPhone 15 Main vs Ultra Wide",
+  "target_angles_mrad": [0.1, 0.25, 0.5, 1.0, 2.0],
+  "example_radii_mm": [300.0, 400.0, 500.0, 1000.0],
+  "camera_priors": {
+    "iPhone 15 Main 1x, 2160p": {"f_px": 2890.0, "status": "DERIVED from SECONDARY sensor data (Mission 2 research report Q1: 0.346 mrad/px); planning value only"},
+    "iPhone 15 Main 1x, 1080p": {"f_px": 1445.0, "status": "DERIVED (half of the 2160p prior); planning value only"},
+    "iPhone 15 Ultra Wide, 2160p": {"f_px": 1445.0, "status": "DERIVED (half the Main focal length; research report Q1); planning value only"},
+    "iPhone 15 Main 2x, 2160p": {"f_px": 5780.0, "status": "UNVERIFIED (assumes a native-pitch sensor crop; readout behaviour undocumented)"}
+  },
+  "thresholds": {
+    "tracks_tolerance": 0.10,
+    "suppressed_below": 0.70,
+    "note": "ASSUMED decision thresholds for the rule-based reading in `compare`; revise when real noise levels are known."
+  },
+  "synthetic_sanity": {
+    "note": "SIMULATED. Verifies the harness on frames with an injected, invented stabiliser. Not a model of any phone.",
+    "seed": 20261006,
+    "cameras": {
+      "main_scale": {"width": 3840, "height": 2160, "f_px": 2890.0},
+      "uw_scale": {"width": 3840, "height": 2160, "f_px": 1445.0}
+    },
+    "degradation": {"psf_sigma_px": 0.7, "electrons_per_unit": 3000.0, "read_noise_e": 2.0},
+    "codec": {"enabled": true, "encoder": "libx264", "crf": 18},
+    "fps": 30.0,
+    "static_s": 10.0,
+    "step_angles_mrad": [0.0, 0.1, 0.25, 0.5, 1.0, 2.0],
+    "jig_radius_mm": 400.0,
+    "hold_s": 3.0,
+    "move_s": 1.0,
+    "hypotheses": {
+      "none": null,
+      "lock": {"corner_hz": 0.0, "gain": 0.7},
+      "recentring": {"corner_hz": 0.5, "gain": 0.9}
+    },
+    "step_hypotheses": ["none", "lock", "recentring"],
+    "oscillation_hypotheses": ["none", "lock"],
+    "oscillation_fps": 60.0,
+    "oscillation_s": 20.0,
+    "tones_hz_mrad": [[0.9, 0.5], [1.4, 0.4], [3.1, 0.3], [4.2, 0.25], [6.3, 0.2], [8.7, 0.15]],
+    "bands_hz": [[0.5, 2.0], [2.0, 5.0], [5.0, 10.0]],
+    "gyro_rate_hz": 200.0,
+    "gyro_noise_rad_s": 0.0002,
+    "ratio_tolerance": 0.05,
+    "noise_floor_px": 0.02,
+    "gain_tolerance": 0.07
+  }
+}
