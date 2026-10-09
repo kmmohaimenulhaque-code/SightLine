@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "sightline"
-version = "0.1.0"
+version = "0.2.0"
 description = "SIGHTLINE research reference implementation: a non-functional, smartphone-based ISSF 10 m air-pistol-style training instrument."
 readme = "README.md"
 requires-python = ">=3.11"
