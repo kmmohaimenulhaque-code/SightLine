@@ -68,3 +68,10 @@ Default p_b = principal point. Optional user sight adjustment in fixed clicks.
 | CAL-EXP-3 | BLE trigger latency | LED-in-frame method (`docs/hardware/BLE_TRIGGER_AND_IMU.md`) | Latency known to ≤ 5 ms (1σ) |
 | CAL-EXP-4 | Print-scale tolerance in practice | Print the target on 3 printers × 2 settings, measure | Report distribution; set acceptance limits |
 | CAL-EXP-5 | Focus breathing at 10 m | Calibrate at locked focus vs. autofocus | f_px change < 0.2 % with locked focus |
+| CAL-EXP-6 | Raw gyroscope characteristics per device | Static and single-axis logs (`docs/experiments/CAL-EXP-6_GYRO_PROTOCOL.md`) | Reported, not pass/fail: rate, jitter, bias, noise, axis convention |
+
+**Mission 2 note (2026-10-06).** CAL-EXP-1 is run as experiment **E-004a** (`docs/experiments/E-004A_PROTOCOL.md`):
+ground truth is a lever jig for steps and an independent gyroscope for oscillation, with the Ultra Wide camera as
+the control. For these experiments f_px is measured from the printed target in each clip
+(`app/calibration/angular.py::focal_px_from_target`); Zhang calibration remains the method for full intrinsics.
+Status of every calibration experiment: PHYSICAL_DATA_REQUIRED.
