@@ -1,0 +1,26 @@
+{
+    "id": "iphone_15_pro_max",
+    "model": "iPhone 15 Pro Max",
+    "variant": "Standard",
+    "body_dims_mm": [159.9, 76.7, 8.25],
+    "body_dims_tolerance_mm": 0.1,
+    "mass_g": 221.0,
+    "mass_source": "Apple tech specs",
+    "mass_confidence": "high",
+    "camera_island_dims_mm": [40.0, 42.0],
+    "camera_island_protrusion_mm": 4.1,
+    "cameras": [
+        {
+            "id": "main",
+            "type": "wide",
+            "position_body_mm": [-15.0, 25.0, 8.25],
+            "fov_deg": 75.0,
+            "aperture": 1.78
+        }
+    ],
+    "adapter_id": "3.1pro_adapter_iphone15pm",
+    "adapter_to_chassis_transform": {
+        "translation_mm": [0, 0, 0],
+        "rotation_deg": [0, 0, 0]
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "id": "android_reference",
+    "model": "Generic Android Reference",
+    "variant": "Standard",
+    "body_dims_mm": [165.0, 75.0, 8.5],
+    "body_dims_tolerance_mm": 0.5,
+    "mass_g": 195.0,
+    "mass_source": "Placeholder average",
+    "mass_confidence": "low",
+    "camera_island_dims_mm": [50.0, 35.0],
+    "camera_island_protrusion_mm": 3.0,
+    "cameras": [
+        {
+            "id": "main",
+            "type": "wide",
+            "position_body_mm": [0.0, 20.0, 8.5],
+            "fov_deg": 70.0,
+            "aperture": 1.8
+        }
+    ],
+    "adapter_id": "3.1pro_adapter_android_ref",
+    "adapter_to_chassis_transform": {
+        "translation_mm": [0, 0, 0],
+        "rotation_deg": [0, 0, 0]
+    }
+}
