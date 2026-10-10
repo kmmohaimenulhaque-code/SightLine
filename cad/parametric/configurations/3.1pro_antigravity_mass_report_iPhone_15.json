@@ -1,0 +1,73 @@
+{
+  "phone": "iPhone_15",
+  "total_mass_g": 941.0,
+  "com_mm": [
+    -4.888416578108395,
+    0.0,
+    -24.87268862911796
+  ],
+  "rail_positions": {
+    "X_longitudinal": -50.0,
+    "Z_vertical": -90.0
+  },
+  "target_error_mm": 0.0,
+  "mass_error_g": 119.0,
+  "feasible": true,
+  "attainable_range": {
+    "total_mass_g": 941.0,
+    "rails": {
+      "X_longitudinal": {
+        "axis": "x",
+        "min_pos": -50.0,
+        "max_pos": 70.0,
+        "ballast_mass_g": 200.0,
+        "com_at_min": {
+          "position_mm": -50.0,
+          "com_x": -4.888416578108395,
+          "com_y": 0.0,
+          "com_z": -24.87268862911796
+        },
+        "com_at_max": {
+          "position_mm": 70.0,
+          "com_x": 20.6163655685441,
+          "com_y": 0.0,
+          "com_z": -24.87268862911796
+        },
+        "com_x_range": [
+          -4.888416578108395,
+          20.6163655685441
+        ],
+        "com_z_range": [
+          -24.87268862911796,
+          -24.87268862911796
+        ]
+      },
+      "Z_vertical": {
+        "axis": "z",
+        "min_pos": -90.0,
+        "max_pos": -30.0,
+        "ballast_mass_g": 100.0,
+        "com_at_min": {
+          "position_mm": -90.0,
+          "com_x": -4.888416578108395,
+          "com_y": 0.0,
+          "com_z": -24.87268862911796
+        },
+        "com_at_max": {
+          "position_mm": -30.0,
+          "com_x": -4.888416578108395,
+          "com_y": 0.0,
+          "com_z": -18.496493092454838
+        },
+        "com_x_range": [
+          -4.888416578108395,
+          -4.888416578108395
+        ],
+        "com_z_range": [
+          -24.87268862911796,
+          -18.496493092454838
+        ]
+      }
+    }
+  }
+}

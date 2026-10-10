@@ -1,0 +1,592 @@
+{
+  "experiment": "E-004a",
+  "kind": "synthetic_sanity",
+  "banner": "SYNTHETIC SANITY CHECK - software verification on simulated frames. NOT a measurement of any phone and NOT experimental evidence.",
+  "status": {
+    "experiment_status": "PHYSICAL_DATA_REQUIRED",
+    "evidence_class": "SIMULATED",
+    "banner": "SYNTHETIC SANITY CHECK - software verification on simulated frames. NOT a measurement of any phone and NOT experimental evidence.",
+    "sanity_check_passed_analysis_checks": true
+  },
+  "created_utc": "2026-10-09T13:01:10+00:00",
+  "git_commit": "941c7b380c8b74f0d8ef1f2361578dc04fbab80c",
+  "codec": "none (frames passed directly)",
+  "config": {
+    "note": "SIMULATED. Verifies the harness on frames with an injected, invented stabiliser. Not a model of any phone.",
+    "seed": 20261006,
+    "cameras": {
+      "main_scale": {
+        "width": 3840,
+        "height": 2160,
+        "f_px": 2890.0
+      },
+      "uw_scale": {
+        "width": 3840,
+        "height": 2160,
+        "f_px": 1445.0
+      }
+    },
+    "degradation": {
+      "psf_sigma_px": 0.7,
+      "electrons_per_unit": 3000.0,
+      "read_noise_e": 2.0
+    },
+    "codec": {
+      "enabled": true,
+      "encoder": "libx264",
+      "crf": 18
+    },
+    "fps": 30.0,
+    "static_s": 10.0,
+    "step_angles_mrad": [
+      0.0,
+      0.1,
+      0.25,
+      0.5,
+      1.0,
+      2.0
+    ],
+    "jig_radius_mm": 400.0,
+    "hold_s": 3.0,
+    "move_s": 1.0,
+    "hypotheses": {
+      "none": null,
+      "lock": {
+        "corner_hz": 0.0,
+        "gain": 0.7
+      },
+      "recentring": {
+        "corner_hz": 0.5,
+        "gain": 0.9
+      }
+    },
+    "step_hypotheses": [
+      "none",
+      "lock",
+      "recentring"
+    ],
+    "oscillation_hypotheses": [
+      "none",
+      "lock"
+    ],
+    "oscillation_fps": 60.0,
+    "oscillation_s": 20.0,
+    "tones_hz_mrad": [
+      [
+        0.9,
+        0.5
+      ],
+      [
+        1.4,
+        0.4
+      ],
+      [
+        3.1,
+        0.3
+      ],
+      [
+        4.2,
+        0.25
+      ],
+      [
+        6.3,
+        0.2
+      ],
+      [
+        8.7,
+        0.15
+      ]
+    ],
+    "bands_hz": [
+      [
+        0.5,
+        2.0
+      ],
+      [
+        2.0,
+        5.0
+      ],
+      [
+        5.0,
+        10.0
+      ]
+    ],
+    "gyro_rate_hz": 200.0,
+    "gyro_noise_rad_s": 0.0002,
+    "ratio_tolerance": 0.05,
+    "noise_floor_px": 0.02,
+    "gain_tolerance": 0.07
+  },
+  "rows": [
+    {
+      "camera": "main_scale",
+      "test": "A_static",
+      "hypothesis": "none",
+      "quantity": "RMS (px)",
+      "injected": 0.0,
+      "recovered": 0.008276334846756342,
+      "tolerance": null,
+      "pass": true
+    },
+    {
+      "camera": "main_scale",
+      "test": "B_step",
+      "hypothesis": "none",
+      "quantity": "settled ratio @ 0.10 mrad (0.29 px)",
+      "injected": 1.0,
+      "recovered": 1.0388836928299974,
+      "tolerance": 0.2073894707670164,
+      "pass": true,
+      "creep_px": 0.002796661648048371
+    },
+    {
+      "camera": "main_scale",
+      "test": "B_step",
+      "hypothesis": "none",
+      "quantity": "settled ratio @ 0.25 mrad (0.72 px)",
+      "injected": 1.0,
+      "recovered": 0.9813761021227693,
+      "tolerance": 0.08295578685508026,
+      "pass": true,
+      "creep_px": 0.0004635789825613301
+    },
+    {
+      "camera": "main_scale",
+      "test": "B_step",
+      "hypothesis": "none",
+      "quantity": "settled ratio @ 0.50 mrad (1.45 px)",
+      "injected": 1.0,
+      "recovered": 0.9995201191006898,
+      "tolerance": 0.05,
+      "pass": true,
+      "creep_px": 0.003389034840978411
+    },
+    {
+      "camera": "main_scale",
+      "test": "B_step",
+      "hypothesis": "none",
+      "quantity": "settled ratio @ 1.00 mrad (2.89 px)",
+      "injected": 1.0,
+      "recovered": 0.9947298476590944,
+      "tolerance": 0.05,
+      "pass": true,
+      "creep_px": -0.0016128061767801682
+    },
+    {
+      "camera": "main_scale",
+      "test": "B_step",
+      "hypothesis": "none",
+      "quantity": "settled ratio @ 2.00 mrad (5.79 px)",
+      "injected": 1.0,
+      "recovered": 0.9964156027638467,
+      "tolerance": 0.05,
+      "pass": true,
+      "creep_px": -0.000784907106577748
+    },
+    {
+      "camera": "main_scale",
+      "test": "B_step",
+      "hypothesis": "lock",
+      "quantity": "settled ratio @ 0.10 mrad (0.29 px)",
+      "injected": 0.30000000000000004,
+      "recovered": 0.31391530080999797,
+      "tolerance": 0.20742171969356893,
+      "pass": true,
+      "creep_px": 0.0016247559752002871
+    },
+    {
+      "camera": "main_scale",
+      "test": "B_step",
+      "hypothesis": "lock",
+      "quantity": "settled ratio @ 0.25 mrad (0.72 px)",
+      "injected": 0.30000000000000004,
+      "recovered": 0.3118565932825474,
+      "tolerance": 0.08296868642547553,
+      "pass": true,
+      "creep_px": -0.0009139753638578441
+    },
+    {
+      "camera": "main_scale",
+      "test": "B_step",
+      "hypothesis": "lock",
+      "quantity": "settled ratio @ 0.50 mrad (1.45 px)",
+      "injected": 0.30000000000000004,
+      "recovered": 0.3012241400626736,
+      "tolerance": 0.05,
+      "pass": true,
+      "creep_px": -0.003320472621012982
+    },
+    {
+      "camera": "main_scale",
+      "test": "B_step",
+      "hypothesis": "lock",
+      "quantity": "settled ratio @ 1.00 mrad (2.89 px)",
+      "injected": 0.30000000000000004,
+      "recovered": 0.29641509352387246,
+      "tolerance": 0.05,
+      "pass": true,
+      "creep_px": 0.008714031929756061
+    },
+    {
+      "camera": "main_scale",
+      "test": "B_step",
+      "hypothesis": "lock",
+      "quantity": "settled ratio @ 2.00 mrad (5.79 px)",
+      "injected": 0.30000000000000004,
+      "recovered": 0.29744254697771383,
+      "tolerance": 0.05,
+      "pass": true,
+      "creep_px": -0.006519282660576664
+    },
+    {
+      "camera": "main_scale",
+      "test": "B_step",
+      "hypothesis": "recentring",
+      "quantity": "settled ratio @ 0.10 mrad (0.29 px)",
+      "injected": 1.0,
+      "recovered": 0.9631181769371793,
+      "tolerance": 0.20739350620891986,
+      "pass": true,
+      "creep_px": 0.1072065820456487
+    },
+    {
+      "camera": "main_scale",
+      "test": "B_step",
+      "hypothesis": "recentring",
+      "quantity": "settled ratio @ 0.25 mrad (0.72 px)",
+      "injected": 1.0,
+      "recovered": 0.9216310922690655,
+      "tolerance": 0.0829574010318134,
+      "pass": true,
+      "creep_px": 0.17703774234821879
+    },
+    {
+      "camera": "main_scale",
+      "test": "B_step",
+      "hypothesis": "recentring",
+      "quantity": "settled ratio @ 0.50 mrad (1.45 px)",
+      "injected": 1.0,
+      "recovered": 0.9705493306961337,
+      "tolerance": 0.05,
+      "pass": true,
+      "creep_px": 0.17452034929351612
+    },
+    {
+      "camera": "main_scale",
+      "test": "B_step",
+      "hypothesis": "recentring",
+      "quantity": "settled ratio @ 1.00 mrad (2.89 px)",
+      "injected": 1.0,
+      "recovered": 0.9882544196782284,
+      "tolerance": 0.05,
+      "pass": true,
+      "creep_px": 0.14128441742226983
+    },
+    {
+      "camera": "main_scale",
+      "test": "B_step",
+      "hypothesis": "recentring",
+      "quantity": "settled ratio @ 2.00 mrad (5.79 px)",
+      "injected": 1.0,
+      "recovered": 0.9891404239071366,
+      "tolerance": 0.05,
+      "pass": true,
+      "creep_px": 0.1984403579323839
+    },
+    {
+      "camera": "main_scale",
+      "test": "D_oscillation",
+      "hypothesis": "none",
+      "quantity": "gain 0.5-2 Hz",
+      "injected": 1.0,
+      "recovered": 0.9979791094933262,
+      "tolerance": 0.07,
+      "pass": true
+    },
+    {
+      "camera": "main_scale",
+      "test": "D_oscillation",
+      "hypothesis": "none",
+      "quantity": "gain 2-5 Hz",
+      "injected": 1.0,
+      "recovered": 1.0032616511340084,
+      "tolerance": 0.07,
+      "pass": true
+    },
+    {
+      "camera": "main_scale",
+      "test": "D_oscillation",
+      "hypothesis": "none",
+      "quantity": "gain 5-10 Hz",
+      "injected": 1.0,
+      "recovered": 1.0153202951954652,
+      "tolerance": 0.07,
+      "pass": true
+    },
+    {
+      "camera": "main_scale",
+      "test": "D_oscillation",
+      "hypothesis": "lock",
+      "quantity": "gain 0.5-2 Hz",
+      "injected": 0.30000000000000004,
+      "recovered": 0.2988780412381561,
+      "tolerance": 0.07,
+      "pass": true
+    },
+    {
+      "camera": "main_scale",
+      "test": "D_oscillation",
+      "hypothesis": "lock",
+      "quantity": "gain 2-5 Hz",
+      "injected": 0.30000000000000004,
+      "recovered": 0.3011657417221744,
+      "tolerance": 0.07,
+      "pass": true
+    },
+    {
+      "camera": "main_scale",
+      "test": "D_oscillation",
+      "hypothesis": "lock",
+      "quantity": "gain 5-10 Hz",
+      "injected": 0.30000000000000004,
+      "recovered": 0.30564058198536964,
+      "tolerance": 0.07,
+      "pass": true
+    },
+    {
+      "camera": "uw_scale",
+      "test": "A_static",
+      "hypothesis": "none",
+      "quantity": "RMS (px)",
+      "injected": 0.0,
+      "recovered": 0.009996831386447916,
+      "tolerance": null,
+      "pass": true
+    },
+    {
+      "camera": "uw_scale",
+      "test": "B_step",
+      "hypothesis": "none",
+      "quantity": "settled ratio @ 0.10 mrad (0.15 px)",
+      "injected": 1.0,
+      "recovered": 0.9215633958967014,
+      "tolerance": 0.41374327770128594,
+      "pass": true,
+      "creep_px": 0.002821461335315689
+    },
+    {
+      "camera": "uw_scale",
+      "test": "B_step",
+      "hypothesis": "none",
+      "quantity": "settled ratio @ 0.25 mrad (0.36 px)",
+      "injected": 1.0,
+      "recovered": 0.9700389833257712,
+      "tolerance": 0.16549730818431144,
+      "pass": true,
+      "creep_px": 0.0003760450660479364
+    },
+    {
+      "camera": "uw_scale",
+      "test": "B_step",
+      "hypothesis": "none",
+      "quantity": "settled ratio @ 0.50 mrad (0.73 px)",
+      "injected": 1.0,
+      "recovered": 1.0172647865249247,
+      "tolerance": 0.0827486489203646,
+      "pass": true,
+      "creep_px": 0.0025815690064519003
+    },
+    {
+      "camera": "uw_scale",
+      "test": "B_step",
+      "hypothesis": "none",
+      "quantity": "settled ratio @ 1.00 mrad (1.45 px)",
+      "injected": 1.0,
+      "recovered": 0.994538013819882,
+      "tolerance": 0.05,
+      "pass": true,
+      "creep_px": 0.0012359545043523212
+    },
+    {
+      "camera": "uw_scale",
+      "test": "B_step",
+      "hypothesis": "none",
+      "quantity": "settled ratio @ 2.00 mrad (2.90 px)",
+      "injected": 1.0,
+      "recovered": 0.9990576521834681,
+      "tolerance": 0.05,
+      "pass": true,
+      "creep_px": -0.0019542200010391753
+    },
+    {
+      "camera": "uw_scale",
+      "test": "B_step",
+      "hypothesis": "lock",
+      "quantity": "settled ratio @ 0.10 mrad (0.14 px)",
+      "injected": 0.30000000000000004,
+      "recovered": 0.26361157632981463,
+      "tolerance": 0.4139696148735244,
+      "pass": true,
+      "creep_px": -0.0011976576843863995
+    },
+    {
+      "camera": "uw_scale",
+      "test": "B_step",
+      "hypothesis": "lock",
+      "quantity": "settled ratio @ 0.25 mrad (0.36 px)",
+      "injected": 0.30000000000000004,
+      "recovered": 0.2773023236947102,
+      "tolerance": 0.16558784305162244,
+      "pass": true,
+      "creep_px": 0.0031739816789837505
+    },
+    {
+      "camera": "uw_scale",
+      "test": "B_step",
+      "hypothesis": "lock",
+      "quantity": "settled ratio @ 0.50 mrad (0.72 px)",
+      "injected": 0.30000000000000004,
+      "recovered": 0.27870367158519627,
+      "tolerance": 0.0827939163511909,
+      "pass": true,
+      "creep_px": -0.004190832795103461
+    },
+    {
+      "camera": "uw_scale",
+      "test": "B_step",
+      "hypothesis": "lock",
+      "quantity": "settled ratio @ 1.00 mrad (1.45 px)",
+      "injected": 0.30000000000000004,
+      "recovered": 0.2960578637339954,
+      "tolerance": 0.05,
+      "pass": true,
+      "creep_px": -0.0009157612990691177
+    },
+    {
+      "camera": "uw_scale",
+      "test": "B_step",
+      "hypothesis": "lock",
+      "quantity": "settled ratio @ 2.00 mrad (2.90 px)",
+      "injected": 0.30000000000000004,
+      "recovered": 0.30278417700604787,
+      "tolerance": 0.05,
+      "pass": true,
+      "creep_px": -0.0017932422555304584
+    },
+    {
+      "camera": "uw_scale",
+      "test": "B_step",
+      "hypothesis": "recentring",
+      "quantity": "settled ratio @ 0.10 mrad (0.15 px)",
+      "injected": 1.0,
+      "recovered": 0.9726218654489042,
+      "tolerance": 0.4137476790459447,
+      "pass": true,
+      "creep_px": -0.04430238617592863
+    },
+    {
+      "camera": "uw_scale",
+      "test": "B_step",
+      "hypothesis": "recentring",
+      "quantity": "settled ratio @ 0.25 mrad (0.36 px)",
+      "injected": 1.0,
+      "recovered": 0.9187534652264088,
+      "tolerance": 0.16549906872214412,
+      "pass": true,
+      "creep_px": 0.09378262711508967
+    },
+    {
+      "camera": "uw_scale",
+      "test": "B_step",
+      "hypothesis": "recentring",
+      "quantity": "settled ratio @ 0.50 mrad (0.73 px)",
+      "injected": 1.0,
+      "recovered": 0.9924054606026984,
+      "tolerance": 0.08274952918922594,
+      "pass": true,
+      "creep_px": 0.09873333121493033
+    },
+    {
+      "camera": "uw_scale",
+      "test": "B_step",
+      "hypothesis": "recentring",
+      "quantity": "settled ratio @ 1.00 mrad (1.45 px)",
+      "injected": 1.0,
+      "recovered": 0.9772224920672568,
+      "tolerance": 0.05,
+      "pass": true,
+      "creep_px": 0.09888348686874338
+    },
+    {
+      "camera": "uw_scale",
+      "test": "B_step",
+      "hypothesis": "recentring",
+      "quantity": "settled ratio @ 2.00 mrad (2.90 px)",
+      "injected": 1.0,
+      "recovered": 0.990789096902106,
+      "tolerance": 0.05,
+      "pass": true,
+      "creep_px": 0.09903182410840827
+    },
+    {
+      "camera": "uw_scale",
+      "test": "D_oscillation",
+      "hypothesis": "none",
+      "quantity": "gain 0.5-2 Hz",
+      "injected": 1.0,
+      "recovered": 0.9978106302396883,
+      "tolerance": 0.07,
+      "pass": true
+    },
+    {
+      "camera": "uw_scale",
+      "test": "D_oscillation",
+      "hypothesis": "none",
+      "quantity": "gain 2-5 Hz",
+      "injected": 1.0,
+      "recovered": 1.0000063001063886,
+      "tolerance": 0.07,
+      "pass": true
+    },
+    {
+      "camera": "uw_scale",
+      "test": "D_oscillation",
+      "hypothesis": "none",
+      "quantity": "gain 5-10 Hz",
+      "injected": 1.0,
+      "recovered": 1.011541771157496,
+      "tolerance": 0.07,
+      "pass": true
+    },
+    {
+      "camera": "uw_scale",
+      "test": "D_oscillation",
+      "hypothesis": "lock",
+      "quantity": "gain 0.5-2 Hz",
+      "injected": 0.30000000000000004,
+      "recovered": 0.2907372529057567,
+      "tolerance": 0.07,
+      "pass": true
+    },
+    {
+      "camera": "uw_scale",
+      "test": "D_oscillation",
+      "hypothesis": "lock",
+      "quantity": "gain 2-5 Hz",
+      "injected": 0.30000000000000004,
+      "recovered": 0.2926982299021152,
+      "tolerance": 0.07,
+      "pass": true
+    },
+    {
+      "camera": "uw_scale",
+      "test": "D_oscillation",
+      "hypothesis": "lock",
+      "quantity": "gain 5-10 Hz",
+      "injected": 0.30000000000000004,
+      "recovered": 0.2973648637780718,
+      "tolerance": 0.07,
+      "pass": true
+    }
+  ]
+}

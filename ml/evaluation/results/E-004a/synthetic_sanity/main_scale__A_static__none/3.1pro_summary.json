@@ -1,0 +1,99 @@
+{
+  "experiment": "E-004a",
+  "capture_id": "synthetic-main_scale__A_static__none",
+  "test": "A_static",
+  "created_utc": "2026-10-09T12:58:36+00:00",
+  "git_commit": "941c7b380c8b74f0d8ef1f2361578dc04fbab80c",
+  "scope": {
+    "device": "SYNTHETIC",
+    "os_version": null,
+    "camera": "main_scale",
+    "zoom_readout": null,
+    "capture_app": null,
+    "resolution": [
+      3840,
+      2160
+    ],
+    "fps": 30.0,
+    "codec": null,
+    "stabilisation_mode": null,
+    "hdr": null,
+    "focus": null,
+    "exposure": 0.0,
+    "iso": null,
+    "white_balance": null
+  },
+  "centre_estimator": "ellipse",
+  "tracking": {
+    "n_frames": 300,
+    "n_invalid": 0,
+    "invalid_fraction": 0.0,
+    "invalid_reasons": {}
+  },
+  "focal_length_px": {
+    "value": 2894.2971787627134,
+    "sigma": 9.837091326647856,
+    "method": "target-anchored (measured black diameter and distance)",
+    "black_major_axis_px": 17.221068213638144,
+    "mm_per_px_at_target": 3.4550702233952744,
+    "sigma_includes": [
+      "frame scatter",
+      "black diameter",
+      "distance"
+    ],
+    "sigma_excludes": [
+      "estimator / ISP scale bias (UNVERIFIED on real video)"
+    ]
+  },
+  "result": {
+    "static": {
+      "frozen_step_fraction": 0.013377926421404682,
+      "n": 300,
+      "duration_s": 9.966666666666667,
+      "mean_x_px": 127.49857134470389,
+      "mean_y_px": 127.50111339293183,
+      "std_x_px": 0.005944130924549257,
+      "std_y_px": 0.005778764176445314,
+      "rms_px": 0.008276334846756342,
+      "p95_px": 0.014288626004045341,
+      "max_px": 0.02148425474554986,
+      "drift_x_px_per_s": 4.011675727505319e-05,
+      "drift_y_px_per_s": -0.00011897676400551057,
+      "end_shift_x_px": 0.0001940155004405142,
+      "end_shift_y_px": -0.002773251200679283,
+      "detrended_rms_px": 0.008268394428007787
+    },
+    "frame_rate_hz": 30.000000000000107,
+    "frame_interval_jitter_s": 2.9147470586024446e-16,
+    "rms_mrad": 0.0028595318087876525,
+    "p95_mrad": 0.004936820623980846,
+    "max_mrad": 0.007422960884318794,
+    "spectrum_peak": {
+      "frequency_hz": 6.400000000000023,
+      "amplitude_px": 0.002580652486841575
+    },
+    "rms_px_by_estimator": {
+      "ellipse": 0.008276334846756342,
+      "moments": 0.014360112099754735,
+      "centroid": 0.04695435907259649,
+      "phase": 42.25644182011903
+    },
+    "frames_used": 300,
+    "at_target_mm": {
+      "std_x": 0.020537389761373162,
+      "std_y": 0.01996603603405952,
+      "rms": 0.028595318087876527,
+      "p95": 0.04936820623980846,
+      "max": 0.07422960884318794,
+      "detrended_rms": 0.028567883383497108,
+      "mm_per_px": 3.4550702233952744
+    }
+  },
+  "warnings": [],
+  "status": {
+    "experiment_status": "PHYSICAL_DATA_REQUIRED",
+    "evidence_class": "SIMULATED",
+    "banner": "SYNTHETIC SANITY CHECK - software verification on simulated frames. NOT a measurement of any phone and NOT experimental evidence.",
+    "sanity_check_passed_analysis_checks": true
+  }
+}

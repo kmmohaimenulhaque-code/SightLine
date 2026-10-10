@@ -1,0 +1,653 @@
+{
+  "meta": {
+    "experiment_id": "E-005",
+    "status_label": "DERIVED (bound) / SIMULATED (comparison with E-001)",
+    "created_utc": "2026-10-09T12:58:28+00:00",
+    "git_commit": "941c7b380c8b74f0d8ef1f2361578dc04fbab80c",
+    "runtime_s": 106.8,
+    "specs_per_cell": 12,
+    "environment": {
+      "python": "3.14.2",
+      "numpy": "2.5.3",
+      "opencv": "5.0.0"
+    }
+  },
+  "cells": [
+    {
+      "preset": "wide_1080p",
+      "condition": "good_light",
+      "mm_per_px": 6.89464126245512,
+      "crlb_rms_mm": 0.07418871230672047,
+      "crlb_p95_mm": 0.1284071870420642,
+      "crlb_rms_px": 0.010760344082108565,
+      "crlb_rms_mm_nuisance_known": 0.059205024996699024,
+      "nuisance_cost_factor": 1.2530813442078077,
+      "best_method": "hybrid",
+      "best_baseline_rms_mm": 0.13793437159186683,
+      "best_efficiency_ratio": 1.8592366318692917,
+      "above_g4_threshold": true
+    },
+    {
+      "preset": "wide_1080p",
+      "condition": "dim_light",
+      "mm_per_px": 6.89464126245512,
+      "crlb_rms_mm": 0.23539922331302393,
+      "crlb_p95_mm": 0.40743330296048225,
+      "crlb_rms_px": 0.034142345388569265,
+      "crlb_rms_mm_nuisance_known": 0.2009961214092661,
+      "nuisance_cost_factor": 1.171163013806155,
+      "best_method": "hybrid",
+      "best_baseline_rms_mm": 0.3651871274768613,
+      "best_efficiency_ratio": 1.5513523041291044,
+      "above_g4_threshold": true
+    },
+    {
+      "preset": "wide_1080p",
+      "condition": "good_light_motion",
+      "mm_per_px": 6.89464126245512,
+      "crlb_rms_mm": 0.08252323270359394,
+      "crlb_p95_mm": 0.14283272815514647,
+      "crlb_rms_px": 0.01196918440890834,
+      "crlb_rms_mm_nuisance_known": 0.06549057186050847,
+      "nuisance_cost_factor": 1.260078059470364,
+      "best_method": "hybrid",
+      "best_baseline_rms_mm": 0.1383923133161323,
+      "best_efficiency_ratio": 1.677010325240267,
+      "above_g4_threshold": true
+    },
+    {
+      "preset": "wide_2160p",
+      "condition": "good_light",
+      "mm_per_px": 3.44732063122756,
+      "crlb_rms_mm": 0.02419291014241576,
+      "crlb_p95_mm": 0.04187353360313847,
+      "crlb_rms_px": 0.007017888015191927,
+      "crlb_rms_mm_nuisance_known": 0.01963369944767857,
+      "nuisance_cost_factor": 1.2322135319880463,
+      "best_method": "hybrid",
+      "best_baseline_rms_mm": 0.06509395820784492,
+      "best_efficiency_ratio": 2.690621253278669,
+      "above_g4_threshold": true
+    },
+    {
+      "preset": "wide_2160p",
+      "condition": "dim_light",
+      "mm_per_px": 3.44732063122756,
+      "crlb_rms_mm": 0.0792576102335224,
+      "crlb_p95_mm": 0.13718052875330758,
+      "crlb_rms_px": 0.022991075885302692,
+      "crlb_rms_mm_nuisance_known": 0.065108043591522,
+      "nuisance_cost_factor": 1.2173244020473513,
+      "best_method": "edges",
+      "best_baseline_rms_mm": 0.127209307704013,
+      "best_efficiency_ratio": 1.6050106397254102,
+      "above_g4_threshold": true
+    },
+    {
+      "preset": "wide_2160p",
+      "condition": "good_light_motion",
+      "mm_per_px": 3.44732063122756,
+      "crlb_rms_mm": 0.026427003067401977,
+      "crlb_p95_mm": 0.04574034270614632,
+      "crlb_rms_px": 0.007665954488831971,
+      "crlb_rms_mm_nuisance_known": 0.022134149259991704,
+      "nuisance_cost_factor": 1.1939470885908303,
+      "best_method": "hybrid",
+      "best_baseline_rms_mm": 0.06750062309069334,
+      "best_efficiency_ratio": 2.5542292070929586,
+      "above_g4_threshold": true
+    },
+    {
+      "preset": "wide_12mp",
+      "condition": "good_light",
+      "mm_per_px": 3.2831625059310094,
+      "crlb_rms_mm": 0.020631137463416528,
+      "crlb_p95_mm": 0.03570875197567601,
+      "crlb_rms_px": 0.006283922110509768,
+      "crlb_rms_mm_nuisance_known": 0.018016435710855403,
+      "nuisance_cost_factor": 1.1451286921855302,
+      "best_method": "hybrid",
+      "best_baseline_rms_mm": 0.0640713691720651,
+      "best_efficiency_ratio": 3.1055664907316674,
+      "above_g4_threshold": true
+    },
+    {
+      "preset": "wide_12mp",
+      "condition": "dim_light",
+      "mm_per_px": 3.2831625059310094,
+      "crlb_rms_mm": 0.07313234716572703,
+      "crlb_p95_mm": 0.12657881083729247,
+      "crlb_rms_px": 0.0222749702561521,
+      "crlb_rms_mm_nuisance_known": 0.06075703368464781,
+      "nuisance_cost_factor": 1.2036852810377776,
+      "best_method": "edges",
+      "best_baseline_rms_mm": 0.11348690733853135,
+      "best_efficiency_ratio": 1.5518017913653974,
+      "above_g4_threshold": true
+    },
+    {
+      "preset": "wide_12mp",
+      "condition": "good_light_motion",
+      "mm_per_px": 3.2831625059310094,
+      "crlb_rms_mm": 0.02485862814169909,
+      "crlb_p95_mm": 0.04302577055392728,
+      "crlb_rms_px": 0.007571549716711298,
+      "crlb_rms_mm_nuisance_known": 0.02074907787518004,
+      "nuisance_cost_factor": 1.1980594169649763,
+      "best_method": "hybrid",
+      "best_baseline_rms_mm": 0.05890794032064351,
+      "best_efficiency_ratio": 2.3697180707180063,
+      "above_g4_threshold": true
+    },
+    {
+      "preset": "tele3x_1080p",
+      "condition": "good_light",
+      "mm_per_px": 2.3093194025306234,
+      "crlb_rms_mm": 0.012457165108897822,
+      "crlb_p95_mm": 0.02156109036559215,
+      "crlb_rms_px": 0.005394301496469859,
+      "crlb_rms_mm_nuisance_known": 0.010344430371792774,
+      "nuisance_cost_factor": 1.2042388668269315,
+      "best_method": "hybrid",
+      "best_baseline_rms_mm": 0.03868327228986117,
+      "best_efficiency_ratio": 3.105303008485513,
+      "above_g4_threshold": true
+    },
+    {
+      "preset": "tele3x_1080p",
+      "condition": "dim_light",
+      "mm_per_px": 2.3093194025306234,
+      "crlb_rms_mm": 0.042522202160201396,
+      "crlb_p95_mm": 0.07359820916760718,
+      "crlb_rms_px": 0.01841330485233193,
+      "crlb_rms_mm_nuisance_known": 0.03488733866583562,
+      "nuisance_cost_factor": 1.2188433909360483,
+      "best_method": "edges",
+      "best_baseline_rms_mm": 0.06476533985026704,
+      "best_efficiency_ratio": 1.5230946790165087,
+      "above_g4_threshold": true
+    },
+    {
+      "preset": "tele3x_1080p",
+      "condition": "good_light_motion",
+      "mm_per_px": 2.3093194025306234,
+      "crlb_rms_mm": 0.01449836327836073,
+      "crlb_p95_mm": 0.025094033679832685,
+      "crlb_rms_px": 0.006278197490772812,
+      "crlb_rms_mm_nuisance_known": 0.012373627569027896,
+      "nuisance_cost_factor": 1.1717148586766264,
+      "best_method": "hybrid",
+      "best_baseline_rms_mm": 0.04189439227861491,
+      "best_efficiency_ratio": 2.889594602802071,
+      "above_g4_threshold": true
+    }
+  ],
+  "decomposition": [
+    {
+      "preset": "wide_1080p",
+      "hybrid_rms_mm_jpeg90": 0.1413511784907904,
+      "hybrid_rms_mm_no_jpeg": 0.1247496888140757,
+      "crlb_rms_mm": 0.07418871230672047,
+      "ratio_jpeg90": 1.9052922485889534,
+      "ratio_no_jpeg": 1.6815184538898527
+    },
+    {
+      "preset": "wide_2160p",
+      "hybrid_rms_mm_jpeg90": 0.06526183755382631,
+      "hybrid_rms_mm_no_jpeg": 0.05900142357362821,
+      "crlb_rms_mm": 0.02419291014241576,
+      "ratio_jpeg90": 2.6975604493073044,
+      "ratio_no_jpeg": 2.4387898448886927
+    },
+    {
+      "preset": "wide_12mp",
+      "hybrid_rms_mm_jpeg90": 0.06385175058008419,
+      "hybrid_rms_mm_no_jpeg": 0.06039999887188634,
+      "crlb_rms_mm": 0.020631137463416528,
+      "ratio_jpeg90": 3.094921484252003,
+      "ratio_no_jpeg": 2.927613612142743
+    },
+    {
+      "preset": "tele3x_1080p",
+      "hybrid_rms_mm_jpeg90": 0.04404183219010019,
+      "hybrid_rms_mm_no_jpeg": 0.04010236445588029,
+      "crlb_rms_mm": 0.012457165108897822,
+      "ratio_jpeg90": 3.535461865127105,
+      "ratio_no_jpeg": 3.2192207541053013
+    }
+  ],
+  "comparison": [
+    {
+      "preset": "tele3x_1080p",
+      "condition": "dim_light",
+      "method": "edges",
+      "baseline_rms_mm": 0.06476533985026704,
+      "crlb_rms_mm": 0.042522202160201396,
+      "efficiency_ratio": 1.5230946790165087,
+      "bound_condition": "dim_light"
+    },
+    {
+      "preset": "tele3x_1080p",
+      "condition": "dim_light",
+      "method": "hybrid",
+      "baseline_rms_mm": 0.11299376207603234,
+      "crlb_rms_mm": 0.042522202160201396,
+      "efficiency_ratio": 2.657288577160962,
+      "bound_condition": "dim_light"
+    },
+    {
+      "preset": "tele3x_1080p",
+      "condition": "dim_light",
+      "method": "moments",
+      "baseline_rms_mm": 0.13578277738131297,
+      "crlb_rms_mm": 0.042522202160201396,
+      "efficiency_ratio": 3.1932207290147994,
+      "bound_condition": "dim_light"
+    },
+    {
+      "preset": "tele3x_1080p",
+      "condition": "good_light",
+      "method": "edges",
+      "baseline_rms_mm": 0.03871404803582482,
+      "crlb_rms_mm": 0.012457165108897822,
+      "efficiency_ratio": 3.10777353413839,
+      "bound_condition": "good_light"
+    },
+    {
+      "preset": "tele3x_1080p",
+      "condition": "good_light",
+      "method": "hybrid",
+      "baseline_rms_mm": 0.03868327228986117,
+      "crlb_rms_mm": 0.012457165108897822,
+      "efficiency_ratio": 3.105303008485513,
+      "bound_condition": "good_light"
+    },
+    {
+      "preset": "tele3x_1080p",
+      "condition": "good_light",
+      "method": "moments",
+      "baseline_rms_mm": 0.04391400039828592,
+      "crlb_rms_mm": 0.012457165108897822,
+      "efficiency_ratio": 3.5252001570501235,
+      "bound_condition": "good_light"
+    },
+    {
+      "preset": "tele3x_1080p",
+      "condition": "good_light_jpeg60",
+      "method": "edges",
+      "baseline_rms_mm": 0.048742516634885394,
+      "crlb_rms_mm": 0.012457165108897822,
+      "efficiency_ratio": 3.9128097130277184,
+      "bound_condition": "good_light"
+    },
+    {
+      "preset": "tele3x_1080p",
+      "condition": "good_light_jpeg60",
+      "method": "hybrid",
+      "baseline_rms_mm": 0.07069970019927314,
+      "crlb_rms_mm": 0.012457165108897822,
+      "efficiency_ratio": 5.675424511213569,
+      "bound_condition": "good_light"
+    },
+    {
+      "preset": "tele3x_1080p",
+      "condition": "good_light_jpeg60",
+      "method": "moments",
+      "baseline_rms_mm": 0.08346956720518038,
+      "crlb_rms_mm": 0.012457165108897822,
+      "efficiency_ratio": 6.700526682877494,
+      "bound_condition": "good_light"
+    },
+    {
+      "preset": "tele3x_1080p",
+      "condition": "good_light_motion",
+      "method": "edges",
+      "baseline_rms_mm": 0.05435380050922461,
+      "crlb_rms_mm": 0.01449836327836073,
+      "efficiency_ratio": 3.748961138968658,
+      "bound_condition": "good_light_motion"
+    },
+    {
+      "preset": "tele3x_1080p",
+      "condition": "good_light_motion",
+      "method": "hybrid",
+      "baseline_rms_mm": 0.04189439227861491,
+      "crlb_rms_mm": 0.01449836327836073,
+      "efficiency_ratio": 2.889594602802071,
+      "bound_condition": "good_light_motion"
+    },
+    {
+      "preset": "tele3x_1080p",
+      "condition": "good_light_motion",
+      "method": "moments",
+      "baseline_rms_mm": 0.06765222720122936,
+      "crlb_rms_mm": 0.01449836327836073,
+      "efficiency_ratio": 4.66619754949874,
+      "bound_condition": "good_light_motion"
+    },
+    {
+      "preset": "wide_1080p",
+      "condition": "dim_light",
+      "method": "edges",
+      "baseline_rms_mm": 0.3840807842796099,
+      "crlb_rms_mm": 0.23539922331302393,
+      "efficiency_ratio": 1.631614492495056,
+      "bound_condition": "dim_light"
+    },
+    {
+      "preset": "wide_1080p",
+      "condition": "dim_light",
+      "method": "hybrid",
+      "baseline_rms_mm": 0.3651871274768613,
+      "crlb_rms_mm": 0.23539922331302393,
+      "efficiency_ratio": 1.5513523041291044,
+      "bound_condition": "dim_light"
+    },
+    {
+      "preset": "wide_1080p",
+      "condition": "dim_light",
+      "method": "moments",
+      "baseline_rms_mm": 0.42540150758384515,
+      "crlb_rms_mm": 0.23539922331302393,
+      "efficiency_ratio": 1.8071491553655816,
+      "bound_condition": "dim_light"
+    },
+    {
+      "preset": "wide_1080p",
+      "condition": "good_light",
+      "method": "edges",
+      "baseline_rms_mm": 0.3155898567483313,
+      "crlb_rms_mm": 0.07418871230672047,
+      "efficiency_ratio": 4.253879693228524,
+      "bound_condition": "good_light"
+    },
+    {
+      "preset": "wide_1080p",
+      "condition": "good_light",
+      "method": "hybrid",
+      "baseline_rms_mm": 0.13793437159186683,
+      "crlb_rms_mm": 0.07418871230672047,
+      "efficiency_ratio": 1.8592366318692917,
+      "bound_condition": "good_light"
+    },
+    {
+      "preset": "wide_1080p",
+      "condition": "good_light",
+      "method": "moments",
+      "baseline_rms_mm": 0.15105403619932525,
+      "crlb_rms_mm": 0.07418871230672047,
+      "efficiency_ratio": 2.0360784208629785,
+      "bound_condition": "good_light"
+    },
+    {
+      "preset": "wide_1080p",
+      "condition": "good_light_jpeg60",
+      "method": "edges",
+      "baseline_rms_mm": 0.39022393436005154,
+      "crlb_rms_mm": 0.07418871230672047,
+      "efficiency_ratio": 5.259882834288022,
+      "bound_condition": "good_light"
+    },
+    {
+      "preset": "wide_1080p",
+      "condition": "good_light_jpeg60",
+      "method": "hybrid",
+      "baseline_rms_mm": 0.24522386317962205,
+      "crlb_rms_mm": 0.07418871230672047,
+      "efficiency_ratio": 3.3054066522382297,
+      "bound_condition": "good_light"
+    },
+    {
+      "preset": "wide_1080p",
+      "condition": "good_light_jpeg60",
+      "method": "moments",
+      "baseline_rms_mm": 0.25042867430885674,
+      "crlb_rms_mm": 0.07418871230672047,
+      "efficiency_ratio": 3.3755630273444086,
+      "bound_condition": "good_light"
+    },
+    {
+      "preset": "wide_1080p",
+      "condition": "good_light_motion",
+      "method": "edges",
+      "baseline_rms_mm": 0.3404130457003611,
+      "crlb_rms_mm": 0.08252323270359394,
+      "efficiency_ratio": 4.125057084506772,
+      "bound_condition": "good_light_motion"
+    },
+    {
+      "preset": "wide_1080p",
+      "condition": "good_light_motion",
+      "method": "hybrid",
+      "baseline_rms_mm": 0.1383923133161323,
+      "crlb_rms_mm": 0.08252323270359394,
+      "efficiency_ratio": 1.677010325240267,
+      "bound_condition": "good_light_motion"
+    },
+    {
+      "preset": "wide_1080p",
+      "condition": "good_light_motion",
+      "method": "moments",
+      "baseline_rms_mm": 0.1757851890531253,
+      "crlb_rms_mm": 0.08252323270359394,
+      "efficiency_ratio": 2.1301297015897167,
+      "bound_condition": "good_light_motion"
+    },
+    {
+      "preset": "wide_12mp",
+      "condition": "dim_light",
+      "method": "edges",
+      "baseline_rms_mm": 0.11348690733853135,
+      "crlb_rms_mm": 0.07313234716572703,
+      "efficiency_ratio": 1.5518017913653974,
+      "bound_condition": "dim_light"
+    },
+    {
+      "preset": "wide_12mp",
+      "condition": "dim_light",
+      "method": "hybrid",
+      "baseline_rms_mm": 0.17124482464533927,
+      "crlb_rms_mm": 0.07313234716572703,
+      "efficiency_ratio": 2.3415743003198997,
+      "bound_condition": "dim_light"
+    },
+    {
+      "preset": "wide_12mp",
+      "condition": "dim_light",
+      "method": "moments",
+      "baseline_rms_mm": 0.19248507937799175,
+      "crlb_rms_mm": 0.07313234716572703,
+      "efficiency_ratio": 2.632010141036449,
+      "bound_condition": "dim_light"
+    },
+    {
+      "preset": "wide_12mp",
+      "condition": "good_light",
+      "method": "edges",
+      "baseline_rms_mm": 0.06678444061185311,
+      "crlb_rms_mm": 0.020631137463416528,
+      "efficiency_ratio": 3.2370702163308436,
+      "bound_condition": "good_light"
+    },
+    {
+      "preset": "wide_12mp",
+      "condition": "good_light",
+      "method": "hybrid",
+      "baseline_rms_mm": 0.0640713691720651,
+      "crlb_rms_mm": 0.020631137463416528,
+      "efficiency_ratio": 3.1055664907316674,
+      "bound_condition": "good_light"
+    },
+    {
+      "preset": "wide_12mp",
+      "condition": "good_light",
+      "method": "moments",
+      "baseline_rms_mm": 0.06979862696422091,
+      "crlb_rms_mm": 0.020631137463416528,
+      "efficiency_ratio": 3.383169109700761,
+      "bound_condition": "good_light"
+    },
+    {
+      "preset": "wide_12mp",
+      "condition": "good_light_jpeg60",
+      "method": "edges",
+      "baseline_rms_mm": 0.07704650937492191,
+      "crlb_rms_mm": 0.020631137463416528,
+      "efficiency_ratio": 3.734477050116216,
+      "bound_condition": "good_light"
+    },
+    {
+      "preset": "wide_12mp",
+      "condition": "good_light_jpeg60",
+      "method": "hybrid",
+      "baseline_rms_mm": 0.09940000695372046,
+      "crlb_rms_mm": 0.020631137463416528,
+      "efficiency_ratio": 4.817960576821234,
+      "bound_condition": "good_light"
+    },
+    {
+      "preset": "wide_12mp",
+      "condition": "good_light_jpeg60",
+      "method": "moments",
+      "baseline_rms_mm": 0.1118349762881008,
+      "crlb_rms_mm": 0.020631137463416528,
+      "efficiency_ratio": 5.420688824666522,
+      "bound_condition": "good_light"
+    },
+    {
+      "preset": "wide_12mp",
+      "condition": "good_light_motion",
+      "method": "edges",
+      "baseline_rms_mm": 0.08731730078787751,
+      "crlb_rms_mm": 0.02485862814169909,
+      "efficiency_ratio": 3.512555089128477,
+      "bound_condition": "good_light_motion"
+    },
+    {
+      "preset": "wide_12mp",
+      "condition": "good_light_motion",
+      "method": "hybrid",
+      "baseline_rms_mm": 0.05890794032064351,
+      "crlb_rms_mm": 0.02485862814169909,
+      "efficiency_ratio": 2.3697180707180063,
+      "bound_condition": "good_light_motion"
+    },
+    {
+      "preset": "wide_12mp",
+      "condition": "good_light_motion",
+      "method": "moments",
+      "baseline_rms_mm": 0.08291093152474933,
+      "crlb_rms_mm": 0.02485862814169909,
+      "efficiency_ratio": 3.3352979517671146,
+      "bound_condition": "good_light_motion"
+    },
+    {
+      "preset": "wide_2160p",
+      "condition": "dim_light",
+      "method": "edges",
+      "baseline_rms_mm": 0.127209307704013,
+      "crlb_rms_mm": 0.0792576102335224,
+      "efficiency_ratio": 1.6050106397254102,
+      "bound_condition": "dim_light"
+    },
+    {
+      "preset": "wide_2160p",
+      "condition": "dim_light",
+      "method": "hybrid",
+      "baseline_rms_mm": 0.17291559188171363,
+      "crlb_rms_mm": 0.0792576102335224,
+      "efficiency_ratio": 2.1816907092232527,
+      "bound_condition": "dim_light"
+    },
+    {
+      "preset": "wide_2160p",
+      "condition": "dim_light",
+      "method": "moments",
+      "baseline_rms_mm": 0.19552546346418584,
+      "crlb_rms_mm": 0.0792576102335224,
+      "efficiency_ratio": 2.46696137933121,
+      "bound_condition": "dim_light"
+    },
+    {
+      "preset": "wide_2160p",
+      "condition": "good_light",
+      "method": "edges",
+      "baseline_rms_mm": 0.08623460125876001,
+      "crlb_rms_mm": 0.02419291014241576,
+      "efficiency_ratio": 3.5644575518664383,
+      "bound_condition": "good_light"
+    },
+    {
+      "preset": "wide_2160p",
+      "condition": "good_light",
+      "method": "hybrid",
+      "baseline_rms_mm": 0.06509395820784492,
+      "crlb_rms_mm": 0.02419291014241576,
+      "efficiency_ratio": 2.690621253278669,
+      "bound_condition": "good_light"
+    },
+    {
+      "preset": "wide_2160p",
+      "condition": "good_light",
+      "method": "moments",
+      "baseline_rms_mm": 0.07305285903345277,
+      "crlb_rms_mm": 0.02419291014241576,
+      "efficiency_ratio": 3.0195978327292767,
+      "bound_condition": "good_light"
+    },
+    {
+      "preset": "wide_2160p",
+      "condition": "good_light_jpeg60",
+      "method": "edges",
+      "baseline_rms_mm": 0.09031177236996783,
+      "crlb_rms_mm": 0.02419291014241576,
+      "efficiency_ratio": 3.7329850703504426,
+      "bound_condition": "good_light"
+    },
+    {
+      "preset": "wide_2160p",
+      "condition": "good_light_jpeg60",
+      "method": "hybrid",
+      "baseline_rms_mm": 0.11045811222007294,
+      "crlb_rms_mm": 0.02419291014241576,
+      "efficiency_ratio": 4.565722419082372,
+      "bound_condition": "good_light"
+    },
+    {
+      "preset": "wide_2160p",
+      "condition": "good_light_jpeg60",
+      "method": "moments",
+      "baseline_rms_mm": 0.11927022793734905,
+      "crlb_rms_mm": 0.02419291014241576,
+      "efficiency_ratio": 4.92996614443009,
+      "bound_condition": "good_light"
+    },
+    {
+      "preset": "wide_2160p",
+      "condition": "good_light_motion",
+      "method": "edges",
+      "baseline_rms_mm": 0.103149373849556,
+      "crlb_rms_mm": 0.026427003067401977,
+      "efficiency_ratio": 3.9031809088027836,
+      "bound_condition": "good_light_motion"
+    },
+    {
+      "preset": "wide_2160p",
+      "condition": "good_light_motion",
+      "method": "hybrid",
+      "baseline_rms_mm": 0.06750062309069334,
+      "crlb_rms_mm": 0.026427003067401977,
+      "efficiency_ratio": 2.5542292070929586,
+      "bound_condition": "good_light_motion"
+    },
+    {
+      "preset": "wide_2160p",
+      "condition": "good_light_motion",
+      "method": "moments",
+      "baseline_rms_mm": 0.09798823309076031,
+      "crlb_rms_mm": 0.026427003067401977,
+      "efficiency_ratio": 3.7078829120669368,
+      "bound_condition": "good_light_motion"
+    }
+  ]
+}

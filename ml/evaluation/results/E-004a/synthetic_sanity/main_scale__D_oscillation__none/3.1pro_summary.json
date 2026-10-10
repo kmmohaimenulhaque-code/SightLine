@@ -1,0 +1,123 @@
+{
+  "experiment": "E-004a",
+  "capture_id": "synthetic-main_scale__D_oscillation__none",
+  "test": "D_oscillation",
+  "created_utc": "2026-10-09T12:59:40+00:00",
+  "git_commit": "941c7b380c8b74f0d8ef1f2361578dc04fbab80c",
+  "scope": {
+    "device": "SYNTHETIC",
+    "os_version": null,
+    "camera": "main_scale",
+    "zoom_readout": null,
+    "capture_app": null,
+    "resolution": [
+      3840,
+      2160
+    ],
+    "fps": 60.0,
+    "codec": null,
+    "stabilisation_mode": null,
+    "hdr": null,
+    "focus": null,
+    "exposure": 0.0,
+    "iso": null,
+    "white_balance": null
+  },
+  "centre_estimator": "ellipse",
+  "tracking": {
+    "n_frames": 1200,
+    "n_invalid": 0,
+    "invalid_fraction": 0.0,
+    "invalid_reasons": {}
+  },
+  "focal_length_px": {
+    "value": 2892.7346916760034,
+    "sigma": 9.830889161249985,
+    "method": "target-anchored (measured black diameter and distance)",
+    "black_major_axis_px": 17.21177141547222,
+    "mm_per_px_at_target": 3.4569364514400602,
+    "sigma_includes": [
+      "frame scatter",
+      "black diameter",
+      "distance"
+    ],
+    "sigma_excludes": [
+      "estimator / ISP scale bias (UNVERIFIED on real video)"
+    ]
+  },
+  "result": {
+    "gyro": {
+      "columns": {
+        "time": "seconds_elapsed",
+        "x": "x",
+        "y": "y",
+        "z": "z"
+      },
+      "time_unit": "s",
+      "rate_unit": "rad/s"
+    },
+    "response": {
+      "frame_rate_hz": 60.00000000000021,
+      "frame_interval_jitter_s": 9.057524036128022e-16,
+      "gyro_rate_hz": 200.00000000000426,
+      "clock_offset_s": 1.7323333333333273,
+      "broadband": {
+        "gain": 1.0009000208456547,
+        "r2": 0.999892114926138,
+        "excitation_rms_rad": 0.0005509718556459423,
+        "image_rms_rad": 0.0005514982534747544,
+        "residual_rms_rad": 5.728287713196829e-06,
+        "principal_axis_energy": 0.9998777364045255,
+        "n": 1080
+      },
+      "bands": [
+        {
+          "f_lo_hz": 0.5,
+          "f_hi_hz": 2.0,
+          "usable": true,
+          "gain": 0.9979791094933262,
+          "r2": 0.9999421085362868,
+          "excitation_rms_rad": 0.00044914307532487524,
+          "image_rms_rad": 0.0004482483947692533,
+          "residual_rms_rad": 3.4105624650961888e-06,
+          "principal_axis_energy": 0.9998701150705416,
+          "n": 1080
+        },
+        {
+          "f_lo_hz": 2.0,
+          "f_hi_hz": 5.0,
+          "usable": true,
+          "gain": 1.0032616511340084,
+          "r2": 0.9999500684173872,
+          "excitation_rms_rad": 0.0002696101765873796,
+          "image_rms_rad": 0.0002704979505852504,
+          "residual_rms_rad": 1.911400277824632e-06,
+          "principal_axis_energy": 0.9998809463717093,
+          "n": 1080
+        },
+        {
+          "f_lo_hz": 5.0,
+          "f_hi_hz": 10.0,
+          "usable": true,
+          "gain": 1.0153202951954652,
+          "r2": 0.9998467750723522,
+          "excitation_rms_rad": 0.00017064312226670715,
+          "image_rms_rad": 0.0001732707543824287,
+          "residual_rms_rad": 2.1448156935085648e-06,
+          "principal_axis_energy": 0.9999355443462583,
+          "n": 1080
+        }
+      ]
+    },
+    "frames_used": 1200
+  },
+  "warnings": [
+    "exposure time unknown: the exposure averaging of fast motion is not modelled"
+  ],
+  "status": {
+    "experiment_status": "PHYSICAL_DATA_REQUIRED",
+    "evidence_class": "SIMULATED",
+    "banner": "SYNTHETIC SANITY CHECK - software verification on simulated frames. NOT a measurement of any phone and NOT experimental evidence.",
+    "sanity_check_passed_analysis_checks": true
+  }
+}

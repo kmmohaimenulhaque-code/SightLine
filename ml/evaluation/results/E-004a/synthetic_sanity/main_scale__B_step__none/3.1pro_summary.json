@@ -1,0 +1,166 @@
+{
+  "experiment": "E-004a",
+  "capture_id": "synthetic-main_scale__B_step__none",
+  "test": "B_step",
+  "created_utc": "2026-10-09T12:58:50+00:00",
+  "git_commit": "941c7b380c8b74f0d8ef1f2361578dc04fbab80c",
+  "scope": {
+    "device": "SYNTHETIC",
+    "os_version": null,
+    "camera": "main_scale",
+    "zoom_readout": null,
+    "capture_app": null,
+    "resolution": [
+      3840,
+      2160
+    ],
+    "fps": 30.0,
+    "codec": null,
+    "stabilisation_mode": null,
+    "hdr": null,
+    "focus": null,
+    "exposure": 0.0,
+    "iso": null,
+    "white_balance": null
+  },
+  "centre_estimator": "ellipse",
+  "tracking": {
+    "n_frames": 690,
+    "n_invalid": 0,
+    "invalid_fraction": 0.0,
+    "invalid_reasons": {}
+  },
+  "focal_length_px": {
+    "value": 2893.1073298029028,
+    "sigma": 9.83243246981564,
+    "method": "target-anchored (measured black diameter and distance)",
+    "black_major_axis_px": 17.21398861232727,
+    "mm_per_px_at_target": 3.456491190971911,
+    "sigma_includes": [
+      "frame scatter",
+      "black diameter",
+      "distance"
+    ],
+    "sigma_excludes": [
+      "estimator / ISP scale bias (UNVERIFIED on real video)"
+    ]
+  },
+  "result": {
+    "plateau_source": "automatic segmentation (stillness floor = 25 % of the smallest expected step)",
+    "steps": {
+      "axis_unit": [
+        -0.004751143395106118,
+        0.9999887132545243
+      ],
+      "rows": [
+        {
+          "plateau": 0,
+          "t_start_s": 0.0,
+          "t_end_s": 2.966666666666667,
+          "n": 90,
+          "expected_px": 0.0,
+          "expected_sigma_px": 0.0,
+          "observed_px": 0.0,
+          "observed_sigma_px": 0.0,
+          "off_axis_px": 0.0,
+          "scatter_px": 0.008058491115859176,
+          "creep_px": -0.0009728056203215374,
+          "theta_mrad": 0.0,
+          "theta_sigma_mrad": 0.0
+        },
+        {
+          "plateau": 1,
+          "t_start_s": 3.966666666666667,
+          "t_end_s": 6.966666666666667,
+          "n": 91,
+          "expected_px": 0.2893107339446594,
+          "expected_sigma_px": 0.001220613234823975,
+          "observed_px": 0.3005602036557846,
+          "observed_sigma_px": 0.0007181300801604411,
+          "off_axis_px": -0.0014918852925094774,
+          "scatter_px": 0.008708425620425007,
+          "creep_px": 0.002796661648048371,
+          "response_ratio": 1.0388836928299974,
+          "response_ratio_sigma": 0.005037147200832688,
+          "theta_mrad": 0.1,
+          "theta_sigma_mrad": 0.0002499999983333333
+        },
+        {
+          "plateau": 2,
+          "t_start_s": 8.0,
+          "t_end_s": 10.966666666666667,
+          "n": 90,
+          "expected_px": 0.7232768475189933,
+          "expected_sigma_px": 0.003051533140461768,
+          "observed_px": 0.7098066133738342,
+          "observed_sigma_px": 0.0008928135543119096,
+          "off_axis_px": -0.00035959161851785784,
+          "scatter_px": 0.007063027932325034,
+          "creep_px": 0.0004635789825613301,
+          "response_ratio": 0.9813761021227693,
+          "response_ratio_sigma": 0.0043205540170542745,
+          "theta_mrad": 0.25,
+          "theta_sigma_mrad": 0.0006249999739583337
+        },
+        {
+          "plateau": 3,
+          "t_start_s": 12.0,
+          "t_end_s": 14.966666666666667,
+          "n": 90,
+          "expected_px": 1.4465537854476023,
+          "expected_sigma_px": 0.006103066662365219,
+          "observed_px": 1.445859611916141,
+          "observed_sigma_px": 0.0007167554338263983,
+          "off_axis_px": -0.0013914457529936603,
+          "scatter_px": 0.007937447706418457,
+          "creep_px": 0.003389034840978411,
+          "response_ratio": 0.9995201191006898,
+          "response_ratio_sigma": 0.004246024161716653,
+          "theta_mrad": 0.5,
+          "theta_sigma_mrad": 0.0012499997916666774
+        },
+        {
+          "plateau": 4,
+          "t_start_s": 16.0,
+          "t_end_s": 18.966666666666665,
+          "n": 90,
+          "expected_px": 2.8931082941723987,
+          "expected_sigma_px": 0.012206136376265041,
+          "observed_px": 2.8778611727233727,
+          "observed_sigma_px": 0.0006351896663749259,
+          "off_axis_px": -0.0014639158927809478,
+          "scatter_px": 0.008344509326135677,
+          "creep_px": -0.0016128061767801682,
+          "response_ratio": 0.9947298476590944,
+          "response_ratio_sigma": 0.004202542845665772,
+          "theta_mrad": 1.0,
+          "theta_sigma_mrad": 0.0024999983333336665
+        },
+        {
+          "plateau": 5,
+          "t_start_s": 20.0,
+          "t_end_s": 22.966666666666665,
+          "n": 90,
+          "expected_px": 5.78622237457103,
+          "expected_sigma_px": 0.02441229716484352,
+          "observed_px": 5.765482255083849,
+          "observed_sigma_px": 0.0005157564727345797,
+          "off_axis_px": 3.469446951953614e-18,
+          "scatter_px": 0.007341030740476758,
+          "creep_px": -0.000784907106577748,
+          "response_ratio": 0.9964156027638467,
+          "response_ratio_sigma": 0.004204861025832215,
+          "theta_mrad": 2.0,
+          "theta_sigma_mrad": 0.0049999866666773345
+        }
+      ]
+    }
+  },
+  "warnings": [],
+  "status": {
+    "experiment_status": "PHYSICAL_DATA_REQUIRED",
+    "evidence_class": "SIMULATED",
+    "banner": "SYNTHETIC SANITY CHECK - software verification on simulated frames. NOT a measurement of any phone and NOT experimental evidence.",
+    "sanity_check_passed_analysis_checks": true
+  }
+}
