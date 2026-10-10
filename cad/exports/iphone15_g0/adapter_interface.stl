@@ -1,0 +1,86 @@
+solid adapter_interface
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex -70.000000 -43.800000 19.000000
+      vertex -70.000000 43.800000 19.000000
+      vertex -70.000000 43.800000 5.000000
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex -70.000000 -43.800000 19.000000
+      vertex -70.000000 43.800000 5.000000
+      vertex -70.000000 -43.800000 5.000000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex -26.000000 -43.800000 5.000000
+      vertex -26.000000 43.800000 5.000000
+      vertex -26.000000 43.800000 19.000000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex -26.000000 -43.800000 5.000000
+      vertex -26.000000 43.800000 19.000000
+      vertex -26.000000 -43.800000 19.000000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex -26.000000 -43.800000 5.000000
+      vertex -26.000000 -43.800000 19.000000
+      vertex -70.000000 -43.800000 19.000000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex -26.000000 -43.800000 5.000000
+      vertex -70.000000 -43.800000 19.000000
+      vertex -70.000000 -43.800000 5.000000
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex -70.000000 43.800000 5.000000
+      vertex -70.000000 43.800000 19.000000
+      vertex -26.000000 43.800000 19.000000
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex -70.000000 43.800000 5.000000
+      vertex -26.000000 43.800000 19.000000
+      vertex -26.000000 43.800000 5.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex -70.000000 43.800000 5.000000
+      vertex -26.000000 43.800000 5.000000
+      vertex -26.000000 -43.800000 5.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex -70.000000 43.800000 5.000000
+      vertex -26.000000 -43.800000 5.000000
+      vertex -70.000000 -43.800000 5.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex -70.000000 -43.800000 19.000000
+      vertex -26.000000 -43.800000 19.000000
+      vertex -26.000000 43.800000 19.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex -70.000000 -43.800000 19.000000
+      vertex -26.000000 43.800000 19.000000
+      vertex -70.000000 43.800000 19.000000
+    endloop
+  endfacet
+endsolid adapter_interface

@@ -1,0 +1,291 @@
+{
+  "attainable_ranges": {
+    "com_mm": [
+      [
+        -8.274102079,
+        6.697542533
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        23.89489603,
+        30.983742911
+      ]
+    ],
+    "total_mass_g": [
+      1058.0,
+      1058.0
+    ]
+  },
+  "best_candidate": {
+    "ballast_positions_mm": {
+      "vertical_ballast": 24.0,
+      "x_ballast": -20.0
+    },
+    "components": [
+      {
+        "chassis_com_mm": [
+          -48.0,
+          0.0,
+          89.8
+        ],
+        "component_com_mm": [
+          -48.0,
+          0.0,
+          89.8
+        ],
+        "confidence": "manufacturer_specified_nominal",
+        "id": "phone",
+        "inertia_tensor_provided": false,
+        "mass_g": 171.0,
+        "role": "phone",
+        "source": "Apple nominal iPhone 15 mass as recorded in docs/cad/GRIP_REQUIREMENTS.md; actual unit not weighed",
+        "value_status": "manufacturer_specified"
+      },
+      {
+        "chassis_com_mm": [
+          8.0,
+          0.0,
+          3.0
+        ],
+        "component_com_mm": [
+          8.0,
+          0.0,
+          3.0
+        ],
+        "confidence": "estimated",
+        "id": "common_chassis",
+        "inertia_tensor_provided": false,
+        "mass_g": 240.0,
+        "role": "training_chassis",
+        "source": "G0 CAD material-density estimate; printed chassis not weighed",
+        "value_status": "estimated"
+      },
+      {
+        "chassis_com_mm": [
+          -14.0,
+          0.0,
+          -42.0
+        ],
+        "component_com_mm": [
+          -14.0,
+          0.0,
+          -42.0
+        ],
+        "confidence": "estimated",
+        "id": "grip_body",
+        "inertia_tensor_provided": false,
+        "mass_g": 155.0,
+        "role": "grip",
+        "source": "G0 CAD material-density estimate; printed grip not weighed",
+        "value_status": "estimated"
+      },
+      {
+        "chassis_com_mm": [
+          -48.0,
+          0.0,
+          90.0
+        ],
+        "component_com_mm": [
+          -48.0,
+          0.0,
+          90.0
+        ],
+        "confidence": "estimated",
+        "id": "phone_adapter_and_retainers",
+        "inertia_tensor_provided": false,
+        "mass_g": 107.0,
+        "role": "adapter",
+        "source": "G0 CAD material-density estimate; adapter and pads not weighed",
+        "value_status": "estimated"
+      },
+      {
+        "chassis_com_mm": [
+          0.0,
+          0.0,
+          4.0
+        ],
+        "component_com_mm": [
+          0.0,
+          0.0,
+          4.0
+        ],
+        "confidence": "estimated",
+        "id": "fasteners_and_inserts",
+        "inertia_tensor_provided": false,
+        "mass_g": 45.0,
+        "role": "fasteners",
+        "source": "allowance for captive hardware; exact fastener bill not weighed",
+        "value_status": "estimated"
+      },
+      {
+        "chassis_com_mm": [
+          34.0,
+          0.0,
+          11.0
+        ],
+        "component_com_mm": [
+          34.0,
+          0.0,
+          11.0
+        ],
+        "confidence": "estimated",
+        "id": "optional_electronics",
+        "inertia_tensor_provided": false,
+        "mass_g": 35.0,
+        "role": "electronics",
+        "source": "placeholder for optional BLE button and IMU; hardware not selected",
+        "value_status": "estimated"
+      },
+      {
+        "chassis_com_mm": [
+          -20.0,
+          0.0,
+          14.0
+        ],
+        "component_com_mm": [
+          -20.0,
+          0.0,
+          14.0
+        ],
+        "confidence": "provisional_design",
+        "id": "x_ballast",
+        "inertia_tensor_provided": false,
+        "mass_g": 180.0,
+        "role": "ballast",
+        "source": "measured steel washer/captive-weight stack to be selected before print release",
+        "value_status": "estimated"
+      },
+      {
+        "chassis_com_mm": [
+          58.0,
+          0.0,
+          24.0
+        ],
+        "component_com_mm": [
+          58.0,
+          0.0,
+          24.0
+        ],
+        "confidence": "provisional_design",
+        "id": "vertical_ballast",
+        "inertia_tensor_provided": false,
+        "mass_g": 125.0,
+        "role": "ballast",
+        "source": "measured steel washer/captive-weight stack to be selected before print release",
+        "value_status": "estimated"
+      }
+    ],
+    "metrics": {
+      "com_mm": [
+        -8.274102079,
+        0.0,
+        23.89489603
+      ],
+      "inertia_tensor_about_chassis_origin_g_mm2": [
+        [
+          2633465.84,
+          0.0,
+          965728.4
+        ],
+        [
+          0.0,
+          3852677.84,
+          0.0
+        ],
+        [
+          965728.4,
+          0.0,
+          1219212.0
+        ]
+      ],
+      "inertia_tensor_about_total_com_g_mm2": [
+        [
+          2029383.752438563,
+          0.0,
+          756552.480151229
+        ],
+        [
+          0.0,
+          3176164.262835538,
+          0.0
+        ],
+        [
+          756552.480151229,
+          0.0,
+          1146780.510396975
+        ]
+      ],
+      "total_mass_g": 1058.0
+    },
+    "objective": 0.04,
+    "residuals": {
+      "mass_normalized_error": -0.2,
+      "mass_residual_g": -2.0
+    }
+  },
+  "confidence_classes": [
+    "estimated",
+    "manufacturer_specified_nominal",
+    "provisional_design"
+  ],
+  "frame": "chassis: X targetward, Y lateral, Z vertical; origin is underside chassis centreline per cad/parametric/assembly.json",
+  "model_id": "iphone15_g0_mass_model",
+  "profile_id": "iPhone15",
+  "profile_summary": {
+    "adapter_id": "iphone_adapter",
+    "body_mm": {
+      "height": 147.6,
+      "thickness": 7.8,
+      "width": 71.6
+    },
+    "camera_status": "UNVERIFIED: active lens, centre and body-frame transform not measured",
+    "case_allowance_mm": 0,
+    "id": "iPhone15",
+    "label": "Apple iPhone 15, nominal bare body",
+    "mass_g": 171,
+    "mass_status": "manufacturer nominal; actual unit not weighed",
+    "variant": "6.1-inch base iPhone 15; exact model identifier and case not recorded"
+  },
+  "report_schema_version": 1,
+  "search": {
+    "best_is_feasible": true,
+    "candidate_count": 368,
+    "feasible_count": 368
+  },
+  "solver": {
+    "enumeration": "inclusive endpoints and configured position increment",
+    "objective": "sum of squared normalized residuals for known mass, COM and inertia targets"
+  },
+  "status": "MODEL_OUTPUT",
+  "target": {
+    "com_tolerance_mm": null,
+    "inertia_tolerance": null,
+    "mass_tolerance_g": 10,
+    "reference_id": "NO_VERIFIED_LP10_MASS_PROPERTY_REFERENCE",
+    "reference_mass_g": null,
+    "status": "DESIGN_TARGET_ONLY",
+    "target_com_mm": null,
+    "target_inertia_tensor_g_mm2": null,
+    "target_mass_g": 1060
+  },
+  "target_interpretation": "PROVISIONAL SIGHTLINE product-design target; not an LP10 measured mass-property target",
+  "units": {
+    "inertia": "g mm^2",
+    "length": "mm",
+    "mass": "g"
+  },
+  "unknown_targets": [
+    "reference_mass_g",
+    "target_com_mm",
+    "target_inertia_tensor_g_mm2"
+  ],
+  "warnings": [
+    "CAD and manufacturer values are predictions until the printed assembly and installed hardware are weighed.",
+    "A feasible mathematical target is not evidence of ergonomic equivalence or optical repeatability.",
+    "Unknown target fields: reference_mass_g, target_com_mm, target_inertia_tensor_g_mm2.",
+    "At least one fixed component mass is not a physical measurement."
+  ]
+}

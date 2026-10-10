@@ -1,0 +1,86 @@
+solid iphone_adapter
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex -55.500000 -43.800000 169.600000
+      vertex -55.500000 43.800000 169.600000
+      vertex -55.500000 43.800000 10.000000
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex -55.500000 -43.800000 169.600000
+      vertex -55.500000 43.800000 10.000000
+      vertex -55.500000 -43.800000 10.000000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex -52.500000 -43.800000 10.000000
+      vertex -52.500000 43.800000 10.000000
+      vertex -52.500000 43.800000 169.600000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex -52.500000 -43.800000 10.000000
+      vertex -52.500000 43.800000 169.600000
+      vertex -52.500000 -43.800000 169.600000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex -52.500000 -43.800000 10.000000
+      vertex -52.500000 -43.800000 169.600000
+      vertex -55.500000 -43.800000 169.600000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex -52.500000 -43.800000 10.000000
+      vertex -55.500000 -43.800000 169.600000
+      vertex -55.500000 -43.800000 10.000000
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex -55.500000 43.800000 10.000000
+      vertex -55.500000 43.800000 169.600000
+      vertex -52.500000 43.800000 169.600000
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex -55.500000 43.800000 10.000000
+      vertex -52.500000 43.800000 169.600000
+      vertex -52.500000 43.800000 10.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex -55.500000 43.800000 10.000000
+      vertex -52.500000 43.800000 10.000000
+      vertex -52.500000 -43.800000 10.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex -55.500000 43.800000 10.000000
+      vertex -52.500000 -43.800000 10.000000
+      vertex -55.500000 -43.800000 10.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex -55.500000 -43.800000 169.600000
+      vertex -52.500000 -43.800000 169.600000
+      vertex -52.500000 43.800000 169.600000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex -55.500000 -43.800000 169.600000
+      vertex -52.500000 43.800000 169.600000
+      vertex -55.500000 43.800000 169.600000
+    endloop
+  endfacet
+endsolid iphone_adapter

@@ -1,0 +1,86 @@
+solid phone_reference
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex -51.900000 -35.800000 163.600000
+      vertex -51.900000 35.800000 163.600000
+      vertex -51.900000 35.800000 16.000000
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex -51.900000 -35.800000 163.600000
+      vertex -51.900000 35.800000 16.000000
+      vertex -51.900000 -35.800000 16.000000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex -44.100000 -35.800000 16.000000
+      vertex -44.100000 35.800000 16.000000
+      vertex -44.100000 35.800000 163.600000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex -44.100000 -35.800000 16.000000
+      vertex -44.100000 35.800000 163.600000
+      vertex -44.100000 -35.800000 163.600000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex -44.100000 -35.800000 16.000000
+      vertex -44.100000 -35.800000 163.600000
+      vertex -51.900000 -35.800000 163.600000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex -44.100000 -35.800000 16.000000
+      vertex -51.900000 -35.800000 163.600000
+      vertex -51.900000 -35.800000 16.000000
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex -51.900000 35.800000 16.000000
+      vertex -51.900000 35.800000 163.600000
+      vertex -44.100000 35.800000 163.600000
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex -51.900000 35.800000 16.000000
+      vertex -44.100000 35.800000 163.600000
+      vertex -44.100000 35.800000 16.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex -51.900000 35.800000 16.000000
+      vertex -44.100000 35.800000 16.000000
+      vertex -44.100000 -35.800000 16.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex -51.900000 35.800000 16.000000
+      vertex -44.100000 -35.800000 16.000000
+      vertex -51.900000 -35.800000 16.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex -51.900000 -35.800000 163.600000
+      vertex -44.100000 -35.800000 163.600000
+      vertex -44.100000 35.800000 163.600000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex -51.900000 -35.800000 163.600000
+      vertex -44.100000 35.800000 163.600000
+      vertex -51.900000 35.800000 163.600000
+    endloop
+  endfacet
+endsolid phone_reference
