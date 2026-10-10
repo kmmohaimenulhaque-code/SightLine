@@ -1,0 +1,1122 @@
+{
+  "appearance": {
+    "adapter_color": "#00B8D9",
+    "chassis_color": "#FF7A00",
+    "marking": "TRAINING INSTRUMENT - NOT A FIREARM",
+    "restrictions": [
+      "passive phone holder",
+      "no barrel",
+      "no muzzle",
+      "no launching or pressure system",
+      "phone screen and upper rear remain open"
+    ]
+  },
+  "axes": {
+    "X": "targetward",
+    "Y": "lateral",
+    "Z": "vertical"
+  },
+  "components": [
+    {
+      "bounds_mm": {
+        "max": [
+          85.0,
+          56.0,
+          6.0
+        ],
+        "min": [
+          -70.0,
+          -56.0,
+          0.0
+        ]
+      },
+      "color": "#FF7A00",
+      "id": "common_training_chassis",
+      "mesh": {
+        "connected_shells": 1,
+        "edges": 18,
+        "triangles": 12,
+        "vertices": 8,
+        "volume_mm3": 104160.0,
+        "watertight": true
+      },
+      "note": "Broad bright chassis slab; no barrel, muzzle, pressure system or launching mechanism",
+      "reference_only": false,
+      "role": "training_chassis",
+      "sha256": "02760da0c928051bc656f44e304a678cb4c0b0f4452a519ada2b7c996466b13c",
+      "step": "common_training_chassis.step",
+      "step_sha256": "3922b962ce92e22a5db09e67214cadd3bc731f297420177a103cc4e8813e12ec",
+      "stl": "common_training_chassis.stl"
+    },
+    {
+      "bounds_mm": {
+        "max": [
+          6.0,
+          16.0,
+          1.0
+        ],
+        "min": [
+          -34.0,
+          -16.0,
+          -85.0
+        ]
+      },
+      "color": "#FF7A00",
+      "id": "grip_body",
+      "mesh": {
+        "connected_shells": 1,
+        "edges": 120,
+        "triangles": 80,
+        "vertices": 42,
+        "volume_mm3": 107174.303253,
+        "watertight": true
+      },
+      "note": "Short broad rounded training grip; exact ergonomics and angle remain open",
+      "reference_only": false,
+      "role": "grip_body",
+      "sha256": "920baa6a888c16bca02c0dd3e29f6639e04aac917290c9c00a5cc9217a83999d",
+      "step": "grip_body.step",
+      "step_sha256": "fa6f7a1063c80008d4e6315243770271019fe67f1c9b3fc74090900298df0182",
+      "stl": "grip_body.stl"
+    },
+    {
+      "bounds_mm": {
+        "max": [
+          -28.0,
+          14.0,
+          -8.0
+        ],
+        "min": [
+          -33.0,
+          -14.0,
+          -78.0
+        ]
+      },
+      "color": "#B6F000",
+      "id": "grip_backstrap",
+      "mesh": {
+        "connected_shells": 1,
+        "edges": 120,
+        "triangles": 80,
+        "vertices": 42,
+        "volume_mm3": 9537.210888,
+        "watertight": true
+      },
+      "note": "Replaceable ergonomic backstrap/panel placeholder; fit and comfort unverified",
+      "reference_only": false,
+      "role": "ergonomic_panel",
+      "sha256": "0e1bc6cb9c4a82da3281f88622c6641ef7369f5e718b4282bd7d114585977b13",
+      "step": "grip_backstrap.step",
+      "step_sha256": "8e43a06ac7a7a15358b285476b67555e4559bd4d2a321c5a6028174f72e5db0a",
+      "stl": "grip_backstrap.stl"
+    },
+    {
+      "bounds_mm": {
+        "max": [
+          -26.0,
+          47.0,
+          19.0
+        ],
+        "min": [
+          -70.0,
+          -47.0,
+          5.0
+        ]
+      },
+      "color": "#00B8D9",
+      "id": "adapter_interface",
+      "mesh": {
+        "connected_shells": 1,
+        "edges": 18,
+        "triangles": 12,
+        "vertices": 8,
+        "volume_mm3": 57904.0,
+        "watertight": true
+      },
+      "note": "Replaceable interface plate; datum geometry only",
+      "reference_only": false,
+      "role": "adapter_interface",
+      "sha256": "f772628d6da851f64ce00558b6920220ca4908f678ce635903e3856fb9de62b1",
+      "step": "adapter_interface.step",
+      "step_sha256": "ac4a0ee7c7000a7f0f2d59d01144bffc68d0a0b4a0a6384567b2e9f07c8963dd",
+      "stl": "adapter_interface.stl"
+    },
+    {
+      "bounds_mm": {
+        "max": [
+          -53.1,
+          47.0,
+          187.0
+        ],
+        "min": [
+          -56.1,
+          -47.0,
+          10.0
+        ]
+      },
+      "color": "#00B8D9",
+      "id": "android_adapter",
+      "mesh": {
+        "connected_shells": 1,
+        "edges": 18,
+        "triangles": 12,
+        "vertices": 8,
+        "volume_mm3": 49914.0,
+        "watertight": true
+      },
+      "note": "Replaceable phone back plate and open-edge frame; rear camera region intentionally not located",
+      "reference_only": false,
+      "role": "phone_adapter",
+      "sha256": "ce04ce7d219b3889ec77e93b75ffd065c044317362363770cec230bfee177778",
+      "step": "android_adapter.step",
+      "step_sha256": "b41b4eb9e7a28ec02cf5a0324023d3d37845fd8dcb42aead1c7e92dffa1f8cfb",
+      "stl": "android_adapter.stl"
+    },
+    {
+      "bounds_mm": {
+        "max": [
+          -43.5,
+          39.0,
+          181.0
+        ],
+        "min": [
+          -52.5,
+          -39.0,
+          16.0
+        ]
+      },
+      "color": "#111827",
+      "id": "phone_reference",
+      "mesh": {
+        "connected_shells": 1,
+        "edges": 18,
+        "triangles": 12,
+        "vertices": 8,
+        "volume_mm3": 115830.0,
+        "watertight": true
+      },
+      "note": "Reference-only envelope from ASSUMED for parametric variation only; NOT measured and NOT manufacturer data; not a measured case or phone solid",
+      "reference_only": true,
+      "role": "phone_reference",
+      "sha256": "7edb143d4e2a53d47f8c53c63a4057df0768b023ebeadc463354dd6364679117",
+      "step": "phone_reference.step",
+      "step_sha256": "f134136f922e14758fca4be904ea3a16f54cb18d0a9684a6c96c4b1f1d9cffa5",
+      "stl": "phone_reference.stl"
+    },
+    {
+      "bounds_mm": {
+        "max": [
+          -39.9,
+          45.5,
+          176.0
+        ],
+        "min": [
+          -42.9,
+          39.5,
+          21.0
+        ]
+      },
+      "color": "#00B8D9",
+      "id": "retainer_left",
+      "mesh": {
+        "connected_shells": 1,
+        "edges": 18,
+        "triangles": 12,
+        "vertices": 8,
+        "volume_mm3": 2790.0,
+        "watertight": true
+      },
+      "note": "Captive lateral retainer; fit is adjustable",
+      "reference_only": false,
+      "role": "phone_retainer",
+      "sha256": "b4ad287b47b071b66253f44051818280b29bee96b9a3a4e1bf38a11dfacb412b",
+      "step": "retainer_left.step",
+      "step_sha256": "3cf28ceb52079705eafc7b09521b009d641f212916881650b6603acfd791663c",
+      "stl": "retainer_left.stl"
+    },
+    {
+      "bounds_mm": {
+        "max": [
+          -39.9,
+          -39.5,
+          176.0
+        ],
+        "min": [
+          -42.9,
+          -45.5,
+          21.0
+        ]
+      },
+      "color": "#00B8D9",
+      "id": "retainer_right",
+      "mesh": {
+        "connected_shells": 1,
+        "edges": 18,
+        "triangles": 12,
+        "vertices": 8,
+        "volume_mm3": 2790.0,
+        "watertight": true
+      },
+      "note": "Captive lateral retainer; fit is adjustable",
+      "reference_only": false,
+      "role": "phone_retainer",
+      "sha256": "ac2b9df4497457afe5938d5a73b95f82a2dce02f573cded9c454bcfc09a32687",
+      "step": "retainer_right.step",
+      "step_sha256": "1d2d2a566fcd9f5251597544caf88e8a597c310ab5a3336ff4ac94bb9dc3fad9",
+      "stl": "retainer_right.stl"
+    },
+    {
+      "bounds_mm": {
+        "max": [
+          -37.6,
+          39.0,
+          171.0
+        ],
+        "min": [
+          -39.6,
+          37.0,
+          26.0
+        ]
+      },
+      "color": "#B6F000",
+      "id": "pad_left",
+      "mesh": {
+        "connected_shells": 1,
+        "edges": 18,
+        "triangles": 12,
+        "vertices": 8,
+        "volume_mm3": 580.0,
+        "watertight": true
+      },
+      "note": "Replaceable compliant pad placeholder; material and compression unverified",
+      "reference_only": false,
+      "role": "phone_pad",
+      "sha256": "d197b73dc1e45b6fa03a85a42d7c7c34e63510606e7df15ef52ecfdf687e1508",
+      "step": "pad_left.step",
+      "step_sha256": "f3ae9da9b557ae6bff7b46cb9fc928c48ec646129903f40f88363bf2018c8a0f",
+      "stl": "pad_left.stl"
+    },
+    {
+      "bounds_mm": {
+        "max": [
+          -37.6,
+          -37.0,
+          171.0
+        ],
+        "min": [
+          -39.6,
+          -39.0,
+          26.0
+        ]
+      },
+      "color": "#B6F000",
+      "id": "pad_right",
+      "mesh": {
+        "connected_shells": 1,
+        "edges": 18,
+        "triangles": 12,
+        "vertices": 8,
+        "volume_mm3": 580.0,
+        "watertight": true
+      },
+      "note": "Replaceable compliant pad placeholder; material and compression unverified",
+      "reference_only": false,
+      "role": "phone_pad",
+      "sha256": "1d6bc02f96d512c57a64293d10bf5c7362e244265aeae582953f7f8299af29d1",
+      "step": "pad_right.step",
+      "step_sha256": "32bc8f317d9ff9421687b3ef2e8e210cf349db04e58eb442077f40bc593d5c5a",
+      "stl": "pad_right.stl"
+    },
+    {
+      "bounds_mm": {
+        "max": [
+          -39.9,
+          45.0,
+          184.5
+        ],
+        "min": [
+          -42.9,
+          -45.0,
+          181.5
+        ]
+      },
+      "color": "#00B8D9",
+      "id": "phone_top_retainer",
+      "mesh": {
+        "connected_shells": 1,
+        "edges": 18,
+        "triangles": 12,
+        "vertices": 8,
+        "volume_mm3": 810.0,
+        "watertight": true
+      },
+      "note": "Upper anti-lift retainer",
+      "reference_only": false,
+      "role": "phone_retainer",
+      "sha256": "1f82283f91edb4eb005b928eb3cee1613a51a9d0d8826808b464e753c2de5d2e",
+      "step": "phone_top_retainer.step",
+      "step_sha256": "8c453cca3614d00bf6d9a0ee25fbcd18a499510ff34aa20468e3b8d2d7884283",
+      "stl": "phone_top_retainer.stl"
+    },
+    {
+      "bounds_mm": {
+        "max": [
+          -39.9,
+          45.0,
+          15.5
+        ],
+        "min": [
+          -42.9,
+          -45.0,
+          12.5
+        ]
+      },
+      "color": "#00B8D9",
+      "id": "phone_bottom_retainer",
+      "mesh": {
+        "connected_shells": 1,
+        "edges": 18,
+        "triangles": 12,
+        "vertices": 8,
+        "volume_mm3": 810.0,
+        "watertight": true
+      },
+      "note": "Lower anti-lift retainer",
+      "reference_only": false,
+      "role": "phone_retainer",
+      "sha256": "68a06ce931eb70e1d6eadaa15d7c5174e32f0cefe3cb70d6ea5e7671315b95c7",
+      "step": "phone_bottom_retainer.step",
+      "step_sha256": "a1fd6fa5fee6056444f616d6fe9b47834afbc0a833dd2e81c3a48e118b087c00",
+      "stl": "phone_bottom_retainer.stl"
+    },
+    {
+      "bounds_mm": {
+        "max": [
+          72.0,
+          14.0,
+          22.0
+        ],
+        "min": [
+          -24.0,
+          -14.0,
+          9.0
+        ]
+      },
+      "color": "#667085",
+      "id": "x_ballast_rail",
+      "mesh": {
+        "connected_shells": 1,
+        "edges": 18,
+        "triangles": 12,
+        "vertices": 8,
+        "volume_mm3": 34944.0,
+        "watertight": true
+      },
+      "note": "Captive X ballast guide; targetward is +X",
+      "reference_only": false,
+      "role": "x_track",
+      "sha256": "ad3d5eb6cc9d4bd31b6dbec3a10c49646edfd99ccd8159bebc1ca55df3ff20ee",
+      "step": "x_ballast_rail.step",
+      "step_sha256": "e01db5f055fa31b222f1237587b2a45b605f5568cb848ec4060ff6710e6cbf8a",
+      "stl": "x_ballast_rail.stl"
+    },
+    {
+      "bounds_mm": {
+        "max": [
+          52.0,
+          9.5,
+          19.0
+        ],
+        "min": [
+          20.0,
+          -9.5,
+          9.5
+        ]
+      },
+      "color": "#667085",
+      "id": "x_ballast_carriage",
+      "mesh": {
+        "connected_shells": 1,
+        "edges": 18,
+        "triangles": 12,
+        "vertices": 8,
+        "volume_mm3": 5776.0,
+        "watertight": true
+      },
+      "note": "Captive carriage at configured nominal X position",
+      "reference_only": false,
+      "role": "x_carriage",
+      "sha256": "9a58e0e39131b6a993b96e3f6e106c020b41902bdec11901c6dd81a66e569413",
+      "step": "x_ballast_carriage.step",
+      "step_sha256": "b20ae4ff9e8692c6c78661ac3da843c165659e7a7d5a821679a45ebdfc18f2b3",
+      "stl": "x_ballast_carriage.stl"
+    },
+    {
+      "bounds_mm": {
+        "max": [
+          42.5,
+          6.5,
+          27.0
+        ],
+        "min": [
+          29.5,
+          -6.5,
+          19.5
+        ]
+      },
+      "color": "#667085",
+      "id": "x_ballast",
+      "mesh": {
+        "connected_shells": 1,
+        "edges": 18,
+        "triangles": 12,
+        "vertices": 8,
+        "volume_mm3": 1267.5,
+        "watertight": true
+      },
+      "note": "Removable ballast placeholder; mass is intentionally unspecified",
+      "reference_only": false,
+      "role": "x_ballast",
+      "sha256": "b9ae4854e3a002645c9a657ce0ec33d2972a601e58ca74912fee3405c01463ca",
+      "step": "x_ballast.step",
+      "step_sha256": "93d9d87047c0a8520d51bf385d651302b4190edefd38ae817b6a16e0e23a7833",
+      "stl": "x_ballast.stl"
+    },
+    {
+      "bounds_mm": {
+        "max": [
+          -20.0,
+          14.0,
+          24.0
+        ],
+        "min": [
+          -24.0,
+          -14.0,
+          9.0
+        ]
+      },
+      "color": "#FF7A00",
+      "id": "x_end_stop_rear",
+      "mesh": {
+        "connected_shells": 1,
+        "edges": 18,
+        "triangles": 12,
+        "vertices": 8,
+        "volume_mm3": 1680.0,
+        "watertight": true
+      },
+      "note": "Hard rear travel end stop",
+      "reference_only": false,
+      "role": "x_end_stop",
+      "sha256": "e60f2604270046fe182cc9f527b686712490d51bc3d0c85a4001c99d1257bfcb",
+      "step": "x_end_stop_rear.step",
+      "step_sha256": "29ed0f82decdeb7f8c8f51506a41e900f30f2564489a2a534aeef74fd0793138",
+      "stl": "x_end_stop_rear.stl"
+    },
+    {
+      "bounds_mm": {
+        "max": [
+          72.0,
+          14.0,
+          24.0
+        ],
+        "min": [
+          68.0,
+          -14.0,
+          9.0
+        ]
+      },
+      "color": "#FF7A00",
+      "id": "x_end_stop_targetward",
+      "mesh": {
+        "connected_shells": 1,
+        "edges": 18,
+        "triangles": 12,
+        "vertices": 8,
+        "volume_mm3": 1680.0,
+        "watertight": true
+      },
+      "note": "Hard targetward travel end stop",
+      "reference_only": false,
+      "role": "x_end_stop",
+      "sha256": "b6dac180c1f5d22b7a3f9bb08180e7361a8d81e6eb73fa14e5b780ec7cd1d8ce",
+      "step": "x_end_stop_targetward.step",
+      "step_sha256": "a7ae5f9d75c64aee2f012b18a38a8172080a297018705dd3802b8ca39dafac8c",
+      "stl": "x_end_stop_targetward.stl"
+    },
+    {
+      "bounds_mm": {
+        "max": [
+          68.0,
+          -15.0,
+          23.5
+        ],
+        "min": [
+          -20.0,
+          -17.0,
+          22.2
+        ]
+      },
+      "color": "#FF7A00",
+      "id": "x_scale",
+      "mesh": {
+        "connected_shells": 1,
+        "edges": 18,
+        "triangles": 12,
+        "vertices": 8,
+        "volume_mm3": 228.8,
+        "watertight": true
+      },
+      "note": "Scale reference bar; nominal pitch 10 mm; print scale must be checked",
+      "reference_only": false,
+      "role": "x_scale",
+      "sha256": "e5077f175269332a03efc396206df7886be72a0e64e3128be710f0d257c10e13",
+      "step": "x_scale.step",
+      "step_sha256": "81a65569f527065be25d61b56c0944c3b421cd71fa907845206b83aa0942615c",
+      "stl": "x_scale.stl"
+    },
+    {
+      "bounds_mm": {
+        "max": [
+          40.0,
+          -16.0,
+          29.0
+        ],
+        "min": [
+          32.0,
+          -20.0,
+          21.0
+        ]
+      },
+      "color": "#111827",
+      "id": "x_lock",
+      "mesh": {
+        "connected_shells": 1,
+        "edges": 96,
+        "triangles": 64,
+        "vertices": 34,
+        "volume_mm3": 195.933917,
+        "watertight": true
+      },
+      "note": "Captive lock placeholder; thread and force are unverified",
+      "reference_only": false,
+      "role": "x_lock",
+      "sha256": "d91c50e36107027c8df9a7e7d0f457008b9ed5ac9406fb6ac364904afa8a5eca",
+      "step": "x_lock.step",
+      "step_sha256": "515536cc4c657eb3c4efd55f0e47160af96638f75ab0949613185522d256708f",
+      "stl": "x_lock.stl"
+    },
+    {
+      "bounds_mm": {
+        "max": [
+          66.0,
+          10.0,
+          98.0
+        ],
+        "min": [
+          50.0,
+          -10.0,
+          10.0
+        ]
+      },
+      "color": "#667085",
+      "id": "vertical_ballast_track",
+      "mesh": {
+        "connected_shells": 1,
+        "edges": 18,
+        "triangles": 12,
+        "vertices": 8,
+        "volume_mm3": 28160.0,
+        "watertight": true
+      },
+      "note": "Captive vertical ballast track; +Z is vertical",
+      "reference_only": false,
+      "role": "vertical_track",
+      "sha256": "8cca24f080c59633276eb58013c635d8b121c31c49f79bbbcff77b92eeeaf285",
+      "step": "vertical_ballast_track.step",
+      "step_sha256": "71246327648a4095f4ace2c91687c714c9f71cdf9abce92f16ea87d2fe7e8268",
+      "stl": "vertical_ballast_track.stl"
+    },
+    {
+      "bounds_mm": {
+        "max": [
+          61.5,
+          5.0,
+          74.0
+        ],
+        "min": [
+          50.5,
+          -5.0,
+          46.0
+        ]
+      },
+      "color": "#667085",
+      "id": "vertical_ballast_cassette",
+      "mesh": {
+        "connected_shells": 1,
+        "edges": 18,
+        "triangles": 12,
+        "vertices": 8,
+        "volume_mm3": 3080.0,
+        "watertight": true
+      },
+      "note": "Removable vertical ballast cassette at configured nominal Z",
+      "reference_only": false,
+      "role": "vertical_cassette",
+      "sha256": "6f83210849b1ea961e27aaf11323e6c38f4389dc9168ff58f929d601919ae355",
+      "step": "vertical_ballast_cassette.step",
+      "step_sha256": "663e62676a7870c607980689b23eac13f26e21354e399d5ad185137fb0f5d9c1",
+      "stl": "vertical_ballast_cassette.stl"
+    },
+    {
+      "bounds_mm": {
+        "max": [
+          60.0,
+          3.0,
+          68.0
+        ],
+        "min": [
+          52.0,
+          -3.0,
+          52.0
+        ]
+      },
+      "color": "#667085",
+      "id": "vertical_ballast",
+      "mesh": {
+        "connected_shells": 1,
+        "edges": 18,
+        "triangles": 12,
+        "vertices": 8,
+        "volume_mm3": 768.0,
+        "watertight": true
+      },
+      "note": "Removable ballast placeholder; mass is intentionally unspecified",
+      "reference_only": false,
+      "role": "vertical_ballast",
+      "sha256": "e8fbffb344af39249c41174d97bb8bf79c20df7b9a4af78a5d075d1f8fe12526",
+      "step": "vertical_ballast.step",
+      "step_sha256": "d30e52b42e6a98ca2527e85ab6023b2056c103689d0f243a8570b199faed36c4",
+      "stl": "vertical_ballast.stl"
+    },
+    {
+      "bounds_mm": {
+        "max": [
+          66.0,
+          -7.0,
+          94.0
+        ],
+        "min": [
+          62.0,
+          -10.0,
+          14.0
+        ]
+      },
+      "color": "#FF7A00",
+      "id": "vertical_retainer",
+      "mesh": {
+        "connected_shells": 1,
+        "edges": 18,
+        "triangles": 12,
+        "vertices": 8,
+        "volume_mm3": 960.0,
+        "watertight": true
+      },
+      "note": "Vertical capture lip",
+      "reference_only": false,
+      "role": "vertical_retainer",
+      "sha256": "6de52c04b3e30e09107060f7bb0b4ea1e6f42d9ae9adafa55f160fd05aaf2498",
+      "step": "vertical_retainer.step",
+      "step_sha256": "0a59c3be2808eeaf3f0ffd979deab0114fa51ceda02d82c650f9e07e95abcc65",
+      "stl": "vertical_retainer.stl"
+    },
+    {
+      "bounds_mm": {
+        "max": [
+          66.0,
+          10.0,
+          14.0
+        ],
+        "min": [
+          50.0,
+          -10.0,
+          10.0
+        ]
+      },
+      "color": "#FF7A00",
+      "id": "vertical_end_stop_lower",
+      "mesh": {
+        "connected_shells": 1,
+        "edges": 18,
+        "triangles": 12,
+        "vertices": 8,
+        "volume_mm3": 1280.0,
+        "watertight": true
+      },
+      "note": "Hard lower vertical end stop",
+      "reference_only": false,
+      "role": "vertical_end_stop",
+      "sha256": "89d6daba7158f95e4d3fcbbcbee972015096d4641376533926af5df58ad7e46f",
+      "step": "vertical_end_stop_lower.step",
+      "step_sha256": "21cdc4c85cdc97e1e89c74a7cf28603c80714efed5a3b7825d962bb850f3db4e",
+      "stl": "vertical_end_stop_lower.stl"
+    },
+    {
+      "bounds_mm": {
+        "max": [
+          66.0,
+          10.0,
+          98.0
+        ],
+        "min": [
+          50.0,
+          -10.0,
+          94.0
+        ]
+      },
+      "color": "#FF7A00",
+      "id": "vertical_end_stop_upper",
+      "mesh": {
+        "connected_shells": 1,
+        "edges": 18,
+        "triangles": 12,
+        "vertices": 8,
+        "volume_mm3": 1280.0,
+        "watertight": true
+      },
+      "note": "Hard upper vertical end stop",
+      "reference_only": false,
+      "role": "vertical_end_stop",
+      "sha256": "0330bc8e563ab8e6ee41374183c9070bd8c857a4d86453b2d1cb2def519533d2",
+      "step": "vertical_end_stop_upper.step",
+      "step_sha256": "cf4a7e17b0d7ae3de2441325974e0668c5513050c5bd0ed589f6752d21c06c32",
+      "stl": "vertical_end_stop_upper.stl"
+    },
+    {
+      "bounds_mm": {
+        "max": [
+          71.0,
+          4.0,
+          64.0
+        ],
+        "min": [
+          67.0,
+          -4.0,
+          56.0
+        ]
+      },
+      "color": "#111827",
+      "id": "vertical_lock",
+      "mesh": {
+        "connected_shells": 1,
+        "edges": 96,
+        "triangles": 64,
+        "vertices": 34,
+        "volume_mm3": 195.933917,
+        "watertight": true
+      },
+      "note": "Vertical cassette lock placeholder; thread and force are unverified",
+      "reference_only": false,
+      "role": "vertical_lock",
+      "sha256": "0a86c29c018f5bdf3c2ac89e50fdd04337fc358b935c9d16fa392128ab35c028",
+      "step": "vertical_lock.step",
+      "step_sha256": "05eb9155c89ebe729909cf0f9ee41d6ca6fffad4fe3ff3a0811e019b72d61254",
+      "stl": "vertical_lock.stl"
+    },
+    {
+      "bounds_mm": {
+        "max": [
+          -30.5,
+          -47.0,
+          44.0
+        ],
+        "min": [
+          -35.5,
+          -55.0,
+          24.0
+        ]
+      },
+      "color": "#B6F000",
+      "id": "passive_fiducial_mount",
+      "mesh": {
+        "connected_shells": 1,
+        "edges": 18,
+        "triangles": 12,
+        "vertices": 8,
+        "volume_mm3": 800.0,
+        "watertight": true
+      },
+      "note": "Passive calibration/fiducial plate; size and camera relation require measurement",
+      "reference_only": false,
+      "role": "fiducial_mount",
+      "sha256": "45b0065d84febc7b5336deeff26c092eb6059a4af31b671f8457bba5b16a809d",
+      "step": "passive_fiducial_mount.step",
+      "step_sha256": "e00d80dbe70f30c600798b6515d54f2e3328dbd673511a99afa4db6e3db24c9f",
+      "stl": "passive_fiducial_mount.stl"
+    },
+    {
+      "bounds_mm": {
+        "max": [
+          42.0,
+          -33.0,
+          15.0
+        ],
+        "min": [
+          26.0,
+          -51.0,
+          8.0
+        ]
+      },
+      "color": "#00B8D9",
+      "id": "imu_mount",
+      "mesh": {
+        "connected_shells": 1,
+        "edges": 18,
+        "triangles": 12,
+        "vertices": 8,
+        "volume_mm3": 2016.0,
+        "watertight": true
+      },
+      "note": "Optional rigid IMU mount placeholder; axis convention unverified",
+      "reference_only": false,
+      "role": "imu_mount",
+      "sha256": "2ffddefca8e38d98d1cf86e0f35f928ec24ce1a90062a5c26b3dfd291efae98b",
+      "step": "imu_mount.step",
+      "step_sha256": "976503faa6e08a5d7064cf75e909f9f9769b5005bd443a3b09ca24e1f5331eb8",
+      "stl": "imu_mount.stl"
+    },
+    {
+      "bounds_mm": {
+        "max": [
+          42.0,
+          51.0,
+          15.0
+        ],
+        "min": [
+          26.0,
+          33.0,
+          8.0
+        ]
+      },
+      "color": "#00B8D9",
+      "id": "ble_mount",
+      "mesh": {
+        "connected_shells": 1,
+        "edges": 18,
+        "triangles": 12,
+        "vertices": 8,
+        "volume_mm3": 2016.0,
+        "watertight": true
+      },
+      "note": "Optional passive BLE/trigger switch mount placeholder",
+      "reference_only": false,
+      "role": "ble_mount",
+      "sha256": "18568ddbba830c5ea8bcf255b7ba58c6ac4bf8ead429c3a0c01e162fb1292baa",
+      "step": "ble_mount.step",
+      "step_sha256": "451a17ee64edd0d297ff33218ef4ebfd8ae2c4b6d83c494d0273b22d462e85fc",
+      "stl": "ble_mount.stl"
+    },
+    {
+      "bounds_mm": {
+        "max": [
+          -56.0,
+          -42.0,
+          0.0
+        ],
+        "min": [
+          -60.0,
+          -46.0,
+          -4.0
+        ]
+      },
+      "color": "#111827",
+      "id": "fastener_placeholders",
+      "mesh": {
+        "connected_shells": 1,
+        "edges": 96,
+        "triangles": 64,
+        "vertices": 34,
+        "volume_mm3": 48.983479,
+        "watertight": true
+      },
+      "note": "One M4-scale placeholder shown; repeat count, inserts and threads are unverified",
+      "reference_only": false,
+      "role": "fastener_placeholder",
+      "sha256": "875d732f642f41ae82d7e1249fbf2fba35cce8dbd4971d3a0c57852140d88ed6",
+      "step": "fastener_placeholders.step",
+      "step_sha256": "8f626d14775d9bedb873ec49053d3a6186c06bde360dd2ef3b874653b7bdb533",
+      "stl": "fastener_placeholders.stl"
+    }
+  ],
+  "configuration_id": "placeholder_android_g0",
+  "determinism": {
+    "fixed_header_date": "2000-01-01T00:00:00",
+    "stl_ascii": true
+  },
+  "exports": {
+    "assembly_step": "assembly.step",
+    "assembly_step_sha256": "924f2bb96e40f73326d62ba8750f7482f4212e0ca9284fa7323d0cb1173b22e7",
+    "step_kind": "faceted BREP with planar triangular faces"
+  },
+  "generator": "scripts/generate_cad.py",
+  "generator_version": "1.1.0",
+  "manifest_version": 1,
+  "phone": {
+    "adapter_id": "android_adapter",
+    "adapter_to_chassis_transform": {
+      "rotation": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "translation_mm": [
+        0,
+        0,
+        0
+      ]
+    },
+    "body_mm": {
+      "height": 165,
+      "thickness": 9,
+      "width": 78
+    },
+    "camera_centres_mm": null,
+    "camera_field_of_view_clearance": null,
+    "camera_keepout": null,
+    "camera_selection": null,
+    "camera_status": "UNKNOWN: Android model and cameras not selected",
+    "case_allowance_mm": 0,
+    "dimension_status": "ASSUMED for parametric variation only; NOT measured and NOT manufacturer data",
+    "mass_g": null,
+    "mass_status": "UNKNOWN",
+    "phone_to_adapter_transform": {
+      "rotation": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "translation_mm": [
+        -52.5,
+        0,
+        16
+      ]
+    },
+    "phone_to_chassis_transform": {
+      "rotation": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "translation_mm": [
+        -52.5,
+        0,
+        16
+      ]
+    },
+    "reference_only": true
+  },
+  "profile_id": "placeholder_android",
+  "source": {
+    "assembly": "cad/parametric/assembly.json",
+    "configuration": "cad/parametric/configurations/placeholder_android_g0.json",
+    "profile": "cad/parametric/phone_profiles/placeholder_android.json"
+  },
+  "units": "mm",
+  "validation": {
+    "capture": {
+      "vertical_ballast": {
+        "capture_lip_mm": 0.5,
+        "end_stops": [
+          "vertical_end_stop_lower",
+          "vertical_end_stop_upper"
+        ],
+        "half_height_mm": 14.0,
+        "nominal_center_mm": 60.0,
+        "passed": true,
+        "track_max_mm": 98.0,
+        "track_min_mm": 10.0
+      },
+      "x_ballast": {
+        "capture_lip_mm": 0.5,
+        "end_stops": [
+          "x_end_stop_rear",
+          "x_end_stop_targetward"
+        ],
+        "half_length_mm": 16.0,
+        "nominal_center_mm": 36.0,
+        "passed": true,
+        "rail_max_mm": 72.0,
+        "rail_min_mm": -24.0
+      }
+    },
+    "envelope": {
+      "bounds_mm": {
+        "max": [
+          85.0,
+          56.0,
+          187.0
+        ],
+        "min": [
+          -70.0,
+          -56.0,
+          -85.0
+        ]
+      },
+      "limits_mm": {
+        "max": [
+          90,
+          70,
+          205
+        ],
+        "min": [
+          -85,
+          -70,
+          -100
+        ]
+      },
+      "passed": true
+    },
+    "errors": [],
+    "forbidden_collisions": {
+      "pairs": [],
+      "passed": true
+    },
+    "passed": true
+  }
+}

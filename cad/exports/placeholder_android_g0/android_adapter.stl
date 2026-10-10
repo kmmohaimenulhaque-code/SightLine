@@ -1,0 +1,86 @@
+solid android_adapter
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex -56.100000 -47.000000 187.000000
+      vertex -56.100000 47.000000 187.000000
+      vertex -56.100000 47.000000 10.000000
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex -56.100000 -47.000000 187.000000
+      vertex -56.100000 47.000000 10.000000
+      vertex -56.100000 -47.000000 10.000000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex -53.100000 -47.000000 10.000000
+      vertex -53.100000 47.000000 10.000000
+      vertex -53.100000 47.000000 187.000000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex -53.100000 -47.000000 10.000000
+      vertex -53.100000 47.000000 187.000000
+      vertex -53.100000 -47.000000 187.000000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex -53.100000 -47.000000 10.000000
+      vertex -53.100000 -47.000000 187.000000
+      vertex -56.100000 -47.000000 187.000000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex -53.100000 -47.000000 10.000000
+      vertex -56.100000 -47.000000 187.000000
+      vertex -56.100000 -47.000000 10.000000
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex -56.100000 47.000000 10.000000
+      vertex -56.100000 47.000000 187.000000
+      vertex -53.100000 47.000000 187.000000
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex -56.100000 47.000000 10.000000
+      vertex -53.100000 47.000000 187.000000
+      vertex -53.100000 47.000000 10.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex -56.100000 47.000000 10.000000
+      vertex -53.100000 47.000000 10.000000
+      vertex -53.100000 -47.000000 10.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex -56.100000 47.000000 10.000000
+      vertex -53.100000 -47.000000 10.000000
+      vertex -56.100000 -47.000000 10.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex -56.100000 -47.000000 187.000000
+      vertex -53.100000 -47.000000 187.000000
+      vertex -53.100000 47.000000 187.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex -56.100000 -47.000000 187.000000
+      vertex -53.100000 47.000000 187.000000
+      vertex -56.100000 47.000000 187.000000
+    endloop
+  endfacet
+endsolid android_adapter

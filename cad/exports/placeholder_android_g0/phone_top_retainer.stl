@@ -1,0 +1,86 @@
+solid phone_top_retainer
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex -42.900000 -45.000000 184.500000
+      vertex -42.900000 45.000000 184.500000
+      vertex -42.900000 45.000000 181.500000
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex -42.900000 -45.000000 184.500000
+      vertex -42.900000 45.000000 181.500000
+      vertex -42.900000 -45.000000 181.500000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex -39.900000 -45.000000 181.500000
+      vertex -39.900000 45.000000 181.500000
+      vertex -39.900000 45.000000 184.500000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex -39.900000 -45.000000 181.500000
+      vertex -39.900000 45.000000 184.500000
+      vertex -39.900000 -45.000000 184.500000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex -39.900000 -45.000000 181.500000
+      vertex -39.900000 -45.000000 184.500000
+      vertex -42.900000 -45.000000 184.500000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex -39.900000 -45.000000 181.500000
+      vertex -42.900000 -45.000000 184.500000
+      vertex -42.900000 -45.000000 181.500000
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex -42.900000 45.000000 181.500000
+      vertex -42.900000 45.000000 184.500000
+      vertex -39.900000 45.000000 184.500000
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex -42.900000 45.000000 181.500000
+      vertex -39.900000 45.000000 184.500000
+      vertex -39.900000 45.000000 181.500000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex -42.900000 45.000000 181.500000
+      vertex -39.900000 45.000000 181.500000
+      vertex -39.900000 -45.000000 181.500000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex -42.900000 45.000000 181.500000
+      vertex -39.900000 -45.000000 181.500000
+      vertex -42.900000 -45.000000 181.500000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex -42.900000 -45.000000 184.500000
+      vertex -39.900000 -45.000000 184.500000
+      vertex -39.900000 45.000000 184.500000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex -42.900000 -45.000000 184.500000
+      vertex -39.900000 45.000000 184.500000
+      vertex -42.900000 45.000000 184.500000
+    endloop
+  endfacet
+endsolid phone_top_retainer

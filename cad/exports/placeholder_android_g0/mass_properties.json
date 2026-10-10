@@ -1,0 +1,291 @@
+{
+  "attainable_ranges": {
+    "com_mm": [
+      [
+        -9.686417502,
+        4.752962625
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        28.781221513,
+        35.618049225
+      ]
+    ],
+    "total_mass_g": [
+      1097.0,
+      1097.0
+    ]
+  },
+  "best_candidate": {
+    "ballast_positions_mm": {
+      "vertical_ballast": 24.0,
+      "x_ballast": -20.0
+    },
+    "components": [
+      {
+        "chassis_com_mm": [
+          -48.0,
+          0.0,
+          98.5
+        ],
+        "component_com_mm": [
+          -48.0,
+          0.0,
+          98.5
+        ],
+        "confidence": "unverified_placeholder",
+        "id": "phone",
+        "inertia_tensor_provided": false,
+        "mass_g": 210.0,
+        "role": "phone",
+        "source": "placeholder Android mass for configuration testing only; model not selected",
+        "value_status": "estimated"
+      },
+      {
+        "chassis_com_mm": [
+          8.0,
+          0.0,
+          3.0
+        ],
+        "component_com_mm": [
+          8.0,
+          0.0,
+          3.0
+        ],
+        "confidence": "estimated",
+        "id": "common_chassis",
+        "inertia_tensor_provided": false,
+        "mass_g": 240.0,
+        "role": "training_chassis",
+        "source": "G0 CAD material-density estimate; printed chassis not weighed",
+        "value_status": "estimated"
+      },
+      {
+        "chassis_com_mm": [
+          -14.0,
+          0.0,
+          -42.0
+        ],
+        "component_com_mm": [
+          -14.0,
+          0.0,
+          -42.0
+        ],
+        "confidence": "estimated",
+        "id": "grip_body",
+        "inertia_tensor_provided": false,
+        "mass_g": 155.0,
+        "role": "grip",
+        "source": "G0 CAD material-density estimate; printed grip not weighed",
+        "value_status": "estimated"
+      },
+      {
+        "chassis_com_mm": [
+          -48.0,
+          0.0,
+          99.0
+        ],
+        "component_com_mm": [
+          -48.0,
+          0.0,
+          99.0
+        ],
+        "confidence": "estimated",
+        "id": "phone_adapter_and_retainers",
+        "inertia_tensor_provided": false,
+        "mass_g": 107.0,
+        "role": "adapter",
+        "source": "G0 CAD material-density estimate; adapter and pads not weighed",
+        "value_status": "estimated"
+      },
+      {
+        "chassis_com_mm": [
+          0.0,
+          0.0,
+          4.0
+        ],
+        "component_com_mm": [
+          0.0,
+          0.0,
+          4.0
+        ],
+        "confidence": "estimated",
+        "id": "fasteners_and_inserts",
+        "inertia_tensor_provided": false,
+        "mass_g": 45.0,
+        "role": "fasteners",
+        "source": "allowance for captive hardware; exact fastener bill not weighed",
+        "value_status": "estimated"
+      },
+      {
+        "chassis_com_mm": [
+          34.0,
+          0.0,
+          11.0
+        ],
+        "component_com_mm": [
+          34.0,
+          0.0,
+          11.0
+        ],
+        "confidence": "estimated",
+        "id": "optional_electronics",
+        "inertia_tensor_provided": false,
+        "mass_g": 35.0,
+        "role": "electronics",
+        "source": "placeholder for optional BLE button and IMU; hardware not selected",
+        "value_status": "estimated"
+      },
+      {
+        "chassis_com_mm": [
+          -20.0,
+          0.0,
+          14.0
+        ],
+        "component_com_mm": [
+          -20.0,
+          0.0,
+          14.0
+        ],
+        "confidence": "provisional_design",
+        "id": "x_ballast",
+        "inertia_tensor_provided": false,
+        "mass_g": 180.0,
+        "role": "ballast",
+        "source": "measured steel washer/captive-weight stack to be selected before print release",
+        "value_status": "estimated"
+      },
+      {
+        "chassis_com_mm": [
+          58.0,
+          0.0,
+          24.0
+        ],
+        "component_com_mm": [
+          58.0,
+          0.0,
+          24.0
+        ],
+        "confidence": "provisional_design",
+        "id": "vertical_ballast",
+        "inertia_tensor_provided": false,
+        "mass_g": 125.0,
+        "role": "ballast",
+        "source": "measured steel washer/captive-weight stack to be selected before print release",
+        "value_status": "estimated"
+      }
+    ],
+    "metrics": {
+      "com_mm": [
+        -9.686417502,
+        0.0,
+        28.781221513
+      ],
+      "inertia_tensor_about_chassis_origin_g_mm2": [
+        [
+          3473994.5,
+          0.0,
+          1267754.0
+        ],
+        [
+          0.0,
+          4783062.5,
+          0.0
+        ],
+        [
+          1267754.0,
+          0.0,
+          1309068.0
+        ]
+      ],
+      "inertia_tensor_about_total_com_g_mm2": [
+        [
+          2565284.993163172,
+          0.0,
+          961924.740200547
+        ],
+        [
+          0.0,
+          3771425.120783956,
+          0.0
+        ],
+        [
+          961924.740200547,
+          0.0,
+          1206140.127620784
+        ]
+      ],
+      "total_mass_g": 1097.0
+    },
+    "objective": 13.69,
+    "residuals": {
+      "mass_normalized_error": 3.7,
+      "mass_residual_g": 37.0
+    }
+  },
+  "confidence_classes": [
+    "estimated",
+    "provisional_design",
+    "unverified_placeholder"
+  ],
+  "frame": "chassis: X targetward, Y lateral, Z vertical; origin is underside chassis centreline per cad/parametric/assembly.json",
+  "model_id": "placeholder_android_g0_mass_model",
+  "profile_id": "placeholder_android",
+  "profile_summary": {
+    "adapter_id": "android_adapter",
+    "body_mm": {
+      "height": 165,
+      "thickness": 9,
+      "width": 78
+    },
+    "camera_status": "UNKNOWN: Android model and cameras not selected",
+    "case_allowance_mm": 0,
+    "id": "placeholder_android",
+    "label": "PLACEHOLDER Android envelope, not an identified device",
+    "mass_g": null,
+    "mass_status": "UNKNOWN",
+    "variant": "No Android model selected"
+  },
+  "report_schema_version": 1,
+  "search": {
+    "best_is_feasible": false,
+    "candidate_count": 368,
+    "feasible_count": 0
+  },
+  "solver": {
+    "enumeration": "inclusive endpoints and configured position increment",
+    "objective": "sum of squared normalized residuals for known mass, COM and inertia targets"
+  },
+  "status": "MODEL_OUTPUT",
+  "target": {
+    "com_tolerance_mm": null,
+    "inertia_tolerance": null,
+    "mass_tolerance_g": 10,
+    "reference_id": "NO_VERIFIED_LP10_MASS_PROPERTY_REFERENCE",
+    "reference_mass_g": null,
+    "status": "DESIGN_TARGET_ONLY",
+    "target_com_mm": null,
+    "target_inertia_tensor_g_mm2": null,
+    "target_mass_g": 1060
+  },
+  "target_interpretation": "PROVISIONAL SIGHTLINE product-design target; Android dimensions and mass are placeholders",
+  "units": {
+    "inertia": "g mm^2",
+    "length": "mm",
+    "mass": "g"
+  },
+  "unknown_targets": [
+    "reference_mass_g",
+    "target_com_mm",
+    "target_inertia_tensor_g_mm2"
+  ],
+  "warnings": [
+    "CAD and manufacturer values are predictions until the printed assembly and installed hardware are weighed.",
+    "A feasible mathematical target is not evidence of ergonomic equivalence or optical repeatability.",
+    "Unknown target fields: reference_mass_g, target_com_mm, target_inertia_tensor_g_mm2.",
+    "At least one fixed component mass is not a physical measurement."
+  ]
+}

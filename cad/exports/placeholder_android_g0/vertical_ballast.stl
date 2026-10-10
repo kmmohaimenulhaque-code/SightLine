@@ -1,0 +1,86 @@
+solid vertical_ballast
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 52.000000 -3.000000 68.000000
+      vertex 52.000000 3.000000 68.000000
+      vertex 52.000000 3.000000 52.000000
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex 52.000000 -3.000000 68.000000
+      vertex 52.000000 3.000000 52.000000
+      vertex 52.000000 -3.000000 52.000000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 60.000000 -3.000000 52.000000
+      vertex 60.000000 3.000000 52.000000
+      vertex 60.000000 3.000000 68.000000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 60.000000 -3.000000 52.000000
+      vertex 60.000000 3.000000 68.000000
+      vertex 60.000000 -3.000000 68.000000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 60.000000 -3.000000 52.000000
+      vertex 60.000000 -3.000000 68.000000
+      vertex 52.000000 -3.000000 68.000000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 60.000000 -3.000000 52.000000
+      vertex 52.000000 -3.000000 68.000000
+      vertex 52.000000 -3.000000 52.000000
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 52.000000 3.000000 52.000000
+      vertex 52.000000 3.000000 68.000000
+      vertex 60.000000 3.000000 68.000000
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex 52.000000 3.000000 52.000000
+      vertex 60.000000 3.000000 68.000000
+      vertex 60.000000 3.000000 52.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 52.000000 3.000000 52.000000
+      vertex 60.000000 3.000000 52.000000
+      vertex 60.000000 -3.000000 52.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex 52.000000 3.000000 52.000000
+      vertex 60.000000 -3.000000 52.000000
+      vertex 52.000000 -3.000000 52.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 52.000000 -3.000000 68.000000
+      vertex 60.000000 -3.000000 68.000000
+      vertex 60.000000 3.000000 68.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex 52.000000 -3.000000 68.000000
+      vertex 60.000000 3.000000 68.000000
+      vertex 52.000000 3.000000 68.000000
+    endloop
+  endfacet
+endsolid vertical_ballast

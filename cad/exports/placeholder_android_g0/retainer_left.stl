@@ -1,0 +1,86 @@
+solid retainer_left
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex -42.900000 39.500000 176.000000
+      vertex -42.900000 45.500000 176.000000
+      vertex -42.900000 45.500000 21.000000
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex -42.900000 39.500000 176.000000
+      vertex -42.900000 45.500000 21.000000
+      vertex -42.900000 39.500000 21.000000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex -39.900000 39.500000 21.000000
+      vertex -39.900000 45.500000 21.000000
+      vertex -39.900000 45.500000 176.000000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex -39.900000 39.500000 21.000000
+      vertex -39.900000 45.500000 176.000000
+      vertex -39.900000 39.500000 176.000000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex -39.900000 39.500000 21.000000
+      vertex -39.900000 39.500000 176.000000
+      vertex -42.900000 39.500000 176.000000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex -39.900000 39.500000 21.000000
+      vertex -42.900000 39.500000 176.000000
+      vertex -42.900000 39.500000 21.000000
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex -42.900000 45.500000 21.000000
+      vertex -42.900000 45.500000 176.000000
+      vertex -39.900000 45.500000 176.000000
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex -42.900000 45.500000 21.000000
+      vertex -39.900000 45.500000 176.000000
+      vertex -39.900000 45.500000 21.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex -42.900000 45.500000 21.000000
+      vertex -39.900000 45.500000 21.000000
+      vertex -39.900000 39.500000 21.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex -42.900000 45.500000 21.000000
+      vertex -39.900000 39.500000 21.000000
+      vertex -42.900000 39.500000 21.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex -42.900000 39.500000 176.000000
+      vertex -39.900000 39.500000 176.000000
+      vertex -39.900000 45.500000 176.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex -42.900000 39.500000 176.000000
+      vertex -39.900000 45.500000 176.000000
+      vertex -42.900000 45.500000 176.000000
+    endloop
+  endfacet
+endsolid retainer_left

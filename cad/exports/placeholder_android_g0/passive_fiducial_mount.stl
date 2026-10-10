@@ -1,0 +1,86 @@
+solid passive_fiducial_mount
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex -35.500000 -55.000000 44.000000
+      vertex -35.500000 -47.000000 44.000000
+      vertex -35.500000 -47.000000 24.000000
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex -35.500000 -55.000000 44.000000
+      vertex -35.500000 -47.000000 24.000000
+      vertex -35.500000 -55.000000 24.000000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex -30.500000 -55.000000 24.000000
+      vertex -30.500000 -47.000000 24.000000
+      vertex -30.500000 -47.000000 44.000000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex -30.500000 -55.000000 24.000000
+      vertex -30.500000 -47.000000 44.000000
+      vertex -30.500000 -55.000000 44.000000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex -30.500000 -55.000000 24.000000
+      vertex -30.500000 -55.000000 44.000000
+      vertex -35.500000 -55.000000 44.000000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex -30.500000 -55.000000 24.000000
+      vertex -35.500000 -55.000000 44.000000
+      vertex -35.500000 -55.000000 24.000000
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex -35.500000 -47.000000 24.000000
+      vertex -35.500000 -47.000000 44.000000
+      vertex -30.500000 -47.000000 44.000000
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex -35.500000 -47.000000 24.000000
+      vertex -30.500000 -47.000000 44.000000
+      vertex -30.500000 -47.000000 24.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex -35.500000 -47.000000 24.000000
+      vertex -30.500000 -47.000000 24.000000
+      vertex -30.500000 -55.000000 24.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex -35.500000 -47.000000 24.000000
+      vertex -30.500000 -55.000000 24.000000
+      vertex -35.500000 -55.000000 24.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex -35.500000 -55.000000 44.000000
+      vertex -30.500000 -55.000000 44.000000
+      vertex -30.500000 -47.000000 44.000000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex -35.500000 -55.000000 44.000000
+      vertex -30.500000 -47.000000 44.000000
+      vertex -35.500000 -47.000000 44.000000
+    endloop
+  endfacet
+endsolid passive_fiducial_mount

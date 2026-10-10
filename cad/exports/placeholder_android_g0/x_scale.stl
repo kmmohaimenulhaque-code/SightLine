@@ -1,0 +1,86 @@
+solid x_scale
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex -20.000000 -17.000000 23.500000
+      vertex -20.000000 -15.000000 23.500000
+      vertex -20.000000 -15.000000 22.200000
+    endloop
+  endfacet
+  facet normal -1.000000 0.000000 0.000000
+    outer loop
+      vertex -20.000000 -17.000000 23.500000
+      vertex -20.000000 -15.000000 22.200000
+      vertex -20.000000 -17.000000 22.200000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 68.000000 -17.000000 22.200000
+      vertex 68.000000 -15.000000 22.200000
+      vertex 68.000000 -15.000000 23.500000
+    endloop
+  endfacet
+  facet normal 1.000000 0.000000 0.000000
+    outer loop
+      vertex 68.000000 -17.000000 22.200000
+      vertex 68.000000 -15.000000 23.500000
+      vertex 68.000000 -17.000000 23.500000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 68.000000 -17.000000 22.200000
+      vertex 68.000000 -17.000000 23.500000
+      vertex -20.000000 -17.000000 23.500000
+    endloop
+  endfacet
+  facet normal 0.000000 -1.000000 0.000000
+    outer loop
+      vertex 68.000000 -17.000000 22.200000
+      vertex -20.000000 -17.000000 23.500000
+      vertex -20.000000 -17.000000 22.200000
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex -20.000000 -15.000000 22.200000
+      vertex -20.000000 -15.000000 23.500000
+      vertex 68.000000 -15.000000 23.500000
+    endloop
+  endfacet
+  facet normal 0.000000 1.000000 0.000000
+    outer loop
+      vertex -20.000000 -15.000000 22.200000
+      vertex 68.000000 -15.000000 23.500000
+      vertex 68.000000 -15.000000 22.200000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex -20.000000 -15.000000 22.200000
+      vertex 68.000000 -15.000000 22.200000
+      vertex 68.000000 -17.000000 22.200000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 -1.000000
+    outer loop
+      vertex -20.000000 -15.000000 22.200000
+      vertex 68.000000 -17.000000 22.200000
+      vertex -20.000000 -17.000000 22.200000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex -20.000000 -17.000000 23.500000
+      vertex 68.000000 -17.000000 23.500000
+      vertex 68.000000 -15.000000 23.500000
+    endloop
+  endfacet
+  facet normal 0.000000 0.000000 1.000000
+    outer loop
+      vertex -20.000000 -17.000000 23.500000
+      vertex 68.000000 -15.000000 23.500000
+      vertex -20.000000 -15.000000 23.500000
+    endloop
+  endfacet
+endsolid x_scale
