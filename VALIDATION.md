@@ -118,3 +118,15 @@ claimed.
 | C-064 | The probe app works on a real Android device | **UNVERIFIED** (compiles, signs, verifies; never executed) | Build log | — | — | First run on the owner's phone |
 
 Nothing in section H upgrades section G: real-world accuracy of anything remains unvalidated.
+
+## I. Mission 3 — G0 mechanical CAD (2026-10-10)
+
+| ID | Claim | Status | Evidence | Method | Confidence | Next validation |
+|---|---|---|---|---|---|---|
+| C-065 | A common chassis plus replaceable adapter/profile path can be regenerated for the nominal iPhone 15 and a dimensionally different placeholder phone | **MODEL OUTPUT** | `cad/parametric/`, `scripts/generate_cad.py`, `tests/test_cad_generation.py` | Deterministic source regeneration; profile and envelope checks | High for the model; no physical fit evidence | Print and perform P1/P2 fit/reseat trials |
+| C-066 | Generated component meshes are closed, positive-volume solids under the dependency-free mesh checker | **MODEL OUTPUT** | `cad/exports/*/manifest.json`, `tests/test_cad_generation.py` | Edge-incidence/winding/volume validation | High for the checker; not a native CAD-kernel audit | Reopen STEP/STL in a native CAD tool |
+| C-067 | The G0 X/Z ballast geometry has captive/end-stop logic in the source model | **MODEL OUTPUT** | `scripts/generate_cad.py`, capture checks in manifest | Parameter and envelope checks | Medium; printed lock/wear behaviour unknown | Print coupon and cycle/lock test |
+| C-068 | The nominal iPhone 15 model totals 1058 g and has an attainable model COM range X −8.27…+6.70 mm, Z 23.89…30.98 mm | **MODEL OUTPUT** | `cad/exports/iphone15_g0/mass_properties.json` | Weighted centroid and enumerated ballast positions | Low–Medium; masses mostly estimated | Weigh components/assembly and measure COM |
+| C-069 | The placeholder Android model totals 1097 g and does not meet the provisional 1060 ± 10 g mass target | **MODEL OUTPUT** | `cad/exports/placeholder_android_g0/mass_properties.json` | Same solver; profile is explicitly unselected | Low; phone mass/dimensions are placeholders | Select and measure an Android device |
+| C-070 | LP10 centre of mass or inertia has been matched | **UNVERIFIED / NOT CLAIMED** | `docs/cad/MASS_REFERENCE.md` | No reference measurement adopted | None | Obtain a trustworthy reference and measure |
+| C-071 | Phone reseating meets 0.05 px observed optical repeatability | **UNVERIFIED / NOT CLAIMED** | No physical reseating data; `cad/measurements/reseating_trials.csv` is empty | No CAD-only method is valid | None | E-002 / Metric A and Metric B trial |

@@ -1,5 +1,26 @@
 # Changelog
 
+## 0.3.0 — 2026-10-10 — Mission 3 G0 parametric CAD
+
+No physical CAD, mass, COM, optical repeatability or ergonomic result is claimed in this version. The generated
+geometry and mass reports are MODEL OUTPUT; the physical measurement templates are intentionally empty.
+
+### Added
+* Dependency-free editable G0 CAD source and generator: common chassis/grip, replaceable phone adapters, retainers,
+  camera-open region, captive X/Z ballast, passive fiducial and optional IMU/BLE mounts.
+* iPhone 15 nominal profile plus an explicitly unselected, dimensionally different Android placeholder profile.
+* Deterministic STL/faceted exchange exports, manifests, dimensioned communication drawings and physical measurement templates.
+* Weighted mass/COM/inertia solver with rigid transforms, parallel-axis theorem, ballast enumeration, attainable ranges,
+  provenance and infeasible-target reporting.
+* CAD gate audit, feasibility study, mass reference, compatibility, tolerance, assembly, balance, fabrication, BOM and
+  physical-validation documentation.
+* 14 focused CAD generation/mass-property tests.
+
+### Decisions
+* G0 is opened before E-004a is complete; E-004a remains a gate for camera-supported operation, not for preliminary
+  mechanical fit and seating work.
+* The 1060 g value is a provisional SIGHTLINE design target only. LP10 COM/inertia values remain unknown.
+
 ## 0.2.0 — 2026-10-06 — Mission 2 experimental validation (branch `mission-2-experimental-validation`)
 
 No physical experiment has been run in this version. It adds the means to run them, and one theoretical result.

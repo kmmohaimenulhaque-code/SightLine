@@ -73,3 +73,14 @@ Status: **DT** = DESIGN TARGET (a goal we chose), **V** = verified external cons
 |---|---|---|---|
 | ANA-01 | Deterministic hold/trigger metrics (time-in-zone, trace speed in the final 1 s and 250 ms, pre/post-trigger displacement, grouping) | DT | Reference-rig motion |
 | ANA-02 | No AI coaching until metrics are validated and data supports it | DT | Gate review |
+
+## Mechanical CAD (CAD) — Mission 3 G0
+
+| ID | Requirement | Status | Verification |
+|---|---|---|---|
+| CAD-01 | One common passive chassis/grip shall accept replaceable phone-adapter modules without redesigning the shared grip for each supported profile | DT | Source review; regenerate iPhone and dimensionally different placeholder configurations |
+| CAD-02 | Each phone profile shall identify body/case dimensions, mass evidence, camera/clearance evidence, adapter ID, phone-to-chassis transform and calibration metadata, with unknowns explicit | DT | JSON profile review and configuration tests |
+| CAD-03 | Phone retainers shall preload hard datums and shall not use uncontrolled friction or soft-pad compression as the only positioning method | DT | Geometry review; physical fit/reseat test at G0 |
+| CAD-04 | Ballast shall be captive, lockable and position-searchable in longitudinal X and vertical Z; loose hand-placed weights are not an accepted adjustment | DT | CAD capture checks; slider/lock physical test |
+| CAD-05 | The mass-property calculator shall report total mass, weighted COM, transformed inertia where supplied, attainable ranges, feasible/infeasible targets and evidence provenance | DT | `tests/test_cad_mass_properties.py`; generated example reports |
+| CAD-06 | Mechanical pose repeatability and observed optical repeatability shall be recorded as separate metrics; CAD shall not be used to claim the 0.05 px optical aspiration | DT | `docs/cad/MECHANICAL_TOLERANCE_BUDGET.md`; physical reseating protocol |

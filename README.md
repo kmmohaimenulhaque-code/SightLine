@@ -6,7 +6,7 @@ quantify hold and trigger control. Nothing in SIGHTLINE launches, or can be adap
 
 SIGHTLINE is not affiliated with AMD, NVIDIA, ISSF or any manufacturer, and is not an ISSF-approved scoring target.
 
-## Status — v0.2.0 (2026-10-06): Mission 2 experimental validation — harnesses ready, physical data required
+## Status — v0.3.0 (2026-10-10): Mission 3 G0 CAD implemented — physical data required
 
 Project readiness ≈ **38 %** (planning estimate; see `ARCHITECTURE.md` §20).
 
@@ -22,6 +22,9 @@ Project readiness ≈ **38 %** (planning estimate; see `ARCHITECTURE.md` §20).
   theoretical/derived spatial scale on the order of tenths of a millimetre at 10 m. Real-world accuracy remains
   experimentally unresolved.
 * No mobile training app, hardware, sensor fusion or ML yet.
+* Mission 3 G0: a dependency-free editable common chassis, iPhone 15 adapter path, placeholder second-phone profile,
+  captive X/Z ballast, deterministic exports and tested mass-property solver are implemented. They are MODEL OUTPUT only;
+  no physical fit, mass, COM, optical repeatability or ergonomic claim has passed.
 
 ## Findings that changed the design
 
@@ -45,6 +48,11 @@ python -m ml.evaluation.e005_localisation_limit          # Cramér–Rao bound (
 python -m ml.evaluation.e004a_ois_transfer expected      # planning table (DERIVED)
 python -m ml.evaluation.e004a_ois_transfer synthetic-sanity   # harness check on simulated frames (several minutes)
 python scripts/generate_synthetic_samples.py
+
+# Mission 3 G0 CAD
+python scripts/generate_cad.py --config cad/parametric/configurations/iphone15_g0.json
+python scripts/generate_cad.py --config cad/parametric/configurations/placeholder_android_g0.json
+python scripts/cad_mass_properties.py --config cad/parametric/configurations/iphone15_mass.json
 ```
 
 Physical experiments (after recording, see `docs/experiments/`):
@@ -85,7 +93,7 @@ print(shot.score.decimal, shot.impact_xy_mm)             # 9.2 [-14.106 2.662]  
 
 `app/` reference implementation (scoring, calibration, vision, time-series analysis, gyroscope characterisation;
 `mobile/android-probe/` measurement-only probe) · `ml/` synthetic data, provenance, capture manifests, experiments · `data/` manifests and the synthetic reference set · `tests/` · `scripts/` ·
-`cad/`, `hardware/` (not started) · `docs/`, `research/`.
+`cad/` (G0 parametric source, exports, drawings and physical-measurement templates), `hardware/` (not instrumented yet) · `docs/`, `research/`.
 
 ## Licence
 

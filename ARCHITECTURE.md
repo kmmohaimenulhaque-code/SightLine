@@ -1,7 +1,7 @@
 # SIGHTLINE™ — Architecture (primary source of truth)
 
 This file is the project's memory. A future session must be able to continue from the repository alone.
-Last updated: 2026-10-06 (version 0.2.0, Mission 2 experimental validation — branch `mission-2-experimental-validation`).
+Last updated: 2026-10-10 (version 0.3.0, Mission 3 G0 CAD — branch `feature/universal-balanced-grip-cad`).
 Claim statuses: `VALIDATION.md`. Requirements: `REQUIREMENTS.md`. Experiments: `EXPERIMENT_LOG.md`.
 
 **Where the project stands.** Mission 1 (foundation, deterministic baseline, E-001) and the Mission 2 research report
@@ -128,8 +128,11 @@ decision PROPOSED: Android-first native Camera2 (D-012, `app/mobile/README.md`).
 
 ## 10. CAD
 
-`docs/cad/GRIP_REQUIREMENTS.md`: freeze list (15 items, mostly OPEN — phone model is the blocking owner decision),
-mass ≤ 1500 g (ISSF), non-realistic appearance, G0–G3 path. No CAD yet; parametric CAD will be the source of truth.
+`docs/cad/GRIP_REQUIREMENTS.md`: revised freeze list and G0–G3 path. Mission 3 implements a dependency-free editable
+G0 source in `cad/parametric/`, generated STL/faceted exchange exports in `cad/exports/`, a nominal iPhone 15 adapter,
+a placeholder second profile, captive X/Z ballast and a tested mass-property solver. G0 is MODEL OUTPUT only; physical
+fit, printer capability, mass/COM/inertia, camera clearance, optical repeatability, ergonomics and final device support
+remain open. E-004a gates camera-supported release, not preliminary phone cradle geometry.
 
 ## 11. Datasets
 
@@ -235,6 +238,7 @@ MEA-01 image-term p95 ≤ 0.4 mm (EST-grade); MEA-02 integer agreement ≥ 99 %;
 | D-019 | 2026-10-06 | Candidate: split measurement into vision (absolute pointing) and gyroscope (hold, tremor, trigger), fused deterministically (§2a) | A stabiliser cannot alter the gyroscope; research report recommendation | Vision only (current); gyro only | Needs camera–IMU calibration and a logger that runs with the camera | **PROPOSED — not decided; awaits E-004a, E-002, CAL-EXP-6** | C-063 |
 | D-020 | 2026-10-06 | E-004a ground truth: lever geometry for steps/ramps, an independent rigidly co-mounted gyroscope for oscillation; Ultra Wide as control; f_px measured from the target per clip | Steps only test the settled response (C-052); hand motion may excite but never be the ground truth | Turntable (not available); hand motion as truth (rejected) | Test D needs the second phone on the jig | ACCEPTED (experiment design) | E-004a synthetic sanity |
 | D-021 | 2026-10-06 | Capture manifests: one validated JSON per clip, raw video never in Git (sha256 only) | Provenance for every physical capture | Commit video; free-text notes | `data/manifests/captures/` | ACCEPTED | `ml/datasets/capture.py` |
+| D-022 | 2026-10-10 | Open G0 mechanical CAD before E-004a is complete, while keeping camera-supported release conditional | E-004a decides optical body-motion behaviour, not whether a passive cradle can be fit-checked; separate mechanical P1/P2 from optical P3 | Wait for all camera experiments before any adapter geometry | G0 geometry mule is implemented; G1–G3 remain evidence-gated | ACCEPTED for G0 | `docs/cad/CAD_GATE_AUDIT.md`, `docs/cad/CAD_DESIGN_REPORT.md` |
 
 ## 20. Progress tracker (planning estimate)
 
@@ -248,6 +252,6 @@ Phase weights are a planning convention (DESIGN TARGET), used to report readines
 | 4 Data | 10 | 55 % | 5.5 | Plus capture manifests, protocols, print target; still no real data |
 | 5 Reconstruction | 15 | 15 % | 2.25 | RAW arm characterised; G2 passed on the synthetic model; TEMPORAL arm not started |
 | 6 Mobile | 15 | 2 % | 0.3 | Platform proposal; measurement-only probe app (untested on hardware) |
-| 7 Hardware | 15 | 8 % | 1.2 | Experiment harnesses and protocols for stabilisation and gyroscope; nothing measured |
+| 7 Hardware | 15 | 18 % | 2.7 | G0 CAD source, two phone-profile pathways, ballast solver and validation harnesses implemented; no physical hardware evidence |
 | 8 Analytics | 10 | 3 % | 0.3 | Prior art and metric list |
-| **Total** | 100 | | **≈ 38** | Remaining ≈ 62. The gain is infrastructure and one theoretical result; the physical experiments that decide the architecture are all still to run |
+| **Total** | 100 | | **≈ 39.5** | Remaining ≈ 60.5. Mission 3 adds reproducible G0 mechanics and model-based mass balance; the physical experiments that decide camera support are still to run |
