@@ -1,0 +1,65 @@
+{
+  "id": "iPhone_15",
+  "model": "iPhone 15",
+  "variant": "Standard",
+  "body_dims_mm": [147.6, 71.6, 7.80],
+  "body_dims_tolerance_mm": [0.5, 0.5, 0.3],
+  "case_dims_mm": null,
+  "mass_g": 171.0,
+  "mass_source": "Apple Technical Specifications",
+  "mass_confidence": "VERIFIED",
+  "camera_island_dims_mm": [35.0, 35.0],
+  "camera_island_protrusion_mm": 2.5,
+  "cameras": [
+    {
+      "id": "main",
+      "type": "Wide (Main)",
+      "position_body_mm": [-30.0, -27.0, 7.8],
+      "fov_deg": 67.0,
+      "aperture": "f/1.6",
+      "has_ois": true,
+      "position_confidence": "ESTIMATED",
+      "notes": "Position interpreted from Apple dimensional drawing; lens assignment uncertain."
+    },
+    {
+      "id": "ultrawide",
+      "type": "Ultra Wide",
+      "position_body_mm": [-30.0, -18.0, 7.8],
+      "fov_deg": 120.0,
+      "aperture": "f/2.4",
+      "has_ois": false,
+      "position_confidence": "ESTIMATED",
+      "notes": "Apple lists OIS for Main only. Ultra Wide is the E-004a control camera."
+    }
+  ],
+  "button_positions": {
+    "power": {"side": "right", "offset_from_top_mm": 40.0},
+    "volume_up": {"side": "left", "offset_from_top_mm": 55.0},
+    "volume_down": {"side": "left", "offset_from_top_mm": 70.0},
+    "action_button": {"side": "left", "offset_from_top_mm": 40.0}
+  },
+  "connector_position": {"side": "bottom", "type": "USB-C"},
+  "installed_orientation": "landscape_left",
+  "adapter_id": "antigravity_adapter_iphone15",
+  "adapter_to_chassis_transform": {
+    "translation_mm": [0.0, 0.0, 0.0],
+    "rotation_deg": [0.0, 0.0, 0.0],
+    "notes": "Identity for G0. Refined after physical measurement."
+  },
+  "camera_keepout_cones_deg": {
+    "main": 121.83,
+    "ultrawide": 75.55
+  },
+  "camera_cover_glass_diameter_mm": {
+    "main": 9.11,
+    "ultrawide": 6.90
+  },
+  "calibration_metadata": {
+    "e004a_status": "PHYSICAL_DATA_REQUIRED",
+    "which_camera_unobstructed": "UNKNOWN — depends on E-004a",
+    "focal_px_measured": false
+  },
+  "data_provenance": "Apple Technical Specifications and Apple Dimensional Drawing (text interpretation from Mission 2 research report Q1)",
+  "measurement_confidence": "MIXED: body dims and mass VERIFIED; camera positions ESTIMATED; keepout cones VERIFIED from drawing text"
+}
+

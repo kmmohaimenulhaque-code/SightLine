@@ -1,0 +1,46 @@
+{
+  "id": "Android_Reference_Placeholder",
+  "model": "Android Reference Device",
+  "variant": "Placeholder — not validated",
+  "body_dims_mm": [160.0, 75.0, 8.5],
+  "body_dims_tolerance_mm": [1.0, 1.0, 0.5],
+  "case_dims_mm": null,
+  "mass_g": 190.0,
+  "mass_source": "PLACEHOLDER estimate",
+  "mass_confidence": "UNVERIFIED",
+  "camera_island_dims_mm": [40.0, 40.0],
+  "camera_island_protrusion_mm": 2.0,
+  "cameras": [
+    {
+      "id": "main",
+      "type": "Wide (Main)",
+      "position_body_mm": [-35.0, -30.0, 8.5],
+      "fov_deg": 80.0,
+      "aperture": "f/1.8",
+      "has_ois": true,
+      "position_confidence": "UNVERIFIED",
+      "notes": "Placeholder values. Replace after E-004b identifies the actual device."
+    }
+  ],
+  "button_positions": {
+    "power": {"side": "right", "offset_from_top_mm": 45.0},
+    "volume_up": {"side": "right", "offset_from_top_mm": 65.0},
+    "volume_down": {"side": "right", "offset_from_top_mm": 80.0}
+  },
+  "connector_position": {"side": "bottom", "type": "USB-C"},
+  "installed_orientation": "landscape_left",
+  "adapter_id": "antigravity_adapter_android_ref",
+  "adapter_to_chassis_transform": {
+    "translation_mm": [0.0, 0.0, 0.0],
+    "rotation_deg": [0.0, 0.0, 0.0],
+    "notes": "Placeholder identity transform."
+  },
+  "calibration_metadata": {
+    "e004b_status": "PHYSICAL_DATA_REQUIRED",
+    "which_camera_unobstructed": "UNKNOWN",
+    "focal_px_measured": false
+  },
+  "data_provenance": "PLACEHOLDER — no physical device measured",
+  "measurement_confidence": "ALL VALUES UNVERIFIED — this profile exists solely to demonstrate multi-device adapter architecture"
+}
+
