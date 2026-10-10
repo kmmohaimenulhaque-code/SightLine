@@ -1,0 +1,1 @@
+record_id,date_utc,operator,configuration_id,slider_id,material,printer_profile,nominal_clearance_mm,measured_free_travel_mm,travel_min_mm,travel_max_mm,lock_slip_mm,backlash_mm,insertion_force_n,cycle_count,wear_observed,selected_setting,notes

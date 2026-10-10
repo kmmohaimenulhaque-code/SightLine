@@ -1,0 +1,1 @@
+record_id,date_utc,operator,instrument,instrument_resolution_g,instrument_uncertainty_g,configuration_id,component_id,part_description,post_processing,fasteners_included,mass_g,value_status,notes

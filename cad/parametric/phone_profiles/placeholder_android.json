@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": "placeholder_android",
+  "label": "PLACEHOLDER Android envelope, not an identified device",
+  "variant": "No Android model selected",
+  "body_mm": {"height": 165, "width": 78, "thickness": 9},
+  "body_dimensional_variation_mm": null,
+  "dimension_status": "ASSUMED for parametric variation only; NOT measured and NOT manufacturer data",
+  "source": "G0 design placeholder; replace after device identification and caliper measurement",
+  "case_allowance_mm": 0,
+  "case_status": "NO CASE SELECTED",
+  "mass_g": null,
+  "mass_status": "UNKNOWN",
+  "mass_source": "No Android model selected; the mass-model JSON uses a clearly labelled placeholder only",
+  "camera_selection": null,
+  "camera_centres_mm": null,
+  "camera_island_geometry": null,
+  "camera_protrusion_mm": null,
+  "camera_field_of_view_clearance": null,
+  "camera_status": "UNKNOWN: Android model and cameras not selected",
+  "camera_aperture_mm": null,
+  "optical_clearance_status": "UNVERIFIED: G0 leaves the upper rear body region open; no optical cone claim",
+  "button_flash_microphone_connector_clearances_mm": null,
+  "installed_orientation": "screen toward operator, rear camera toward target; pending device survey",
+  "phone_body_frame": "origin at lower rear-body centre; local X through body thickness, Y lateral, Z upward",
+  "phone_to_chassis_transform": {
+    "rotation": [[1, 0, 0], [0, 1, 0], [0, 0, 1]],
+    "translation_mm": [-52.5, 0, 16]
+  },
+  "phone_to_adapter_transform": {
+    "rotation": [[1, 0, 0], [0, 1, 0], [0, 0, 1]],
+    "translation_mm": [-52.5, 0, 16]
+  },
+  "adapter_to_chassis_transform": {
+    "rotation": [[1, 0, 0], [0, 1, 0], [0, 0, 1]],
+    "translation_mm": [0, 0, 0]
+  },
+  "adapter_id": "android_adapter",
+  "calibration_metadata_required": [
+    "exact Android model and variant",
+    "measured body and case envelope",
+    "active camera and measured camera centre",
+    "camera-to-chassis transform after fit check",
+    "Camera2 stabilisation/OIS capability record"
+  ],
+  "camera_policy": "leave full upper rear body region open; fit and optics require measurement"
+}

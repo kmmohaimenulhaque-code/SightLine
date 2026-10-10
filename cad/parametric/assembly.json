@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "sightline_universal_g0",
+  "units": "mm",
+  "axes": {"X": "targetward", "Y": "lateral", "Z": "vertical"},
+  "origin": "top of grip, centreline of chassis, underside of chassis",
+  "status": "G0 geometry mule; all mechanical dimensions are design assumptions, not measured",
+  "appearance": {
+    "chassis_color": "#FF7A00",
+    "adapter_color": "#00B8D9",
+    "marking": "TRAINING INSTRUMENT - NOT A FIREARM",
+    "restrictions": ["passive phone holder", "no barrel", "no muzzle", "no launching or pressure system", "phone screen and upper rear remain open"]
+  },
+  "dimensions": {
+    "chassis_x_min": -70, "chassis_x_max": 85, "chassis_half_width": 56, "chassis_thickness": 6,
+    "grip_length": 40, "grip_width": 32, "grip_height": 85,
+    "phone_x": -48, "phone_bottom_z": 16, "pad_thickness": 2, "adapter_wall": 3,
+    "x_track_min": -24, "x_track_max": 72, "x_track_half_width": 14,
+    "x_channel_half_width": 10, "x_mouth_half_width": 7,
+    "x_flange_half_width": 9.5, "x_neck_half_width": 6.5,
+    "x_flange_half_length": 16, "slide_clearance": 0.5,
+    "x_track_floor_z": 9, "x_lip_bottom_z": 19, "x_track_top_z": 22,
+    "stop_thickness": 4, "scale_pitch": 10,
+    "vertical_min_z": 10, "vertical_max_z": 98,
+    "vertical_flange_half_height": 14,
+    "vertical_back_x": 50, "vertical_floor_x": 54,
+    "vertical_lip_x": 62, "vertical_outer_x": 66,
+    "vertical_y_min": -10, "vertical_y_max": 10,
+    "vertical_channel_y_min": -6, "vertical_channel_y_max": 6,
+    "vertical_mouth_y_min": -3, "vertical_mouth_y_max": 3
+  },
+  "envelope_limits_mm": {"min": [-85, -70, -100], "max": [90, 70, 205]},
+  "required_roles": [
+    "training_chassis", "grip_body", "ergonomic_panel", "adapter_interface", "phone_adapter", "phone_reference",
+    "phone_retainer", "phone_pad", "x_track", "x_carriage", "x_ballast",
+    "x_end_stop", "x_scale", "x_lock", "vertical_track", "vertical_cassette",
+    "vertical_ballast", "vertical_retainer", "vertical_end_stop", "vertical_lock",
+    "fiducial_mount", "fastener_placeholder"
+  ],
+  "validation_scope": [
+    "axis-aligned solid intersection, including phone envelope",
+    "closed oriented manifold meshes and positive geometric volume",
+    "capture lip overlap and hard end stops, at configured slide positions",
+    "design envelope and an open upper rear camera region (not optical cone certification)"
+  ],
+  "unverified": [
+    "phone/case caliper dimensions", "lens positions and camera cones", "pad compression",
+    "material and print tolerances", "fastener threads and insert selection", "strength and lock force",
+    "mass and centre of mass", "fiducial size and tracking", "phone reseating repeatability"
+  ]
+}

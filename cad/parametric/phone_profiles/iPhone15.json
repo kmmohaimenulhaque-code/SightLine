@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "id": "iPhone15",
+  "label": "Apple iPhone 15, nominal bare body",
+  "variant": "6.1-inch base iPhone 15; exact model identifier and case not recorded",
+  "body_mm": {"height": 147.6, "width": 71.6, "thickness": 7.8},
+  "body_dimensional_variation_mm": null,
+  "dimension_status": "manufacturer nominal; actual unit and case NOT measured",
+  "source": "docs/cad/GRIP_REQUIREMENTS.md section 4, Apple specification quoted in Mission 2 research report Q1",
+  "case_allowance_mm": 0,
+  "case_status": "NO CASE SELECTED FOR G0; allowance must be entered before printing an adapter",
+  "mass_g": 171,
+  "mass_status": "manufacturer nominal; actual unit not weighed",
+  "mass_source": "Apple nominal specification as recorded in docs/cad/GRIP_REQUIREMENTS.md; verify on the exact phone",
+  "camera_selection": "rear_main_pending_E-004a; Ultra Wide remains a possible control",
+  "camera_status": "UNVERIFIED: active lens, centre and body-frame transform not measured",
+  "camera_centres_mm": null,
+  "camera_island_geometry": null,
+  "camera_protrusion_mm": null,
+  "camera_field_of_view_clearance": null,
+  "camera_keepout": {
+    "status": "manufacturer-drawing values recorded without lens assignment or body-frame interpretation",
+    "rear_field_angles_deg": [121.83, 75.55],
+    "diameter_at_cover_glass_mm": [9.11, 6.90]
+  },
+  "camera_aperture_mm": null,
+  "optical_clearance_status": "UNVERIFIED: G0 leaves the upper rear body region open; no optical cone claim",
+  "button_flash_microphone_connector_clearances_mm": null,
+  "installed_orientation": "screen toward operator, rear camera toward target; phone long axis parallel to chassis Z",
+  "phone_body_frame": "origin at lower rear-body centre; local X through body thickness, Y lateral, Z upward",
+  "phone_to_chassis_transform": {
+    "rotation": [[1, 0, 0], [0, 1, 0], [0, 0, 1]],
+    "translation_mm": [-51.9, 0, 16]
+  },
+  "phone_to_adapter_transform": {
+    "rotation": [[1, 0, 0], [0, 1, 0], [0, 0, 1]],
+    "translation_mm": [-51.9, 0, 16]
+  },
+  "adapter_to_chassis_transform": {
+    "rotation": [[1, 0, 0], [0, 1, 0], [0, 0, 1]],
+    "translation_mm": [0, 0, 0]
+  },
+  "adapter_id": "iphone_adapter",
+  "calibration_metadata_required": [
+    "active camera selection and E-004a status",
+    "measured camera centre in phone body frame",
+    "camera-to-chassis transform after adapter fit check",
+    "camera mode, resolution, crop and focus state",
+    "bore-pixel zeroing value and target-anchored calibration record"
+  ],
+  "camera_policy": "leave full upper rear body region open; fit and optics require measurement"
+}

@@ -1,0 +1,1 @@
+record_id,date_utc,operator,configuration_id,profile_id,scale_instrument,scale_uncertainty_g,total_mass_g,support_method,support_a_force_g,support_b_force_g,reference_points_mm,com_x_mm,com_y_mm,com_z_mm,com_uncertainty_mm,ballast_settings,notes

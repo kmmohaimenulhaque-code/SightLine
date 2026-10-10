@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "id": "placeholder_android_g0",
+  "assembly": "../assembly.json",
+  "phone_profile": "../phone_profiles/placeholder_android.json",
+  "x_carriage_position_mm": 36,
+  "vertical_cassette_position_mm": 60,
+  "include_imu_mount": true,
+  "include_ble_mount": true,
+  "dimension_overrides": {},
+  "release_status": "G0 placeholder only; Android hardware has not been selected"
+}

@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "id": "iphone15_g0_mass_model",
+  "phone_profile": "../phone_profiles/iPhone15.json",
+  "phone_component_id": "phone",
+  "target_interpretation": "PROVISIONAL SIGHTLINE product-design target; not an LP10 measured mass-property target",
+  "components": [
+    {
+      "id": "phone",
+      "role": "phone",
+      "mass_g": 171,
+      "com_mm": [-48, 0, 89.8],
+      "source": "Apple nominal iPhone 15 mass as recorded in docs/cad/GRIP_REQUIREMENTS.md; actual unit not weighed",
+      "confidence": "manufacturer_specified_nominal",
+      "value_status": "manufacturer_specified"
+    },
+    {
+      "id": "common_chassis",
+      "role": "training_chassis",
+      "mass_g": 240,
+      "com_mm": [8, 0, 3],
+      "source": "G0 CAD material-density estimate; printed chassis not weighed",
+      "confidence": "estimated",
+      "value_status": "estimated"
+    },
+    {
+      "id": "grip_body",
+      "role": "grip",
+      "mass_g": 155,
+      "com_mm": [-14, 0, -42],
+      "source": "G0 CAD material-density estimate; printed grip not weighed",
+      "confidence": "estimated",
+      "value_status": "estimated"
+    },
+    {
+      "id": "phone_adapter_and_retainers",
+      "role": "adapter",
+      "mass_g": 107,
+      "com_mm": [-48, 0, 90],
+      "source": "G0 CAD material-density estimate; adapter and pads not weighed",
+      "confidence": "estimated",
+      "value_status": "estimated"
+    },
+    {
+      "id": "fasteners_and_inserts",
+      "role": "fasteners",
+      "mass_g": 45,
+      "com_mm": [0, 0, 4],
+      "source": "allowance for captive hardware; exact fastener bill not weighed",
+      "confidence": "estimated",
+      "value_status": "estimated"
+    },
+    {
+      "id": "optional_electronics",
+      "role": "electronics",
+      "mass_g": 35,
+      "com_mm": [34, 0, 11],
+      "source": "placeholder for optional BLE button and IMU; hardware not selected",
+      "confidence": "estimated",
+      "value_status": "estimated"
+    }
+  ],
+  "ballast": [
+    {
+      "id": "x_ballast",
+      "mass_g": 180,
+      "axis": "X",
+      "position_mm": [20, 0, 14],
+      "travel_mm": [-20, 68],
+      "step_mm": 4,
+      "source": "measured steel washer/captive-weight stack to be selected before print release",
+      "confidence": "provisional_design",
+      "value_status": "estimated"
+    },
+    {
+      "id": "vertical_ballast",
+      "mass_g": 125,
+      "axis": "Z",
+      "position_mm": [58, 0, 52],
+      "travel_mm": [24, 84],
+      "step_mm": 4,
+      "source": "measured steel washer/captive-weight stack to be selected before print release",
+      "confidence": "provisional_design",
+      "value_status": "estimated"
+    }
+  ],
+  "target": {
+    "reference_id": "NO_VERIFIED_LP10_MASS_PROPERTY_REFERENCE",
+    "reference_mass_g": null,
+    "target_mass_g": 1060,
+    "target_com_mm": null,
+    "target_inertia_tensor_g_mm2": null,
+    "mass_tolerance_g": 10,
+    "com_tolerance_mm": null,
+    "inertia_tolerance": null,
+    "status": "DESIGN_TARGET_ONLY"
+  }
+}

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="780" viewBox="0 0 1200 780">
+  <title>SIGHTLINE G0 common chassis — nominal communication drawing</title>
+  <desc>Not an inspection drawing. All dimensions in millimetres and all values are design parameters unless labelled otherwise.</desc>
+  <style>
+    .part { fill:#ff7a00; stroke:#132238; stroke-width:2; }
+    .adapter { fill:#00b8d9; stroke:#132238; stroke-width:2; }
+    .ballast { fill:#667085; stroke:#132238; stroke-width:2; }
+    .phone { fill:#111827; stroke:#e7edf5; stroke-width:2; stroke-dasharray:7 5; }
+    .dim { stroke:#334155; stroke-width:1.5; marker-start:url(#arrow); marker-end:url(#arrow); }
+    .ext { stroke:#64748b; stroke-width:1; stroke-dasharray:4 4; }
+    text { font-family:Arial,sans-serif; fill:#172033; font-size:16px; }
+    .small { font-size:13px; }
+    .title { font-size:25px; font-weight:bold; }
+    .note { fill:#9a3412; font-size:14px; }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#334155"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1200" height="780" fill="#f8fafc"/>
+  <text x="40" y="45" class="title">SIGHTLINE G0 — COMMON CHASSIS / BALLAST DATUMS</text>
+  <text x="40" y="70" class="small">MODEL OUTPUT • X targetward • Y lateral • Z vertical • nominal/design dimensions in mm</text>
+
+  <!-- top / plan -->
+  <text x="55" y="120">PLAN (X–Y)</text>
+  <rect x="100" y="145" width="620" height="224" rx="10" class="part"/>
+  <rect x="120" y="170" width="200" height="174" class="adapter"/>
+  <rect x="140" y="188" width="160" height="138" class="phone"/>
+  <rect x="332" y="218" width="384" height="68" rx="8" class="ballast"/>
+  <line x1="100" y1="257" x2="720" y2="257" stroke="#fff" stroke-width="1" stroke-dasharray="6 6"/>
+  <text x="154" y="245" fill="#fff">phone adapter</text>
+  <text x="430" y="250" fill="#fff">X captive rail</text>
+  <text x="335" y="312" class="small">targetward +X →</text>
+  <line x1="100" y1="398" x2="720" y2="398" class="dim"/>
+  <line x1="100" y1="369" x2="100" y2="410" class="ext"/><line x1="720" y1="369" x2="720" y2="410" class="ext"/>
+  <text x="360" y="390">155 chassis length</text>
+  <line x1="760" y1="145" x2="760" y2="369" class="dim"/>
+  <line x1="720" y1="145" x2="780" y2="145" class="ext"/><line x1="720" y1="369" x2="780" y2="369" class="ext"/>
+  <text x="786" y="265">112 chassis width</text>
+  <text x="100" y="430" class="small">Phone outline is a reference envelope; camera clearance is not certified by this drawing.</text>
+
+  <!-- side -->
+  <text x="55" y="490">SIDE (X–Z)</text>
+  <rect x="100" y="610" width="620" height="25" class="part"/>
+  <rect x="245" y="530" width="34" height="80" class="adapter"/>
+  <rect x="250" y="492" width="22" height="116" class="phone"/>
+  <rect x="430" y="570" width="150" height="28" class="ballast"/>
+  <rect x="610" y="430" width="30" height="180" class="ballast"/>
+  <rect x="70" y="635" width="160" height="125" rx="25" class="part"/>
+  <text x="118" y="705" fill="#fff">grip</text>
+  <text x="416" y="560" class="small">X carriage</text>
+  <text x="645" y="500" class="small">Z cassette</text>
+  <line x1="100" y1="665" x2="720" y2="665" stroke="#2563eb" stroke-width="1.5" stroke-dasharray="6 6"/>
+  <text x="730" y="670" class="small">Z=0 underside datum</text>
+  <text x="60" y="775" class="note">G0 communication drawing only — do not use nominal dimensions as a print inspection certificate.</text>
+</svg>
