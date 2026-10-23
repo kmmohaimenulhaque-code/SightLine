@@ -1,0 +1,33 @@
+{
+  "schema": "sightline.cad.g1_configuration/1",
+  "config_id": "G1-IP15-LH",
+  "description": "G1 silhouette, iPhone 15 reference profile, mirrored left-hand grip set.",
+  "parameters": "cad/parametric/parameters/g1.json",
+  "phone_profile": "cad/parametric/phone_profiles/apple-iphone-15.json",
+  "hand": "left",
+  "angle_deg": 0.0,
+  "sight": {
+    "rear_elev": 0.0,
+    "rear_wind": 0.0,
+    "front_shim": 1.0,
+    "front_lat": 0.0
+  },
+  "palm_shelf": {
+    "drop": 4.0,
+    "angle_deg": 0.0
+  },
+  "backstrap": "M",
+  "ballast": {
+    "fixed_bars": 2,
+    "x": {
+      "position_mm": 180.0,
+      "slugs": 4
+    },
+    "z": {
+      "index_mm": 0.0,
+      "slugs": 5
+    }
+  },
+  "status": "CAD prediction only - nothing in this configuration has been printed, assembled or weighed",
+  "ballast_note": "nominal setting = solver best for the PROVISIONAL 1060 g target (STEYR-LP10-manual-older-edition); COM-x/z targets UNKNOWN"
+}

@@ -1,0 +1,502 @@
+{
+ "generator": "sightline_g1 g1-1.0.0",
+ "source_commit": "2b718f0a021dd40179d358a8f2ffa5a648efebbe+dirty",
+ "summary": {
+  "config_id": "G1-IP15-LH",
+  "profile": "apple-iphone-15",
+  "mass_g": 1060.1,
+  "mass_sigma_g": 39.2,
+  "com_K_mm": [
+   124.57,
+   -0.39,
+   -15.41
+  ],
+  "com_G_mm": [
+   69.57,
+   -0.39,
+   24.59
+  ],
+  "inertia_about_com_K_gmm2": [
+   [
+    4970072.0,
+    -22744.0,
+    2080420.0
+   ],
+   [
+    -22744.0,
+    14310928.0,
+    46384.0
+   ],
+   [
+    2080420.0,
+    46384.0,
+    10239351.0
+   ]
+  ],
+  "status": "MODEL OUTPUT (CAD estimate: printed parts volume \u00d7 density with a wall/infill model, steel solid, phone at its box centre with manufacturer/placeholder mass, electronics PLACEHOLDER). Not measured.",
+  "sigma_basis": "1\u03c3 from phone mass \u03c3, \u00b110 % on printed-part mass, \u00b16 g hardware/electronics (ESTIMATED)",
+  "by_group": {
+   "ballast_x": 417.5,
+   "ballast_z": 37.4,
+   "cradle": 102.3,
+   "grip": 128.6,
+   "housing": 154.8,
+   "interfaces": 31.7,
+   "phone": 171.0,
+   "sights": 16.8
+  }
+ },
+ "solver": {
+  "config_id": "G1-IP15-LH",
+  "profile": "apple-iphone-15",
+  "phone_mass": {
+   "v": 171.0,
+   "s": "MANUFACTURER",
+   "sigma": 3.0
+  },
+  "envelope": {
+   "mass_g": [
+    652.2,
+    1219.2
+   ],
+   "com_x_K_mm": [
+    70.5,
+    147.2
+   ],
+   "com_y_K_mm": [
+    -0.63,
+    -0.34
+   ],
+   "com_z_K_mm": [
+    -17.2,
+    2.5
+   ],
+   "settings": 6912
+  },
+  "grip_datum_K": [
+   55.0,
+   0.0,
+   -40.0
+  ],
+  "targets": [
+   {
+    "target_id": "DEMO-INFEASIBLE",
+    "target_mass_g": 1500.0,
+    "target_com_mm": [
+     null,
+     null,
+     null
+    ],
+    "com_axes_used": [],
+    "frame_notes": [
+     "COM-x 120.0 mm given in the G0 frame K \u2014 not transferable to K1, not used"
+    ],
+    "status": "INFEASIBLE",
+    "reasons": [
+     "insufficient ballast"
+    ],
+    "mass_tolerance_g": 10.0,
+    "com_tolerance_mm": 1.0,
+    "inertia_target": "UNKNOWN \u2014 not used",
+    "best": [
+     {
+      "fixed_bars": 3,
+      "x_slugs": 5,
+      "x_position_mm": 174.0,
+      "z_slugs": 5,
+      "z_index_mm": 6.0,
+      "mass_g": 1219.2,
+      "com_K_mm": [
+       137.23,
+       -0.34,
+       -16.38
+      ],
+      "com_G_mm": [
+       82.23,
+       -0.34,
+       23.62
+      ],
+      "inertia_diag_about_com_gmm2": [
+       5074342.0,
+       15926016.0,
+       11755912.0
+      ]
+     },
+     {
+      "fixed_bars": 3,
+      "x_slugs": 5,
+      "x_position_mm": 162.0,
+      "z_slugs": 5,
+      "z_index_mm": 6.0,
+      "mass_g": 1219.2,
+      "com_K_mm": [
+       135.51,
+       -0.34,
+       -16.38
+      ],
+      "com_G_mm": [
+       80.51,
+       -0.34,
+       23.62
+      ],
+      "inertia_diag_about_com_gmm2": [
+       5074342.0,
+       15652221.0,
+       11482117.0
+      ]
+     },
+     {
+      "fixed_bars": 3,
+      "x_slugs": 5,
+      "x_position_mm": 192.0,
+      "z_slugs": 5,
+      "z_index_mm": 6.0,
+      "mass_g": 1219.2,
+      "com_K_mm": [
+       139.82,
+       -0.34,
+       -16.38
+      ],
+      "com_G_mm": [
+       84.82,
+       -0.34,
+       23.62
+      ],
+      "inertia_diag_about_com_gmm2": [
+       5074342.0,
+       16417631.0,
+       12247527.0
+      ]
+     },
+     {
+      "fixed_bars": 3,
+      "x_slugs": 5,
+      "x_position_mm": 156.0,
+      "z_slugs": 5,
+      "z_index_mm": 6.0,
+      "mass_g": 1219.2,
+      "com_K_mm": [
+       134.65,
+       -0.34,
+       -16.38
+      ],
+      "com_G_mm": [
+       79.65,
+       -0.34,
+       23.62
+      ],
+      "inertia_diag_about_com_gmm2": [
+       5074342.0,
+       15531508.0,
+       11361403.0
+      ]
+     },
+     {
+      "fixed_bars": 3,
+      "x_slugs": 5,
+      "x_position_mm": 204.0,
+      "z_slugs": 5,
+      "z_index_mm": 6.0,
+      "mass_g": 1219.2,
+      "com_K_mm": [
+       141.54,
+       -0.34,
+       -16.38
+      ],
+      "com_G_mm": [
+       86.54,
+       -0.34,
+       23.62
+      ],
+      "inertia_diag_about_com_gmm2": [
+       5074342.0,
+       16799324.0,
+       12629219.0
+      ]
+     }
+    ]
+   },
+   {
+    "target_id": "STEYR-LP10-manual-03-2005",
+    "target_mass_g": 968.0,
+    "target_com_mm": [
+     null,
+     0.0,
+     null
+    ],
+    "com_axes_used": [
+     "y"
+    ],
+    "frame_notes": [],
+    "status": "NO VERDICT (tolerance TBD)",
+    "reasons": [],
+    "mass_tolerance_g": "TBD",
+    "com_tolerance_mm": "TBD",
+    "inertia_target": "UNKNOWN \u2014 not used",
+    "best": [
+     {
+      "fixed_bars": 2,
+      "x_slugs": 2,
+      "x_position_mm": 186.0,
+      "z_slugs": 0,
+      "z_index_mm": 0.0,
+      "mass_g": 969.8,
+      "com_K_mm": [
+       122.4,
+       -0.42,
+       -9.41
+      ],
+      "com_G_mm": [
+       67.4,
+       -0.42,
+       30.59
+      ],
+      "inertia_diag_about_com_gmm2": [
+       4495969.0,
+       13123079.0,
+       9522126.0
+      ]
+     },
+     {
+      "fixed_bars": 2,
+      "x_slugs": 2,
+      "x_position_mm": 168.0,
+      "z_slugs": 0,
+      "z_index_mm": 0.0,
+      "mass_g": 969.8,
+      "com_K_mm": [
+       120.78,
+       -0.42,
+       -9.41
+      ],
+      "com_G_mm": [
+       65.78,
+       -0.42,
+       30.59
+      ],
+      "inertia_diag_about_com_gmm2": [
+       4495969.0,
+       12880839.0,
+       9279886.0
+      ]
+     },
+     {
+      "fixed_bars": 2,
+      "x_slugs": 2,
+      "x_position_mm": 192.0,
+      "z_slugs": 0,
+      "z_index_mm": 0.0,
+      "mass_g": 969.8,
+      "com_K_mm": [
+       122.94,
+       -0.42,
+       -9.41
+      ],
+      "com_G_mm": [
+       67.94,
+       -0.42,
+       30.59
+      ],
+      "inertia_diag_about_com_gmm2": [
+       4495969.0,
+       13215220.0,
+       9614268.0
+      ]
+     },
+     {
+      "fixed_bars": 2,
+      "x_slugs": 2,
+      "x_position_mm": 198.0,
+      "z_slugs": 0,
+      "z_index_mm": 0.0,
+      "mass_g": 969.8,
+      "com_K_mm": [
+       123.47,
+       -0.42,
+       -9.41
+      ],
+      "com_G_mm": [
+       68.47,
+       -0.42,
+       30.59
+      ],
+      "inertia_diag_about_com_gmm2": [
+       4495969.0,
+       13313060.0,
+       9712107.0
+      ]
+     },
+     {
+      "fixed_bars": 2,
+      "x_slugs": 2,
+      "x_position_mm": 210.0,
+      "z_slugs": 0,
+      "z_index_mm": 0.0,
+      "mass_g": 969.8,
+      "com_K_mm": [
+       124.55,
+       -0.42,
+       -9.41
+      ],
+      "com_G_mm": [
+       69.55,
+       -0.42,
+       30.59
+      ],
+      "inertia_diag_about_com_gmm2": [
+       4495969.0,
+       13525832.0,
+       9924879.0
+      ]
+     }
+    ]
+   },
+   {
+    "target_id": "STEYR-LP10-manual-older-edition",
+    "target_mass_g": 1060.0,
+    "target_com_mm": [
+     null,
+     0.0,
+     null
+    ],
+    "com_axes_used": [
+     "y"
+    ],
+    "frame_notes": [],
+    "status": "NO VERDICT (tolerance TBD)",
+    "reasons": [],
+    "mass_tolerance_g": "TBD",
+    "com_tolerance_mm": "TBD",
+    "inertia_target": "UNKNOWN \u2014 not used",
+    "best": [
+     {
+      "fixed_bars": 2,
+      "x_slugs": 4,
+      "x_position_mm": 174.0,
+      "z_slugs": 5,
+      "z_index_mm": 0.0,
+      "mass_g": 1060.1,
+      "com_K_mm": [
+       123.75,
+       -0.39,
+       -15.41
+      ],
+      "com_G_mm": [
+       68.75,
+       -0.39,
+       24.59
+      ],
+      "inertia_diag_about_com_gmm2": [
+       4970072.0,
+       14168174.0,
+       10096596.0
+      ]
+     },
+     {
+      "fixed_bars": 2,
+      "x_slugs": 4,
+      "x_position_mm": 156.0,
+      "z_slugs": 5,
+      "z_index_mm": 0.0,
+      "mass_g": 1060.1,
+      "com_K_mm": [
+       121.27,
+       -0.39,
+       -15.41
+      ],
+      "com_G_mm": [
+       66.27,
+       -0.39,
+       24.59
+      ],
+      "inertia_diag_about_com_gmm2": [
+       4970072.0,
+       13794178.0,
+       9722600.0
+      ]
+     },
+     {
+      "fixed_bars": 2,
+      "x_slugs": 4,
+      "x_position_mm": 180.0,
+      "z_slugs": 5,
+      "z_index_mm": 0.0,
+      "mass_g": 1060.1,
+      "com_K_mm": [
+       124.57,
+       -0.39,
+       -15.41
+      ],
+      "com_G_mm": [
+       69.57,
+       -0.39,
+       24.59
+      ],
+      "inertia_diag_about_com_gmm2": [
+       4970072.0,
+       14310928.0,
+       10239351.0
+      ]
+     },
+     {
+      "fixed_bars": 2,
+      "x_slugs": 4,
+      "x_position_mm": 162.0,
+      "z_slugs": 5,
+      "z_index_mm": 0.0,
+      "mass_g": 1060.1,
+      "com_K_mm": [
+       122.1,
+       -0.39,
+       -15.41
+      ],
+      "com_G_mm": [
+       67.1,
+       -0.39,
+       24.59
+      ],
+      "inertia_diag_about_com_gmm2": [
+       4970072.0,
+       13909799.0,
+       9838221.0
+      ]
+     },
+     {
+      "fixed_bars": 2,
+      "x_slugs": 4,
+      "x_position_mm": 210.0,
+      "z_slugs": 5,
+      "z_index_mm": 0.0,
+      "mass_g": 1060.1,
+      "com_K_mm": [
+       128.69,
+       -0.39,
+       -15.41
+      ],
+      "com_G_mm": [
+       73.69,
+       -0.39,
+       24.59
+      ],
+      "inertia_diag_about_com_gmm2": [
+       4970072.0,
+       15160366.0,
+       11088788.0
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "settings": {
+  "fixed_bars": 2,
+  "x": {
+   "position_mm": 180.0,
+   "slugs": 4
+  },
+  "z": {
+   "index_mm": 0.0,
+   "slugs": 5
+  }
+ }
+}

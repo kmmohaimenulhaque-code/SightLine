@@ -1,0 +1,37 @@
+{
+ "config": "G1-IP15-RH",
+ "generator": "sightline_g1 g1-1.0.0",
+ "source_commit": "2b718f0a021dd40179d358a8f2ffa5a648efebbe+dirty",
+ "renderer": "VTK offscreen (EGL), B-rep tessellation 0.12 mm",
+ "files": [
+  {
+   "file": "01_hero.png",
+   "sha256": "d2ab9f5ae86f720a137eaa6772b2f005c0255b209986bebb1dda7d63cb2d4e39"
+  },
+  {
+   "file": "02_ergonomic_side.png",
+   "sha256": "7db3a1e0b874d9b74f24f58757c883b4f1fa624c744ef253c22a695335f2a589"
+  },
+  {
+   "file": "03_rear_camera.png",
+   "sha256": "67d3ea3f3c024a6e1004a382fd3ca3afb591552f1b544be8923b27ab9540df75"
+  },
+  {
+   "file": "04_sight_alignment.png",
+   "sha256": "3d5120356abe2e0dfd4bf9511507c1b143dc5d81a99d4e7423edc76e9b902d41"
+  },
+  {
+   "file": "05_exploded.png",
+   "sha256": "1a8f981aa2affbd246c76095d6c41a80378abd85376c9f3f7209fb49cafda758"
+  },
+  {
+   "file": "06_dimensions.png",
+   "sha256": "60167e2ff44f592cf99066e15e4ce23b1e846679f297cee8970fc06053e53c4f"
+  }
+ ],
+ "reference_images": [
+  "docs/cad/reference/g1_absolute_reference.jpg",
+  "docs/cad/reference/g1_secondary_reference.png"
+ ],
+ "note": "renders are CAD-derived; the reference images are qualitative and nothing was measured from them"
+}

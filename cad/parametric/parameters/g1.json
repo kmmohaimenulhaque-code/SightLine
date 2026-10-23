@@ -1,0 +1,333 @@
+{
+  "schema": "sightline.cad.g1_parameters/1",
+  "generation": "G1",
+  "frame": "K1 chassis frame: X toward the target, Y to the shooter's left, Z up (right-handed). Origin: housing rear face, lateral centre plane, housing top plane. All lengths mm, angles deg, masses g.",
+  "status_note": "Every value is DESIGN (chosen for this CAD) unless its group says otherwise. Nothing was measured from the reference images; they are qualitative only.",
+  "housing": {
+    "status": "DESIGN",
+    "length": 290.0,
+    "width": 28.0,
+    "height": 40.0,
+    "edge_r": 7.0,
+    "wall": 2.4,
+    "split_x": 145.0,
+    "coupler_half_len": 20.0,
+    "coupler_wall": 3.0,
+    "coupler_clear": 0.2,
+    "grip_screw_x": [
+      48.0,
+      68.0
+    ],
+    "grip_screw_d": 4.0
+  },
+  "nose": {
+    "status": "DESIGN",
+    "length": 10.0,
+    "note": "solid high-visibility cap; no bore, no opening"
+  },
+  "rail": {
+    "status": "DESIGN",
+    "x0": 8.0,
+    "x1": 240.0,
+    "half_w": 8.0,
+    "h": 5.0,
+    "tick_pitch": 5.0,
+    "tick_depth": 0.4
+  },
+  "service_plate": {
+    "status": "DESIGN",
+    "x0": 150.0,
+    "x1": 200.0,
+    "z0": -28.0,
+    "z1": -12.0,
+    "t": 3.0
+  },
+  "marking": {
+    "status": "DESIGN",
+    "line1": "SIGHTLINE - PASSIVE TRAINING INSTRUMENT",
+    "line2": "NOT A FIREARM",
+    "font_h": 3.6,
+    "depth": 0.4,
+    "x0": 18.0
+  },
+  "sight": {
+    "status": "DESIGN",
+    "line_z": 20.0,
+    "rear_base_x": [
+      44.0,
+      72.0
+    ],
+    "rear_hinge_x": 48.0,
+    "rear_notch_x": [
+      60.0,
+      62.5
+    ],
+    "notch_w": 3.6,
+    "notch_depth": 3.5,
+    "rear_elev_screw_x": 68.5,
+    "rear_elev_range_mm": 1.0,
+    "rear_wind_range_mm": 1.5,
+    "front_base_x": [
+      266.0,
+      288.0
+    ],
+    "front_blade_x": [
+      278.0,
+      281.0
+    ],
+    "blade_w": 4.0,
+    "front_shim_nominal": 1.0,
+    "front_shim_range": [
+      0.0,
+      2.0
+    ],
+    "front_shim_step": 0.5,
+    "front_carrier_half_w": 5.0,
+    "front_wall_inner": 6.2,
+    "front_lat_shim_nominal": 0.6,
+    "eye_distance_mm": 700.0,
+    "eye_distance_status": "ASSUMED (arm-length hold, for the sight-picture estimate only)"
+  },
+  "yoke": {
+    "status": "DESIGN",
+    "x0": 12.0,
+    "x1": 40.0,
+    "half_w": 22.0,
+    "upright_t": 6.0,
+    "base_t": 5.0,
+    "pivot_x": 26.0,
+    "pivot_clear_above_line": 12.0,
+    "shaft_d": 6.0,
+    "hub_d": 14.0,
+    "plate_d": 32.0,
+    "plate_t": 3.0,
+    "knob_d": 16.0,
+    "knob_l": 8.0,
+    "index_step_deg": 2.5,
+    "angle_nominal_deg": 0.0,
+    "angle_range_deg": [
+      -10.0,
+      10.0
+    ]
+  },
+  "cradle": {
+    "status": "DESIGN",
+    "back_x": 29.0,
+    "back_t": 5.0,
+    "back_half_w": 30.0,
+    "pad_t": 1.0,
+    "ledge_above_hub": 9.0,
+    "beam_half_extra": 8.0,
+    "end_block_t": 5.0,
+    "end_block_h": 24.0,
+    "lip": 1.5,
+    "case_allowance": 0.0,
+    "case_allowance_note": "added to every phone dimension; 0 = bare phone",
+    "camera_keepout_end_zone": 38.0,
+    "camera_keepout_depth": 30.0,
+    "camera_keepout_margin": 2.0,
+    "camera_keepout_note": "camera centre, lens assignment, protrusion and FOV are PENDING measurement; the keep-out is the whole upper and lower end zone at BOTH short ends so either landscape direction is covered",
+    "beam_above_pivot": 17.0,
+    "beam_t": 3.0,
+    "ledge_pad_t": 2.0,
+    "ledge_pad_from_top": [
+      12.0,
+      114.0
+    ],
+    "top_pad_from_top": 99.0,
+    "pad_note": "pads sit outside the ESTIMATED button spans (profile 'buttons', measured from the top end); top end of the phone toward +Y"
+  },
+  "grip": {
+    "status": "DESIGN",
+    "hand": "right",
+    "top_x": 55.0,
+    "rake_deg": 14.0,
+    "length": 115.0,
+    "station_step": 4.0,
+    "front_depth": 22.0,
+    "back_depth": 20.0,
+    "half_w_thumb": 14.0,
+    "half_w_palm": 15.0,
+    "superellipse_n": 2.6,
+    "swell_s": 48.0,
+    "swell_r": 22.0,
+    "swell_h": 5.0,
+    "finger_s": [
+      30.0,
+      52.0,
+      74.0
+    ],
+    "finger_depth": 2.0,
+    "finger_sigma": 6.0,
+    "heel_s": 100.0,
+    "heel_sigma": 12.0,
+    "heel_h": 4.0,
+    "rear_swell_h": 3.0,
+    "thumb_rest_s": 18.0,
+    "thumb_rest_proud": 12.0,
+    "thumb_rest_half_t": 5.0,
+    "thumb_rest_len": 34.0,
+    "beavertail_len": 24.0,
+    "beavertail_half_w": 13.0,
+    "beavertail_half_h": 7.0,
+    "panel_split_y": 9.0,
+    "backstrap_offset": -12.0,
+    "backstrap_variants": {
+      "S": -2.0,
+      "M": 0.0,
+      "L": 3.0
+    },
+    "panel_screw_s": [
+      36.0,
+      84.0
+    ],
+    "backstrap_screw_s": [
+      20.0,
+      46.0
+    ],
+    "screw_d": 3.0,
+    "hole_d": 3.4,
+    "pocket_local_x": [
+      6.0,
+      18.0
+    ],
+    "pocket_half_w": 5.2,
+    "pocket_depth": 20.0
+  },
+  "palm_shelf": {
+    "status": "DESIGN",
+    "drop_positions": [
+      0.0,
+      4.0,
+      8.0
+    ],
+    "drop": 4.0,
+    "angle_variants_deg": [
+      -5.0,
+      0.0,
+      5.0
+    ],
+    "angle_deg": 0.0,
+    "t": 6.0,
+    "front": 28.0,
+    "rear": 30.0,
+    "half_w_palm": 24.0,
+    "half_w_thumb": 16.0,
+    "screw_local_x": [
+      -6.0,
+      24.0
+    ]
+  },
+  "x_ballast": {
+    "status": "DESIGN",
+    "channel_x": [
+      165.0,
+      280.0
+    ],
+    "channel_half_w": 9.0,
+    "channel_h": 8.0,
+    "slot_neck_half": 3.5,
+    "slot_head_half": 6.5,
+    "slot_head_z": [
+      -44.0,
+      -41.5
+    ],
+    "rear_stop_x": [
+      168.0,
+      174.0
+    ],
+    "front_stop_x": [
+      270.0,
+      280.0
+    ],
+    "end_cap_t": 4.0,
+    "pos_min": 156.0,
+    "pos_max": 222.0,
+    "pos_step": 6.0,
+    "tube_d": 26.0,
+    "bore_d": 20.6,
+    "len": 66.0,
+    "rear_wall": 3.0,
+    "cap_t": 6.0,
+    "shoe_x": [
+      18.0,
+      48.0
+    ],
+    "shoe_clear": 0.3,
+    "slug_d": 20.0,
+    "slug_l": 12.0,
+    "slug_max": 5,
+    "lock_hole_d": 4.4,
+    "lock_d": 4.0,
+    "lock_knob_d": 10.0
+  },
+  "z_ballast": {
+    "status": "DESIGN",
+    "bore_d": 14.5,
+    "cass_d": 14.0,
+    "cass_len": 44.0,
+    "cass_wall": 1.2,
+    "slug_d": 11.4,
+    "slug_l": 8.0,
+    "slug_max": 5,
+    "travel": 18.0,
+    "index_mm": [
+      0.0,
+      6.0,
+      12.0,
+      18.0
+    ],
+    "axis_offset": -4.0
+  },
+  "fixed_ballast": {
+    "status": "DESIGN",
+    "x0": 168.0,
+    "len": 118.0,
+    "w": 14.0,
+    "t": 10.0,
+    "bars_max": 3
+  },
+  "switch": {
+    "status": "DESIGN",
+    "x": 100.0,
+    "blade_w": 6.0,
+    "slot_half_x": 3.0,
+    "slot_half_y": 3.5,
+    "note": "contact switch actuator only: no sear, no spring energy store, no hammer"
+  },
+  "trigger_guard": {
+    "status": "DESIGN",
+    "x": [
+      84.0,
+      152.0
+    ],
+    "bottom_z": -66.0,
+    "t": 6.0,
+    "half_w": 4.0
+  },
+  "materials": {
+    "status": "ESTIMATED",
+    "PETG": {
+      "rho": 1.27,
+      "infill": 0.35,
+      "wall": 1.2
+    },
+    "PETG-ballast-cassette": {
+      "rho": 1.27,
+      "infill": 1.0,
+      "wall": 1.2
+    },
+    "TPU": {
+      "rho": 1.21,
+      "infill": 1.0,
+      "wall": 1.2
+    },
+    "steel": {
+      "rho": 7.85
+    },
+    "electronics": {
+      "mass_g": 25.0,
+      "status": "PLACEHOLDER"
+    }
+  }
+}

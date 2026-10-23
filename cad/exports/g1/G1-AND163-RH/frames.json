@@ -1,0 +1,246 @@
+{
+ "frame_K1": "K1 chassis frame: X toward the target, Y to the shooter's left, Z up (right-handed). Origin: housing rear face, lateral centre plane, housing top plane. All lengths mm, angles deg, masses g.",
+ "chain": "p_K = T_KY \u00b7 T_YQ \u00b7 T_QP \u00b7 p_P ;  p_G = T_KG\u207b\u00b9 \u00b7 p_K",
+ "T_QP": [
+  [
+   1.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  [
+   0.0,
+   1.0,
+   0.0,
+   -81.5
+  ],
+  [
+   0.0,
+   0.0,
+   1.0,
+   38.0
+  ],
+  [
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ]
+ ],
+ "T_YQ": [
+  [
+   1.0,
+   0.0,
+   0.0,
+   3.0
+  ],
+  [
+   0.0,
+   1.0,
+   0.0,
+   81.5
+  ],
+  [
+   0.0,
+   0.0,
+   1.0,
+   22.0
+  ],
+  [
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ]
+ ],
+ "T_KY": [
+  [
+   1.0,
+   0.0,
+   -0.0,
+   26.0
+  ],
+  [
+   0.0,
+   1.0,
+   0.0,
+   0.0
+  ],
+  [
+   0.0,
+   0.0,
+   1.0,
+   32.0
+  ],
+  [
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ]
+ ],
+ "T_KG": [
+  [
+   1.0,
+   0.0,
+   0.0,
+   55.0
+  ],
+  [
+   0.0,
+   1.0,
+   0.0,
+   0.0
+  ],
+  [
+   0.0,
+   0.0,
+   1.0,
+   -40.0
+  ],
+  [
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ]
+ ],
+ "T_KP": [
+  [
+   1.0,
+   0.0,
+   0.0,
+   29.0
+  ],
+  [
+   0.0,
+   1.0,
+   0.0,
+   0.0
+  ],
+  [
+   0.0,
+   0.0,
+   1.0,
+   92.0
+  ],
+  [
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ]
+ ],
+ "T_GP": [
+  [
+   1.0,
+   0.0,
+   0.0,
+   -26.0
+  ],
+  [
+   0.0,
+   1.0,
+   0.0,
+   0.0
+  ],
+  [
+   0.0,
+   0.0,
+   1.0,
+   132.0
+  ],
+  [
+   0.0,
+   0.0,
+   0.0,
+   1.0
+  ]
+ ],
+ "pivot_K": [
+  26.0,
+  0.0,
+  32.0
+ ],
+ "grip_datum_K": [
+  55.0,
+  0.0,
+  -40.0
+ ],
+ "phone_long_axis_K": [
+  0.0,
+  1.0,
+  0.0
+ ],
+ "screen_normal_K": [
+  -1.0,
+  -0.0,
+  -0.0
+ ],
+ "rear_camera_axis_K": [
+  1.0,
+  0.0,
+  0.0
+ ],
+ "operator_view_dir_K": [
+  1.0,
+  0.0,
+  0.0
+ ],
+ "target_dir_K": [
+  1.0,
+  0.0,
+  0.0
+ ],
+ "angle_deg": 0.0,
+ "sight_line_frame": {
+  "rear_sight_origin_K": [
+   61.25,
+   0.0,
+   20.0
+  ],
+  "front_sight_origin_K": [
+   279.5,
+   0.0,
+   20.0
+  ],
+  "sight_radius_mm": 218.25,
+  "nominal_sight_height_above_housing_mm": 20.0,
+  "reference_alignment_axis_K": [
+   1.0,
+   0.0,
+   0.0
+  ],
+  "rear_elevation_range_mm": [
+   -1.0,
+   1.0
+  ],
+  "rear_elevation_range_mrad": 4.58,
+  "rear_leaf_angle_range_deg": 4.32,
+  "rear_windage_range_mm": [
+   -1.5,
+   1.5
+  ],
+  "rear_windage_range_mrad": 6.87,
+  "front_elevation_shim_mm": [
+   0.0,
+   2.0
+  ],
+  "front_shim_step_mm": 0.5,
+  "front_lateral_shim_offset_mm": [
+   -0.8000000000000002,
+   0.8000000000000002
+  ],
+  "front_blade_width_mm": 4.0,
+  "rear_notch_width_mm": 3.6,
+  "sight_picture_at_assumed_eye_distance": {
+   "eye_distance_mm": 700.0,
+   "status": "ASSUMED (arm-length hold, for the sight-picture estimate only)",
+   "blade_mrad": 4.36,
+   "notch_mrad": 5.14,
+   "light_gap_each_side_mrad": 0.39
+  },
+  "evidence": "MODEL OUTPUT (geometry); sight-alignment performance UNVERIFIED"
+ },
+ "phone_profile": "placeholder-android-163x76"
+}

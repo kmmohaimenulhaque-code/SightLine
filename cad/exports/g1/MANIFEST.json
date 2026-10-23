@@ -1,0 +1,3748 @@
+{
+ "generator": "sightline_g1 g1-1.0.0",
+ "source_commit": "2b718f0a021dd40179d358a8f2ffa5a648efebbe+dirty",
+ "parameters": "cad/parametric/parameters/g1.json",
+ "parameters_sha256": "44b139cad8b5b77ed3a31296d06e0196129a07ac0b0f3bae81b33db55dbfbc36",
+ "configurations": [
+  "cad/parametric/configurations/g1/g1_android_placeholder_rh.json",
+  "cad/parametric/configurations/g1/g1_iphone15_lh.json",
+  "cad/parametric/configurations/g1/g1_iphone15_rh.json"
+ ],
+ "note": "STEP headers carry a timestamp, so STEP hashes change on every regeneration; volumes and STL geometry are deterministic; assembly STEP/STL are stored gzip-compressed (gzip -9 -n, lossless): gunzip before opening",
+ "components": [
+  {
+   "id": "G1-AND163-RH-assembly",
+   "step": "cad/exports/g1/G1-AND163-RH/G1-AND163-RH_assembly.step.gz",
+   "stl": "cad/exports/g1/G1-AND163-RH/G1-AND163-RH_assembly.stl.gz",
+   "parts": 77
+  },
+  {
+   "id": "G1-IP15-LH-assembly",
+   "step": "cad/exports/g1/G1-IP15-LH/G1-IP15-LH_assembly.step.gz",
+   "stl": "cad/exports/g1/G1-IP15-LH/G1-IP15-LH_assembly.stl.gz",
+   "parts": 79
+  },
+  {
+   "id": "G1-IP15-RH-assembly",
+   "step": "cad/exports/g1/G1-IP15-RH/G1-IP15-RH_assembly.step.gz",
+   "stl": "cad/exports/g1/G1-IP15-RH/G1-IP15-RH_assembly.stl.gz",
+   "parts": 79
+  },
+  {
+   "step": "cad/exports/g1/parts/A-HOUSING-R.step",
+   "stl": "cad/exports/g1/parts/A-HOUSING-R.stl",
+   "brep_volume_mm3": 42229.221,
+   "step_reimport_volume_mm3": 42229.221,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 42224.104,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "A-HOUSING-R",
+   "material": "PETG",
+   "color_rgb": [
+    0.17,
+    0.21,
+    0.31
+   ],
+   "kind": "printed",
+   "bbox_K_mm": [
+    -0.0,
+    145.0,
+    -14.0,
+    14.01,
+    -40.0,
+    0.0
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/A-HOUSING-F.step",
+   "stl": "cad/exports/g1/parts/A-HOUSING-F.stl",
+   "brep_volume_mm3": 42438.324,
+   "step_reimport_volume_mm3": 42438.324,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 42433.163,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "A-HOUSING-F",
+   "material": "PETG",
+   "color_rgb": [
+    0.17,
+    0.21,
+    0.31
+   ],
+   "kind": "printed",
+   "bbox_K_mm": [
+    145.0,
+    290.0,
+    -14.0,
+    14.0,
+    -40.0,
+    0.0
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/A-HOUSING-COUPLER.step",
+   "stl": "cad/exports/g1/parts/A-HOUSING-COUPLER.stl",
+   "brep_volume_mm3": 11719.249,
+   "step_reimport_volume_mm3": 11719.249,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 11718.273,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "A-HOUSING-COUPLER",
+   "material": "PETG",
+   "color_rgb": [
+    0.1,
+    0.1,
+    0.11
+   ],
+   "kind": "printed",
+   "bbox_K_mm": [
+    125.0,
+    165.0,
+    -11.4,
+    11.4,
+    -37.4,
+    -2.6
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/A-NOSE.step",
+   "stl": "cad/exports/g1/parts/A-NOSE.stl",
+   "brep_volume_mm3": 10548.051,
+   "step_reimport_volume_mm3": 10548.051,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 10547.131,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "A-NOSE",
+   "material": "PETG",
+   "color_rgb": [
+    0.95,
+    0.45,
+    0.06
+   ],
+   "kind": "printed",
+   "bbox_K_mm": [
+    290.0,
+    300.0,
+    -14.0,
+    14.0,
+    -40.0,
+    0.0
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/A-RAIL.step",
+   "stl": "cad/exports/g1/parts/A-RAIL.stl",
+   "brep_volume_mm3": 18351.87,
+   "step_reimport_volume_mm3": 18351.87,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 18351.504,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "A-RAIL",
+   "material": "PETG",
+   "color_rgb": [
+    0.95,
+    0.45,
+    0.06
+   ],
+   "kind": "printed",
+   "bbox_K_mm": [
+    7.92,
+    240.08,
+    -8.0,
+    8.08,
+    -0.0,
+    5.08
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/A-SERVICE-PLATE.step",
+   "stl": "cad/exports/g1/parts/A-SERVICE-PLATE.stl",
+   "brep_volume_mm3": 2281.092,
+   "step_reimport_volume_mm3": 2281.092,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 2281.087,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "A-SERVICE-PLATE",
+   "material": "PETG",
+   "color_rgb": [
+    0.95,
+    0.45,
+    0.06
+   ],
+   "kind": "printed",
+   "bbox_K_mm": [
+    150.0,
+    200.0,
+    -17.0,
+    -14.0,
+    -28.0,
+    -12.0
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/A-TRIGGER-GUARD.step",
+   "stl": "cad/exports/g1/parts/A-TRIGGER-GUARD.stl",
+   "brep_volume_mm3": 5029.19,
+   "step_reimport_volume_mm3": 5029.19,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 5028.946,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "A-TRIGGER-GUARD",
+   "material": "PETG",
+   "color_rgb": [
+    0.17,
+    0.21,
+    0.31
+   ],
+   "kind": "printed",
+   "bbox_K_mm": [
+    84.0,
+    152.0,
+    -4.0,
+    4.0,
+    -66.0,
+    -40.0
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/D-SWITCH-BLADE.step",
+   "stl": "cad/exports/g1/parts/D-SWITCH-BLADE.stl",
+   "brep_volume_mm3": 556.59,
+   "step_reimport_volume_mm3": 556.59,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 556.59,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "D-SWITCH-BLADE",
+   "material": "PETG",
+   "color_rgb": [
+    0.1,
+    0.1,
+    0.11
+   ],
+   "kind": "printed",
+   "bbox_K_mm": [
+    97.8,
+    103.5,
+    -3.0,
+    3.0,
+    -58.5,
+    -34.1
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/reference/D-SWITCH-BODY.step",
+   "stl": "cad/exports/g1/parts/reference/D-SWITCH-BODY.stl",
+   "brep_volume_mm3": 1897.96,
+   "step_reimport_volume_mm3": 1897.96,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 1897.96,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "D-SWITCH-BODY",
+   "material": "-",
+   "color_rgb": [
+    0.1,
+    0.1,
+    0.11
+   ],
+   "kind": "electronics",
+   "bbox_K_mm": [
+    90.0,
+    110.0,
+    -6.8,
+    6.8,
+    -37.6,
+    -30.2
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/reference/E-ELECTRONICS.step",
+   "stl": "cad/exports/g1/parts/reference/E-ELECTRONICS.stl",
+   "brep_volume_mm3": 6120.0,
+   "step_reimport_volume_mm3": 6120.0,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 6119.999,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "E-ELECTRONICS",
+   "material": "-",
+   "color_rgb": [
+    0.1,
+    0.1,
+    0.11
+   ],
+   "kind": "electronics",
+   "bbox_K_mm": [
+    8.0,
+    38.0,
+    -6.8,
+    6.8,
+    -37.6,
+    -22.6
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/S-REAR-BASE.step",
+   "stl": "cad/exports/g1/parts/S-REAR-BASE.stl",
+   "brep_volume_mm3": 2768.505,
+   "step_reimport_volume_mm3": 2768.505,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 2768.545,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "S-REAR-BASE",
+   "material": "PETG",
+   "color_rgb": [
+    0.1,
+    0.1,
+    0.11
+   ],
+   "kind": "printed",
+   "bbox_K_mm": [
+    44.0,
+    72.0,
+    -10.0,
+    10.0,
+    1.5,
+    12.5
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/S-REAR-LEAF.step",
+   "stl": "cad/exports/g1/parts/S-REAR-LEAF.stl",
+   "brep_volume_mm3": 1813.235,
+   "step_reimport_volume_mm3": 1813.235,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 1813.328,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "S-REAR-LEAF",
+   "material": "PETG",
+   "color_rgb": [
+    0.1,
+    0.1,
+    0.11
+   ],
+   "kind": "printed",
+   "bbox_K_mm": [
+    45.0,
+    72.0,
+    -9.0,
+    9.0,
+    9.3,
+    16.7
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/S-REAR-SLIDE.step",
+   "stl": "cad/exports/g1/parts/S-REAR-SLIDE.stl",
+   "brep_volume_mm3": 120.0,
+   "step_reimport_volume_mm3": 120.0,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 120.0,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "S-REAR-SLIDE",
+   "material": "PETG",
+   "color_rgb": [
+    0.1,
+    0.1,
+    0.11
+   ],
+   "kind": "printed",
+   "bbox_K_mm": [
+    56.0,
+    60.0,
+    -10.0,
+    10.0,
+    16.7,
+    18.2
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/S-REAR-NOTCH.step",
+   "stl": "cad/exports/g1/parts/S-REAR-NOTCH.stl",
+   "brep_volume_mm3": 342.5,
+   "step_reimport_volume_mm3": 342.5,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 342.5,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "S-REAR-NOTCH",
+   "material": "PETG",
+   "color_rgb": [
+    0.1,
+    0.1,
+    0.11
+   ],
+   "kind": "printed",
+   "bbox_K_mm": [
+    60.0,
+    62.5,
+    -11.0,
+    11.0,
+    16.7,
+    23.5
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/hardware/H-REAR-PIN.step",
+   "stl": "cad/exports/g1/parts/hardware/H-REAR-PIN.stl",
+   "brep_volume_mm3": 88.357,
+   "step_reimport_volume_mm3": 88.357,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 88.321,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "H-REAR-PIN",
+   "material": "steel",
+   "color_rgb": [
+    0.74,
+    0.74,
+    0.76
+   ],
+   "kind": "hardware",
+   "bbox_K_mm": [
+    46.75,
+    49.25,
+    -9.0,
+    9.0,
+    9.75,
+    12.25
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/hardware/H-REAR-ELEV.step",
+   "stl": "cad/exports/g1/parts/hardware/H-REAR-ELEV.stl",
+   "brep_volume_mm3": 89.771,
+   "step_reimport_volume_mm3": 89.771,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 89.734,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "H-REAR-ELEV",
+   "material": "steel",
+   "color_rgb": [
+    0.74,
+    0.74,
+    0.76
+   ],
+   "kind": "hardware",
+   "bbox_K_mm": [
+    67.0,
+    70.0,
+    -1.5,
+    1.5,
+    5.5,
+    18.2
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/hardware/H-REAR-ELEV-KNOB.step",
+   "stl": "cad/exports/g1/parts/hardware/H-REAR-ELEV-KNOB.stl",
+   "brep_volume_mm3": 104.856,
+   "step_reimport_volume_mm3": 104.856,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 104.864,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "H-REAR-ELEV-KNOB",
+   "material": "steel",
+   "color_rgb": [
+    0.74,
+    0.74,
+    0.76
+   ],
+   "kind": "hardware",
+   "bbox_K_mm": [
+    64.5,
+    72.5,
+    -4.0,
+    4.0,
+    16.7,
+    19.5
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/hardware/H-REAR-SPRING.step",
+   "stl": "cad/exports/g1/parts/hardware/H-REAR-SPRING.stl",
+   "brep_volume_mm3": 62.653,
+   "step_reimport_volume_mm3": 62.653,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 62.627,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "H-REAR-SPRING",
+   "material": "steel",
+   "color_rgb": [
+    0.74,
+    0.74,
+    0.76
+   ],
+   "kind": "hardware",
+   "bbox_K_mm": [
+    65.5,
+    71.5,
+    -3.0,
+    3.0,
+    9.0,
+    12.7
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/hardware/H-REAR-WIND.step",
+   "stl": "cad/exports/g1/parts/hardware/H-REAR-WIND.stl",
+   "brep_volume_mm3": 141.372,
+   "step_reimport_volume_mm3": 141.372,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 141.313,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "H-REAR-WIND",
+   "material": "steel",
+   "color_rgb": [
+    0.74,
+    0.74,
+    0.76
+   ],
+   "kind": "hardware",
+   "bbox_K_mm": [
+    56.5,
+    59.5,
+    -14.0,
+    6.0,
+    13.2,
+    16.2
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/hardware/H-REAR-WIND-KNOB.step",
+   "stl": "cad/exports/g1/parts/hardware/H-REAR-WIND-KNOB.stl",
+   "brep_volume_mm3": 267.102,
+   "step_reimport_volume_mm3": 267.102,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 267.102,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "H-REAR-WIND-KNOB",
+   "material": "steel",
+   "color_rgb": [
+    0.74,
+    0.74,
+    0.76
+   ],
+   "kind": "hardware",
+   "bbox_K_mm": [
+    54.0,
+    62.0,
+    -20.0,
+    -14.0,
+    10.7,
+    18.7
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/S-FRONT-BASE.step",
+   "stl": "cad/exports/g1/parts/S-FRONT-BASE.stl",
+   "brep_volume_mm3": 2538.816,
+   "step_reimport_volume_mm3": 2538.816,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 2538.816,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "S-FRONT-BASE",
+   "material": "PETG",
+   "color_rgb": [
+    0.1,
+    0.1,
+    0.11
+   ],
+   "kind": "printed",
+   "bbox_K_mm": [
+    266.0,
+    288.0,
+    -8.0,
+    8.0,
+    -0.0,
+    12.0
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/S-FRONT-CARRIER.step",
+   "stl": "cad/exports/g1/parts/S-FRONT-CARRIER.stl",
+   "brep_volume_mm3": 359.575,
+   "step_reimport_volume_mm3": 359.575,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 359.608,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "S-FRONT-CARRIER",
+   "material": "PETG",
+   "color_rgb": [
+    0.1,
+    0.1,
+    0.11
+   ],
+   "kind": "printed",
+   "bbox_K_mm": [
+    274.0,
+    285.0,
+    -5.0,
+    5.0,
+    7.0,
+    11.0
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/S-FRONT-BLADE.step",
+   "stl": "cad/exports/g1/parts/S-FRONT-BLADE.stl",
+   "brep_volume_mm3": 108.0,
+   "step_reimport_volume_mm3": 108.0,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 108.0,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "S-FRONT-BLADE",
+   "material": "PETG",
+   "color_rgb": [
+    0.95,
+    0.45,
+    0.06
+   ],
+   "kind": "printed",
+   "bbox_K_mm": [
+    278.0,
+    281.0,
+    -2.0,
+    2.0,
+    11.0,
+    20.0
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/S-FRONT-LSHIM-L.step",
+   "stl": "cad/exports/g1/parts/S-FRONT-LSHIM-L.stl",
+   "brep_volume_mm3": 43.149,
+   "step_reimport_volume_mm3": 43.149,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 43.153,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "S-FRONT-LSHIM-L",
+   "material": "PETG",
+   "color_rgb": [
+    0.1,
+    0.1,
+    0.11
+   ],
+   "kind": "printed",
+   "bbox_K_mm": [
+    274.0,
+    285.0,
+    5.0,
+    6.2,
+    7.0,
+    11.0
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/S-FRONT-LSHIM-R.step",
+   "stl": "cad/exports/g1/parts/S-FRONT-LSHIM-R.stl",
+   "brep_volume_mm3": 43.149,
+   "step_reimport_volume_mm3": 43.149,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 43.153,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "S-FRONT-LSHIM-R",
+   "material": "PETG",
+   "color_rgb": [
+    0.1,
+    0.1,
+    0.11
+   ],
+   "kind": "printed",
+   "bbox_K_mm": [
+    274.0,
+    285.0,
+    -6.2,
+    -5.0,
+    7.0,
+    11.0
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/hardware/H-FRONT-CLAMP.step",
+   "stl": "cad/exports/g1/parts/hardware/H-FRONT-CLAMP.stl",
+   "brep_volume_mm3": 134.303,
+   "step_reimport_volume_mm3": 134.303,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 134.247,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "H-FRONT-CLAMP",
+   "material": "steel",
+   "color_rgb": [
+    0.74,
+    0.74,
+    0.76
+   ],
+   "kind": "hardware",
+   "bbox_K_mm": [
+    274.5,
+    277.5,
+    -9.5,
+    9.5,
+    7.5,
+    10.5
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/S-FRONT-SHIM.step",
+   "stl": "cad/exports/g1/parts/S-FRONT-SHIM.stl",
+   "brep_volume_mm3": 110.0,
+   "step_reimport_volume_mm3": 110.0,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 110.0,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "S-FRONT-SHIM",
+   "material": "PETG",
+   "color_rgb": [
+    0.1,
+    0.1,
+    0.11
+   ],
+   "kind": "printed",
+   "bbox_K_mm": [
+    274.0,
+    285.0,
+    -5.0,
+    5.0,
+    6.0,
+    7.0
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/B-YOKE.step",
+   "stl": "cad/exports/g1/parts/B-YOKE.stl",
+   "brep_volume_mm3": 11568.819,
+   "step_reimport_volume_mm3": 11568.819,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 11568.475,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "B-YOKE",
+   "material": "PETG",
+   "color_rgb": [
+    0.1,
+    0.1,
+    0.11
+   ],
+   "kind": "printed",
+   "bbox_K_mm": [
+    12.0,
+    40.0,
+    -22.0,
+    22.0,
+    1.5,
+    40.0
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/hardware/H-DETENT-L.step",
+   "stl": "cad/exports/g1/parts/hardware/H-DETENT-L.stl",
+   "brep_volume_mm3": 7.069,
+   "step_reimport_volume_mm3": 7.069,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 7.066,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "H-DETENT-L",
+   "material": "steel",
+   "color_rgb": [
+    0.74,
+    0.74,
+    0.76
+   ],
+   "kind": "hardware",
+   "bbox_K_mm": [
+    25.25,
+    26.75,
+    19.0,
+    23.0,
+    19.25,
+    20.75
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/hardware/H-DETENT-R.step",
+   "stl": "cad/exports/g1/parts/hardware/H-DETENT-R.stl",
+   "brep_volume_mm3": 7.069,
+   "step_reimport_volume_mm3": 7.069,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 7.066,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "H-DETENT-R",
+   "material": "steel",
+   "color_rgb": [
+    0.74,
+    0.74,
+    0.76
+   ],
+   "kind": "hardware",
+   "bbox_K_mm": [
+    25.25,
+    26.75,
+    -23.0,
+    -19.0,
+    19.25,
+    20.75
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/B-ANGLE-DIAL-L.step",
+   "stl": "cad/exports/g1/parts/B-ANGLE-DIAL-L.stl",
+   "brep_volume_mm3": 2298.908,
+   "step_reimport_volume_mm3": 2298.908,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 2297.95,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "B-ANGLE-DIAL-L",
+   "material": "PETG",
+   "color_rgb": [
+    0.74,
+    0.74,
+    0.76
+   ],
+   "kind": "printed",
+   "bbox_K_mm": [
+    10.0,
+    42.0,
+    22.0,
+    25.0,
+    16.0,
+    48.0
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/hardware/H-ANGLE-KNOB-L.step",
+   "stl": "cad/exports/g1/parts/hardware/H-ANGLE-KNOB-L.stl",
+   "brep_volume_mm3": 1288.64,
+   "step_reimport_volume_mm3": 1288.64,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 1288.734,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "H-ANGLE-KNOB-L",
+   "material": "steel",
+   "color_rgb": [
+    0.74,
+    0.74,
+    0.76
+   ],
+   "kind": "hardware",
+   "bbox_K_mm": [
+    18.0,
+    34.0,
+    25.0,
+    33.0,
+    24.0,
+    40.0
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/B-ANGLE-DIAL-R.step",
+   "stl": "cad/exports/g1/parts/B-ANGLE-DIAL-R.stl",
+   "brep_volume_mm3": 2298.908,
+   "step_reimport_volume_mm3": 2298.908,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 2297.95,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "B-ANGLE-DIAL-R",
+   "material": "PETG",
+   "color_rgb": [
+    0.74,
+    0.74,
+    0.76
+   ],
+   "kind": "printed",
+   "bbox_K_mm": [
+    10.0,
+    42.0,
+    -25.0,
+    -22.0,
+    16.0,
+    48.0
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/hardware/H-ANGLE-KNOB-R.step",
+   "stl": "cad/exports/g1/parts/hardware/H-ANGLE-KNOB-R.stl",
+   "brep_volume_mm3": 1288.64,
+   "step_reimport_volume_mm3": 1288.64,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 1288.734,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "H-ANGLE-KNOB-R",
+   "material": "steel",
+   "color_rgb": [
+    0.74,
+    0.74,
+    0.76
+   ],
+   "kind": "hardware",
+   "bbox_K_mm": [
+    18.0,
+    34.0,
+    -33.0,
+    -25.0,
+    24.0,
+    40.0
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/hardware/H-PIVOT-SHAFT.step",
+   "stl": "cad/exports/g1/parts/hardware/H-PIVOT-SHAFT.stl",
+   "brep_volume_mm3": 1866.106,
+   "step_reimport_volume_mm3": 1866.106,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 1865.333,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "H-PIVOT-SHAFT",
+   "material": "steel",
+   "color_rgb": [
+    0.74,
+    0.74,
+    0.76
+   ],
+   "kind": "hardware",
+   "bbox_K_mm": [
+    23.0,
+    29.0,
+    -33.0,
+    33.0,
+    29.0,
+    35.0
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/B-CRADLE.step",
+   "stl": "cad/exports/g1/parts/B-CRADLE.stl",
+   "brep_volume_mm3": 39780.021,
+   "step_reimport_volume_mm3": 39780.021,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 39778.954,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "B-CRADLE",
+   "material": "PETG",
+   "color_rgb": [
+    0.1,
+    0.1,
+    0.11
+   ],
+   "kind": "printed",
+   "bbox_K_mm": [
+    19.0,
+    34.0,
+    -87.8,
+    81.8,
+    25.0,
+    144.6
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/B-RETAINER-R.step",
+   "stl": "cad/exports/g1/parts/B-RETAINER-R.stl",
+   "brep_volume_mm3": 1377.301,
+   "step_reimport_volume_mm3": 1377.301,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 1377.316,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "B-RETAINER-R",
+   "material": "PETG",
+   "color_rgb": [
+    0.1,
+    0.1,
+    0.11
+   ],
+   "kind": "printed",
+   "bbox_K_mm": [
+    19.7,
+    33.0,
+    -78.8,
+    -72.3,
+    56.0,
+    78.0
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/B-RETAINER-TOP.step",
+   "stl": "cad/exports/g1/parts/B-RETAINER-TOP.stl",
+   "brep_volume_mm3": 2476.842,
+   "step_reimport_volume_mm3": 2476.842,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 2476.876,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "B-RETAINER-TOP",
+   "material": "PETG",
+   "color_rgb": [
+    0.1,
+    0.1,
+    0.11
+   ],
+   "kind": "printed",
+   "bbox_K_mm": [
+    21.1,
+    29.8,
+    -33.2,
+    10.0,
+    125.6,
+    137.6
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/hardware/H-RET-R-SCREW.step",
+   "stl": "cad/exports/g1/parts/hardware/H-RET-R-SCREW.stl",
+   "brep_volume_mm3": 251.327,
+   "step_reimport_volume_mm3": 251.327,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 251.223,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "H-RET-R-SCREW",
+   "material": "nylon",
+   "color_rgb": [
+    0.74,
+    0.74,
+    0.76
+   ],
+   "kind": "hardware",
+   "bbox_K_mm": [
+    25.1,
+    29.1,
+    -95.8,
+    -75.8,
+    61.0,
+    65.0
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/hardware/H-RET-R-KNOB.step",
+   "stl": "cad/exports/g1/parts/hardware/H-RET-R-KNOB.stl",
+   "brep_volume_mm3": 1049.389,
+   "step_reimport_volume_mm3": 1049.389,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 1049.431,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "H-RET-R-KNOB",
+   "material": "aluminium",
+   "color_rgb": [
+    0.74,
+    0.74,
+    0.76
+   ],
+   "kind": "hardware",
+   "bbox_K_mm": [
+    20.1,
+    34.1,
+    -95.8,
+    -87.8,
+    56.0,
+    70.0
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/hardware/H-RET-TOP-SCREW.step",
+   "stl": "cad/exports/g1/parts/hardware/H-RET-TOP-SCREW.stl",
+   "brep_volume_mm3": 251.327,
+   "step_reimport_volume_mm3": 251.327,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 251.223,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "H-RET-TOP-SCREW",
+   "material": "nylon",
+   "color_rgb": [
+    0.74,
+    0.74,
+    0.76
+   ],
+   "kind": "hardware",
+   "bbox_K_mm": [
+    21.7,
+    25.7,
+    -2.0,
+    2.0,
+    132.6,
+    152.6
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/hardware/H-RET-TOP-KNOB.step",
+   "stl": "cad/exports/g1/parts/hardware/H-RET-TOP-KNOB.stl",
+   "brep_volume_mm3": 642.805,
+   "step_reimport_volume_mm3": 642.805,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 642.842,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "H-RET-TOP-KNOB",
+   "material": "aluminium",
+   "color_rgb": [
+    0.74,
+    0.74,
+    0.76
+   ],
+   "kind": "hardware",
+   "bbox_K_mm": [
+    17.7,
+    29.7,
+    -6.0,
+    6.0,
+    144.6,
+    151.6
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/B-PAD-BACK-1.step",
+   "stl": "cad/exports/g1/parts/B-PAD-BACK-1.stl",
+   "brep_volume_mm3": 100.0,
+   "step_reimport_volume_mm3": 100.0,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 100.0,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "B-PAD-BACK-1",
+   "material": "TPU",
+   "color_rgb": [
+    0.06,
+    0.06,
+    0.06
+   ],
+   "kind": "tpu",
+   "bbox_K_mm": [
+    29.0,
+    30.0,
+    15.0,
+    25.0,
+    65.0,
+    75.0
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/B-PAD-BACK-2.step",
+   "stl": "cad/exports/g1/parts/B-PAD-BACK-2.stl",
+   "brep_volume_mm3": 100.0,
+   "step_reimport_volume_mm3": 100.0,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 100.0,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "B-PAD-BACK-2",
+   "material": "TPU",
+   "color_rgb": [
+    0.06,
+    0.06,
+    0.06
+   ],
+   "kind": "tpu",
+   "bbox_K_mm": [
+    29.0,
+    30.0,
+    -25.0,
+    -15.0,
+    65.0,
+    75.0
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/B-PAD-BACK-3.step",
+   "stl": "cad/exports/g1/parts/B-PAD-BACK-3.stl",
+   "brep_volume_mm3": 100.0,
+   "step_reimport_volume_mm3": 100.0,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 100.0,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "B-PAD-BACK-3",
+   "material": "TPU",
+   "color_rgb": [
+    0.06,
+    0.06,
+    0.06
+   ],
+   "kind": "tpu",
+   "bbox_K_mm": [
+    29.0,
+    30.0,
+    -5.0,
+    5.0,
+    106.6,
+    116.6
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/B-PAD-LEDGE-1.step",
+   "stl": "cad/exports/g1/parts/B-PAD-LEDGE-1.stl",
+   "brep_volume_mm3": 158.4,
+   "step_reimport_volume_mm3": 158.4,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 158.4,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "B-PAD-LEDGE-1",
+   "material": "TPU",
+   "color_rgb": [
+    0.06,
+    0.06,
+    0.06
+   ],
+   "kind": "tpu",
+   "bbox_K_mm": [
+    21.8,
+    28.4,
+    55.8,
+    67.8,
+    52.0,
+    54.0
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/B-PAD-LEDGE-2.step",
+   "stl": "cad/exports/g1/parts/B-PAD-LEDGE-2.stl",
+   "brep_volume_mm3": 158.4,
+   "step_reimport_volume_mm3": 158.4,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 158.4,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "B-PAD-LEDGE-2",
+   "material": "TPU",
+   "color_rgb": [
+    0.06,
+    0.06,
+    0.06
+   ],
+   "kind": "tpu",
+   "bbox_K_mm": [
+    21.8,
+    28.4,
+    -46.2,
+    -34.2,
+    52.0,
+    54.0
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/reference/PHONE.step",
+   "stl": "cad/exports/g1/parts/reference/PHONE.stl",
+   "brep_volume_mm3": 81567.539,
+   "step_reimport_volume_mm3": 81567.539,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 81566.277,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "PHONE",
+   "material": "phone",
+   "color_rgb": [
+    0.13,
+    0.13,
+    0.15
+   ],
+   "kind": "phone",
+   "bbox_K_mm": [
+    21.2,
+    29.0,
+    -73.8,
+    73.8,
+    54.0,
+    125.6
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/A-GRIP-CORE.step",
+   "stl": "cad/exports/g1/parts/A-GRIP-CORE.stl",
+   "brep_volume_mm3": 54596.026,
+   "step_reimport_volume_mm3": 54596.026,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 54559.153,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "A-GRIP-CORE",
+   "material": "PETG",
+   "color_rgb": [
+    0.36,
+    0.29,
+    0.22
+   ],
+   "kind": "printed",
+   "bbox_K_mm": [
+    13.96,
+    77.13,
+    -9.13,
+    9.11,
+    -155.13,
+    -39.87
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/A-GRIP-PANEL-L.step",
+   "stl": "cad/exports/g1/parts/A-GRIP-PANEL-L.stl",
+   "brep_volume_mm3": 20982.657,
+   "step_reimport_volume_mm3": 20982.657,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 20907.709,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "A-GRIP-PANEL-L",
+   "material": "PETG",
+   "color_rgb": [
+    0.29,
+    0.24,
+    0.19
+   ],
+   "kind": "printed",
+   "bbox_K_mm": [
+    8.12,
+    74.19,
+    8.81,
+    26.36,
+    -155.19,
+    -39.81
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/A-GRIP-PANEL-R.step",
+   "stl": "cad/exports/g1/parts/A-GRIP-PANEL-R.stl",
+   "brep_volume_mm3": 27498.143,
+   "step_reimport_volume_mm3": 27498.143,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 27406.679,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "A-GRIP-PANEL-R",
+   "material": "PETG",
+   "color_rgb": [
+    0.29,
+    0.24,
+    0.19
+   ],
+   "kind": "printed",
+   "bbox_K_mm": [
+    7.53,
+    74.83,
+    -20.1,
+    -8.74,
+    -155.26,
+    -39.74
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/A-BACKSTRAP.step",
+   "stl": "cad/exports/g1/parts/A-BACKSTRAP.stl",
+   "brep_volume_mm3": 22117.765,
+   "step_reimport_volume_mm3": 22117.765,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 22070.186,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "A-BACKSTRAP",
+   "material": "PETG",
+   "color_rgb": [
+    0.36,
+    0.29,
+    0.22
+   ],
+   "kind": "printed",
+   "bbox_K_mm": [
+    5.23,
+    42.63,
+    -9.27,
+    9.27,
+    -155.15,
+    -39.73
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/A-PALM-SHELF.step",
+   "stl": "cad/exports/g1/parts/A-PALM-SHELF.stl",
+   "brep_volume_mm3": 17444.775,
+   "step_reimport_volume_mm3": 17444.775,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 17444.8,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "A-PALM-SHELF",
+   "material": "PETG",
+   "color_rgb": [
+    0.29,
+    0.24,
+    0.19
+   ],
+   "kind": "printed",
+   "bbox_K_mm": [
+    -3.67,
+    54.33,
+    -24.0,
+    16.0,
+    -165.0,
+    -135.5
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/hardware/H-SHELF-PIN.step",
+   "stl": "cad/exports/g1/parts/hardware/H-SHELF-PIN.stl",
+   "brep_volume_mm3": 326.733,
+   "step_reimport_volume_mm3": 326.733,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 326.597,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "H-SHELF-PIN",
+   "material": "steel",
+   "color_rgb": [
+    0.74,
+    0.74,
+    0.76
+   ],
+   "kind": "hardware",
+   "bbox_K_mm": [
+    38.57,
+    42.57,
+    -13.5,
+    12.5,
+    -148.0,
+    -144.0
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/hardware/H-PANEL-BOLT-1.step",
+   "stl": "cad/exports/g1/parts/hardware/H-PANEL-BOLT-1.stl",
+   "brep_volume_mm3": 201.143,
+   "step_reimport_volume_mm3": 201.143,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 201.06,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "H-PANEL-BOLT-1",
+   "material": "steel",
+   "color_rgb": [
+    0.74,
+    0.74,
+    0.76
+   ],
+   "kind": "hardware",
+   "bbox_K_mm": [
+    53.52,
+    56.52,
+    -16.21,
+    12.24,
+    -77.5,
+    -74.5
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/hardware/H-PANEL-BOLT-2.step",
+   "stl": "cad/exports/g1/parts/hardware/H-PANEL-BOLT-2.stl",
+   "brep_volume_mm3": 172.561,
+   "step_reimport_volume_mm3": 172.561,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 172.489,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "H-PANEL-BOLT-2",
+   "material": "steel",
+   "color_rgb": [
+    0.74,
+    0.74,
+    0.76
+   ],
+   "kind": "hardware",
+   "bbox_K_mm": [
+    41.56,
+    44.56,
+    -12.84,
+    11.57,
+    -125.5,
+    -122.5
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/hardware/H-BACKSTRAP-SCREW-1.step",
+   "stl": "cad/exports/g1/parts/hardware/H-BACKSTRAP-SCREW-1.stl",
+   "brep_volume_mm3": 110.296,
+   "step_reimport_volume_mm3": 110.296,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 110.25,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "H-BACKSTRAP-SCREW-1",
+   "material": "steel",
+   "color_rgb": [
+    0.74,
+    0.74,
+    0.76
+   ],
+   "kind": "hardware",
+   "bbox_K_mm": [
+    31.41,
+    47.01,
+    -1.5,
+    1.5,
+    -61.5,
+    -58.5
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/hardware/H-BACKSTRAP-SCREW-2.step",
+   "stl": "cad/exports/g1/parts/hardware/H-BACKSTRAP-SCREW-2.stl",
+   "brep_volume_mm3": 123.327,
+   "step_reimport_volume_mm3": 123.327,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 123.275,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "H-BACKSTRAP-SCREW-2",
+   "material": "steel",
+   "color_rgb": [
+    0.74,
+    0.74,
+    0.76
+   ],
+   "kind": "hardware",
+   "bbox_K_mm": [
+    23.08,
+    40.53,
+    -1.5,
+    1.5,
+    -87.5,
+    -84.5
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/hardware/H-GRIP-SCREW-1.step",
+   "stl": "cad/exports/g1/parts/hardware/H-GRIP-SCREW-1.stl",
+   "brep_volume_mm3": 293.249,
+   "step_reimport_volume_mm3": 293.249,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 293.127,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "H-GRIP-SCREW-1",
+   "material": "steel",
+   "color_rgb": [
+    0.74,
+    0.74,
+    0.76
+   ],
+   "kind": "hardware",
+   "bbox_K_mm": [
+    44.6,
+    51.4,
+    -3.4,
+    3.4,
+    -54.0,
+    -35.2
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/hardware/H-GRIP-SCREW-2.step",
+   "stl": "cad/exports/g1/parts/hardware/H-GRIP-SCREW-2.stl",
+   "brep_volume_mm3": 293.249,
+   "step_reimport_volume_mm3": 293.249,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 293.127,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "H-GRIP-SCREW-2",
+   "material": "steel",
+   "color_rgb": [
+    0.74,
+    0.74,
+    0.76
+   ],
+   "kind": "hardware",
+   "bbox_K_mm": [
+    64.6,
+    71.4,
+    -3.4,
+    3.4,
+    -54.0,
+    -35.2
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/C-Z-CASSETTE.step",
+   "stl": "cad/exports/g1/parts/C-Z-CASSETTE.stl",
+   "brep_volume_mm3": 2253.916,
+   "step_reimport_volume_mm3": 2253.916,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 2252.982,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "C-Z-CASSETTE",
+   "material": "PETG-ballast-cassette",
+   "color_rgb": [
+    0.16,
+    0.46,
+    0.27
+   ],
+   "kind": "printed",
+   "bbox_K_mm": [
+    20.35,
+    44.58,
+    -7.0,
+    7.0,
+    -137.39,
+    -91.3
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/hardware/C-ZSLUG-1.step",
+   "stl": "cad/exports/g1/parts/hardware/C-ZSLUG-1.stl",
+   "brep_volume_mm3": 806.356,
+   "step_reimport_volume_mm3": 806.356,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 806.022,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "C-ZSLUG-1",
+   "material": "steel",
+   "color_rgb": [
+    0.74,
+    0.74,
+    0.76
+   ],
+   "kind": "steel",
+   "bbox_K_mm": [
+    30.03,
+    43.01,
+    -5.7,
+    5.7,
+    -103.3,
+    -92.87
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/hardware/C-ZSLUG-2.step",
+   "stl": "cad/exports/g1/parts/hardware/C-ZSLUG-2.stl",
+   "brep_volume_mm3": 806.356,
+   "step_reimport_volume_mm3": 806.356,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 806.022,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "C-ZSLUG-2",
+   "material": "steel",
+   "color_rgb": [
+    0.74,
+    0.74,
+    0.76
+   ],
+   "kind": "steel",
+   "bbox_K_mm": [
+    28.04,
+    41.01,
+    -5.7,
+    5.7,
+    -111.3,
+    -100.87
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/hardware/C-ZSLUG-3.step",
+   "stl": "cad/exports/g1/parts/hardware/C-ZSLUG-3.stl",
+   "brep_volume_mm3": 806.356,
+   "step_reimport_volume_mm3": 806.356,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 806.022,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "C-ZSLUG-3",
+   "material": "steel",
+   "color_rgb": [
+    0.74,
+    0.74,
+    0.76
+   ],
+   "kind": "steel",
+   "bbox_K_mm": [
+    26.04,
+    39.02,
+    -5.7,
+    5.7,
+    -119.3,
+    -108.87
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/hardware/C-ZSLUG-4.step",
+   "stl": "cad/exports/g1/parts/hardware/C-ZSLUG-4.stl",
+   "brep_volume_mm3": 806.356,
+   "step_reimport_volume_mm3": 806.356,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 806.022,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "C-ZSLUG-4",
+   "material": "steel",
+   "color_rgb": [
+    0.74,
+    0.74,
+    0.76
+   ],
+   "kind": "steel",
+   "bbox_K_mm": [
+    24.05,
+    37.02,
+    -5.7,
+    5.7,
+    -127.3,
+    -116.87
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/hardware/C-ZSLUG-5.step",
+   "stl": "cad/exports/g1/parts/hardware/C-ZSLUG-5.stl",
+   "brep_volume_mm3": 806.356,
+   "step_reimport_volume_mm3": 806.356,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 806.022,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "C-ZSLUG-5",
+   "material": "steel",
+   "color_rgb": [
+    0.74,
+    0.74,
+    0.76
+   ],
+   "kind": "steel",
+   "bbox_K_mm": [
+    22.05,
+    35.03,
+    -5.7,
+    5.7,
+    -135.3,
+    -124.87
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/C-Z-SPACER-B.step",
+   "stl": "cad/exports/g1/parts/C-Z-SPACER-B.stl",
+   "brep_volume_mm3": 3490.314,
+   "step_reimport_volume_mm3": 3490.314,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 3489.149,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "C-Z-SPACER-B",
+   "material": "PETG",
+   "color_rgb": [
+    0.16,
+    0.46,
+    0.27
+   ],
+   "kind": "printed",
+   "bbox_K_mm": [
+    14.11,
+    33.61,
+    -7.0,
+    7.0,
+    -159.0,
+    -135.3
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/C-X-CHANNEL.step",
+   "stl": "cad/exports/g1/parts/C-X-CHANNEL.stl",
+   "brep_volume_mm3": 9164.583,
+   "step_reimport_volume_mm3": 9164.583,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 9164.888,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "C-X-CHANNEL",
+   "material": "PETG",
+   "color_rgb": [
+    0.1,
+    0.1,
+    0.11
+   ],
+   "kind": "printed",
+   "bbox_K_mm": [
+    165.0,
+    280.0,
+    -9.0,
+    9.0,
+    -48.0,
+    -40.0
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/C-X-STOP-F.step",
+   "stl": "cad/exports/g1/parts/C-X-STOP-F.stl",
+   "brep_volume_mm3": 1174.5,
+   "step_reimport_volume_mm3": 1174.5,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 1174.5,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "C-X-STOP-F",
+   "material": "PETG",
+   "color_rgb": [
+    0.1,
+    0.1,
+    0.11
+   ],
+   "kind": "printed",
+   "bbox_K_mm": [
+    270.0,
+    284.0,
+    -9.0,
+    9.0,
+    -48.0,
+    -40.0
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/C-X-CASSETTE.step",
+   "stl": "cad/exports/g1/parts/C-X-CASSETTE.stl",
+   "brep_volume_mm3": 15619.184,
+   "step_reimport_volume_mm3": 15619.184,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 15613.904,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "C-X-CASSETTE",
+   "material": "PETG-ballast-cassette",
+   "color_rgb": [
+    0.16,
+    0.46,
+    0.27
+   ],
+   "kind": "printed",
+   "bbox_K_mm": [
+    180.0,
+    246.0,
+    -13.0,
+    13.0,
+    -74.3,
+    -41.8
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/C-X-CAP.step",
+   "stl": "cad/exports/g1/parts/C-X-CAP.stl",
+   "brep_volume_mm3": 3071.403,
+   "step_reimport_volume_mm3": 3071.403,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 3071.403,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "C-X-CAP",
+   "material": "PETG-ballast-cassette",
+   "color_rgb": [
+    0.1,
+    0.1,
+    0.11
+   ],
+   "kind": "printed",
+   "bbox_K_mm": [
+    246.0,
+    252.0,
+    -13.0,
+    13.0,
+    -74.3,
+    -48.3
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/hardware/H-X-LOCK.step",
+   "stl": "cad/exports/g1/parts/hardware/H-X-LOCK.stl",
+   "brep_volume_mm3": 144.513,
+   "step_reimport_volume_mm3": 144.513,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 144.453,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "H-X-LOCK",
+   "material": "steel",
+   "color_rgb": [
+    0.74,
+    0.74,
+    0.76
+   ],
+   "kind": "hardware",
+   "bbox_K_mm": [
+    211.0,
+    215.0,
+    -12.0,
+    -0.5,
+    -48.0,
+    -44.0
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/hardware/H-X-LOCK-KNOB.step",
+   "stl": "cad/exports/g1/parts/hardware/H-X-LOCK-KNOB.stl",
+   "brep_volume_mm3": 427.928,
+   "step_reimport_volume_mm3": 427.928,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 427.928,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "H-X-LOCK-KNOB",
+   "material": "steel",
+   "color_rgb": [
+    0.74,
+    0.74,
+    0.76
+   ],
+   "kind": "hardware",
+   "bbox_K_mm": [
+    208.0,
+    218.0,
+    -18.0,
+    -12.0,
+    -51.0,
+    -41.0
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/hardware/C-XSLUG-1.step",
+   "stl": "cad/exports/g1/parts/hardware/C-XSLUG-1.stl",
+   "brep_volume_mm3": 3738.495,
+   "step_reimport_volume_mm3": 3738.495,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 3736.944,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "C-XSLUG-1",
+   "material": "steel",
+   "color_rgb": [
+    0.74,
+    0.74,
+    0.76
+   ],
+   "kind": "steel",
+   "bbox_K_mm": [
+    183.05,
+    194.95,
+    -10.0,
+    10.0,
+    -71.3,
+    -51.3
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/hardware/C-XSLUG-2.step",
+   "stl": "cad/exports/g1/parts/hardware/C-XSLUG-2.stl",
+   "brep_volume_mm3": 3738.495,
+   "step_reimport_volume_mm3": 3738.495,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 3736.944,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "C-XSLUG-2",
+   "material": "steel",
+   "color_rgb": [
+    0.74,
+    0.74,
+    0.76
+   ],
+   "kind": "steel",
+   "bbox_K_mm": [
+    195.05,
+    206.95,
+    -10.0,
+    10.0,
+    -71.3,
+    -51.3
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/hardware/C-XSLUG-3.step",
+   "stl": "cad/exports/g1/parts/hardware/C-XSLUG-3.stl",
+   "brep_volume_mm3": 3738.495,
+   "step_reimport_volume_mm3": 3738.495,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 3736.944,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "C-XSLUG-3",
+   "material": "steel",
+   "color_rgb": [
+    0.74,
+    0.74,
+    0.76
+   ],
+   "kind": "steel",
+   "bbox_K_mm": [
+    207.05,
+    218.95,
+    -10.0,
+    10.0,
+    -71.3,
+    -51.3
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/hardware/C-XSLUG-4.step",
+   "stl": "cad/exports/g1/parts/hardware/C-XSLUG-4.stl",
+   "brep_volume_mm3": 3738.495,
+   "step_reimport_volume_mm3": 3738.495,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 3736.944,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "C-XSLUG-4",
+   "material": "steel",
+   "color_rgb": [
+    0.74,
+    0.74,
+    0.76
+   ],
+   "kind": "steel",
+   "bbox_K_mm": [
+    219.05,
+    230.95,
+    -10.0,
+    10.0,
+    -71.3,
+    -51.3
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/hardware/C-FIXED-BAR-1.step",
+   "stl": "cad/exports/g1/parts/hardware/C-FIXED-BAR-1.stl",
+   "brep_volume_mm3": 16486.96,
+   "step_reimport_volume_mm3": 16486.96,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 16486.962,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "C-FIXED-BAR-1",
+   "material": "steel",
+   "color_rgb": [
+    0.74,
+    0.74,
+    0.76
+   ],
+   "kind": "steel",
+   "bbox_K_mm": [
+    168.0,
+    286.0,
+    -7.0,
+    7.0,
+    -37.58,
+    -27.6
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/hardware/C-FIXED-BAR-2.step",
+   "stl": "cad/exports/g1/parts/hardware/C-FIXED-BAR-2.stl",
+   "brep_volume_mm3": 16486.96,
+   "step_reimport_volume_mm3": 16486.96,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 16486.959,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "C-FIXED-BAR-2",
+   "material": "steel",
+   "color_rgb": [
+    0.74,
+    0.74,
+    0.76
+   ],
+   "kind": "steel",
+   "bbox_K_mm": [
+    168.0,
+    286.0,
+    -7.0,
+    7.0,
+    -27.58,
+    -17.6
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/A-BACKSTRAP-S.step",
+   "stl": "cad/exports/g1/parts/A-BACKSTRAP-S.stl",
+   "brep_volume_mm3": 18119.616,
+   "step_reimport_volume_mm3": 18119.616,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 18068.213,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "A-BACKSTRAP-S",
+   "material": "PETG",
+   "color_rgb": [
+    0.36,
+    0.29,
+    0.22
+   ],
+   "kind": "printed",
+   "bbox_K_mm": [
+    7.15,
+    42.63,
+    -9.26,
+    9.26,
+    -155.23,
+    -39.74
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/A-BACKSTRAP-L.step",
+   "stl": "cad/exports/g1/parts/A-BACKSTRAP-L.stl",
+   "brep_volume_mm3": 28115.444,
+   "step_reimport_volume_mm3": 28115.444,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 28082.058,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "A-BACKSTRAP-L",
+   "material": "PETG",
+   "color_rgb": [
+    0.36,
+    0.29,
+    0.22
+   ],
+   "kind": "printed",
+   "bbox_K_mm": [
+    2.22,
+    42.63,
+    -9.27,
+    9.27,
+    -155.15,
+    -39.73
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/A-PALM-SHELF-M5DEG.step",
+   "stl": "cad/exports/g1/parts/A-PALM-SHELF-M5DEG.stl",
+   "brep_volume_mm3": 17290.462,
+   "step_reimport_volume_mm3": 17290.462,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 17290.488,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "A-PALM-SHELF-M5DEG",
+   "material": "PETG",
+   "color_rgb": [
+    0.29,
+    0.24,
+    0.19
+   ],
+   "kind": "printed",
+   "bbox_K_mm": [
+    -3.67,
+    54.33,
+    -24.0,
+    16.0,
+    -165.0,
+    -135.5
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/A-PALM-SHELF-P5DEG.step",
+   "stl": "cad/exports/g1/parts/A-PALM-SHELF-P5DEG.stl",
+   "brep_volume_mm3": 17599.088,
+   "step_reimport_volume_mm3": 17599.088,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 17599.113,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "A-PALM-SHELF-P5DEG",
+   "material": "PETG",
+   "color_rgb": [
+    0.29,
+    0.24,
+    0.19
+   ],
+   "kind": "printed",
+   "bbox_K_mm": [
+    -3.67,
+    54.33,
+    -24.0,
+    16.0,
+    -165.0,
+    -135.5
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/S-FRONT-SHIM-2MM.step",
+   "stl": "cad/exports/g1/parts/S-FRONT-SHIM-2MM.stl",
+   "brep_volume_mm3": 220.0,
+   "step_reimport_volume_mm3": 220.0,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 220.0,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "S-FRONT-SHIM-2MM",
+   "material": "PETG",
+   "color_rgb": [
+    0.1,
+    0.1,
+    0.11
+   ],
+   "kind": "printed",
+   "bbox_K_mm": [
+    274.0,
+    285.0,
+    -5.0,
+    5.0,
+    6.0,
+    8.0
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/B-CRADLE-PLACEHOLDER-ANDROID-163X76.step",
+   "stl": "cad/exports/g1/parts/B-CRADLE-PLACEHOLDER-ANDROID-163X76.stl",
+   "brep_volume_mm3": 42435.003,
+   "step_reimport_volume_mm3": 42435.003,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 42433.94,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "B-CRADLE-PLACEHOLDER-ANDROID-163X76",
+   "material": "PETG",
+   "color_rgb": [
+    0.1,
+    0.1,
+    0.11
+   ],
+   "kind": "printed",
+   "bbox_K_mm": [
+    18.6,
+    34.0,
+    -95.5,
+    89.5,
+    25.0,
+    149.0
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/B-RETAINER-R-PLACEHOLDER-ANDROID-163X76.step",
+   "stl": "cad/exports/g1/parts/B-RETAINER-R-PLACEHOLDER-ANDROID-163X76.stl",
+   "brep_volume_mm3": 1498.301,
+   "step_reimport_volume_mm3": 1498.301,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 1498.316,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "B-RETAINER-R-PLACEHOLDER-ANDROID-163X76",
+   "material": "PETG",
+   "color_rgb": [
+    0.1,
+    0.1,
+    0.11
+   ],
+   "kind": "printed",
+   "bbox_K_mm": [
+    18.6,
+    33.0,
+    -86.5,
+    -80.0,
+    56.0,
+    78.0
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/B-RETAINER-TOP-PLACEHOLDER-ANDROID-163X76.step",
+   "stl": "cad/exports/g1/parts/B-RETAINER-TOP-PLACEHOLDER-ANDROID-163X76.stl",
+   "brep_volume_mm3": 2577.127,
+   "step_reimport_volume_mm3": 2577.127,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 2577.158,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "B-RETAINER-TOP-PLACEHOLDER-ANDROID-163X76",
+   "material": "PETG",
+   "color_rgb": [
+    0.1,
+    0.1,
+    0.11
+   ],
+   "kind": "printed",
+   "bbox_K_mm": [
+    20.5,
+    29.8,
+    -25.5,
+    10.0,
+    130.0,
+    142.0
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/B-PAD-BACK-1-PLACEHOLDER-ANDROID-163X76.step",
+   "stl": "cad/exports/g1/parts/B-PAD-BACK-1-PLACEHOLDER-ANDROID-163X76.stl",
+   "brep_volume_mm3": 100.0,
+   "step_reimport_volume_mm3": 100.0,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 100.0,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "B-PAD-BACK-1-PLACEHOLDER-ANDROID-163X76",
+   "material": "TPU",
+   "color_rgb": [
+    0.06,
+    0.06,
+    0.06
+   ],
+   "kind": "tpu",
+   "bbox_K_mm": [
+    29.0,
+    30.0,
+    15.0,
+    25.0,
+    65.0,
+    75.0
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/B-PAD-BACK-2-PLACEHOLDER-ANDROID-163X76.step",
+   "stl": "cad/exports/g1/parts/B-PAD-BACK-2-PLACEHOLDER-ANDROID-163X76.stl",
+   "brep_volume_mm3": 100.0,
+   "step_reimport_volume_mm3": 100.0,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 100.0,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "B-PAD-BACK-2-PLACEHOLDER-ANDROID-163X76",
+   "material": "TPU",
+   "color_rgb": [
+    0.06,
+    0.06,
+    0.06
+   ],
+   "kind": "tpu",
+   "bbox_K_mm": [
+    29.0,
+    30.0,
+    -25.0,
+    -15.0,
+    65.0,
+    75.0
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/B-PAD-BACK-3-PLACEHOLDER-ANDROID-163X76.step",
+   "stl": "cad/exports/g1/parts/B-PAD-BACK-3-PLACEHOLDER-ANDROID-163X76.stl",
+   "brep_volume_mm3": 100.0,
+   "step_reimport_volume_mm3": 100.0,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 100.0,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "B-PAD-BACK-3-PLACEHOLDER-ANDROID-163X76",
+   "material": "TPU",
+   "color_rgb": [
+    0.06,
+    0.06,
+    0.06
+   ],
+   "kind": "tpu",
+   "bbox_K_mm": [
+    29.0,
+    30.0,
+    -5.0,
+    5.0,
+    111.0,
+    121.0
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/B-PAD-LEDGE-1-PLACEHOLDER-ANDROID-163X76.step",
+   "stl": "cad/exports/g1/parts/B-PAD-LEDGE-1-PLACEHOLDER-ANDROID-163X76.stl",
+   "brep_volume_mm3": 184.8,
+   "step_reimport_volume_mm3": 184.8,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 184.8,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "B-PAD-LEDGE-1-PLACEHOLDER-ANDROID-163X76",
+   "material": "TPU",
+   "color_rgb": [
+    0.06,
+    0.06,
+    0.06
+   ],
+   "kind": "tpu",
+   "bbox_K_mm": [
+    20.7,
+    28.4,
+    63.5,
+    75.5,
+    52.0,
+    54.0
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/B-PAD-LEDGE-2-PLACEHOLDER-ANDROID-163X76.step",
+   "stl": "cad/exports/g1/parts/B-PAD-LEDGE-2-PLACEHOLDER-ANDROID-163X76.stl",
+   "brep_volume_mm3": 184.8,
+   "step_reimport_volume_mm3": 184.8,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 184.8,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "B-PAD-LEDGE-2-PLACEHOLDER-ANDROID-163X76",
+   "material": "TPU",
+   "color_rgb": [
+    0.06,
+    0.06,
+    0.06
+   ],
+   "kind": "tpu",
+   "bbox_K_mm": [
+    20.7,
+    28.4,
+    -38.5,
+    -26.5,
+    52.0,
+    54.0
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/A-GRIP-CORE-LH.step",
+   "stl": "cad/exports/g1/parts/A-GRIP-CORE-LH.stl",
+   "brep_volume_mm3": 54596.026,
+   "step_reimport_volume_mm3": 54605.58,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 54559.153,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "A-GRIP-CORE-LH",
+   "material": "PETG",
+   "color_rgb": [
+    0.36,
+    0.29,
+    0.22
+   ],
+   "kind": "printed",
+   "bbox_K_mm": [
+    13.96,
+    77.13,
+    -9.11,
+    9.13,
+    -155.13,
+    -39.87
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/A-GRIP-PANEL-L-LH.step",
+   "stl": "cad/exports/g1/parts/A-GRIP-PANEL-L-LH.stl",
+   "brep_volume_mm3": 20982.657,
+   "step_reimport_volume_mm3": 20986.745,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 20907.709,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "A-GRIP-PANEL-L-LH",
+   "material": "PETG",
+   "color_rgb": [
+    0.29,
+    0.24,
+    0.19
+   ],
+   "kind": "printed",
+   "bbox_K_mm": [
+    8.12,
+    74.19,
+    -26.36,
+    -8.81,
+    -155.19,
+    -39.81
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/A-GRIP-PANEL-R-LH.step",
+   "stl": "cad/exports/g1/parts/A-GRIP-PANEL-R-LH.stl",
+   "brep_volume_mm3": 27498.143,
+   "step_reimport_volume_mm3": 27498.399,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 27406.679,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "A-GRIP-PANEL-R-LH",
+   "material": "PETG",
+   "color_rgb": [
+    0.29,
+    0.24,
+    0.19
+   ],
+   "kind": "printed",
+   "bbox_K_mm": [
+    7.53,
+    74.83,
+    8.74,
+    20.1,
+    -155.26,
+    -39.74
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/A-BACKSTRAP-LH.step",
+   "stl": "cad/exports/g1/parts/A-BACKSTRAP-LH.stl",
+   "brep_volume_mm3": 22117.765,
+   "step_reimport_volume_mm3": 22121.117,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 22070.186,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "A-BACKSTRAP-LH",
+   "material": "PETG",
+   "color_rgb": [
+    0.36,
+    0.29,
+    0.22
+   ],
+   "kind": "printed",
+   "bbox_K_mm": [
+    5.23,
+    42.63,
+    -9.27,
+    9.27,
+    -155.15,
+    -39.73
+   ]
+  },
+  {
+   "step": "cad/exports/g1/parts/A-PALM-SHELF-LH.step",
+   "stl": "cad/exports/g1/parts/A-PALM-SHELF-LH.stl",
+   "brep_volume_mm3": 17444.775,
+   "step_reimport_volume_mm3": 17444.775,
+   "step_ok": true,
+   "stl_watertight": true,
+   "stl_volume_mm3": 17444.8,
+   "stl_tolerance_mm": 0.02,
+   "stl_ok": true,
+   "id": "A-PALM-SHELF-LH",
+   "material": "PETG",
+   "color_rgb": [
+    0.29,
+    0.24,
+    0.19
+   ],
+   "kind": "printed",
+   "bbox_K_mm": [
+    -3.67,
+    54.33,
+    -16.0,
+    24.0,
+    -165.0,
+    -135.5
+   ]
+  }
+ ],
+ "files": [
+  {
+   "file": "cad/exports/g1/G1-AND163-RH/G1-AND163-RH_assembly.step.gz",
+   "sha256": "ecb37c592c73b80266b0b0191a252c0c8be2751f9e90f0799dde7e59824e5108",
+   "bytes": 11601061
+  },
+  {
+   "file": "cad/exports/g1/G1-AND163-RH/G1-AND163-RH_assembly.stl.gz",
+   "sha256": "4ae11fcf7502d63c789835a70ce2ef1875a2eab62aa0defcbb07c1c16ea4acd1",
+   "bytes": 552599
+  },
+  {
+   "file": "cad/exports/g1/G1-AND163-RH/checks.json",
+   "sha256": "136ae006c0ffd2ab0c79721891ecf5ab9e783258a7e3faf1b3d34cf2b292c8dd",
+   "bytes": 3787
+  },
+  {
+   "file": "cad/exports/g1/G1-AND163-RH/checks.md",
+   "sha256": "14cf6a69e7e4df7c27f9ea24ed79cd9750eee47050d4f0dbc37e54e4a0c91290",
+   "bytes": 1013
+  },
+  {
+   "file": "cad/exports/g1/G1-AND163-RH/frames.json",
+   "sha256": "8fd350366c1625c30d1a7503b2d0f301069cbaf16cb7c4656e793ebddb2e013d",
+   "bytes": 2801
+  },
+  {
+   "file": "cad/exports/g1/G1-AND163-RH/mass_report.json",
+   "sha256": "6bc0b04b938c923baabf2b431df39688237bc9597164f83b15303fa2060a3299",
+   "bytes": 8940
+  },
+  {
+   "file": "cad/exports/g1/G1-AND163-RH/mass_report.md",
+   "sha256": "f41342dd627a6861cf53be78f3d81c133e6ba9d7d587562625f4522ddf3549e0",
+   "bytes": 1195
+  },
+  {
+   "file": "cad/exports/g1/G1-AND163-RH/parts.json",
+   "sha256": "0e2d63f93a43d1ce8b36a845b77e7a110102fc5ad2c5aaf248fae24f17a26505",
+   "bytes": 47816
+  },
+  {
+   "file": "cad/exports/g1/G1-IP15-LH/G1-IP15-LH_assembly.step.gz",
+   "sha256": "24ef1fa5937b9ee2540bebf9ce68153a9864f3cf0e4e2d21e60e3427e77b23f3",
+   "bytes": 11603229
+  },
+  {
+   "file": "cad/exports/g1/G1-IP15-LH/G1-IP15-LH_assembly.stl.gz",
+   "sha256": "179694c3966b76f1188a41dfd0ebd6aafec2ce9d1f497a6e10c5734763a349d6",
+   "bytes": 553906
+  },
+  {
+   "file": "cad/exports/g1/G1-IP15-LH/checks.json",
+   "sha256": "898ffd77fcd47c25471dee0f11042fb0c61681e4e2f0d997a7b00e68c3d39ccd",
+   "bytes": 3777
+  },
+  {
+   "file": "cad/exports/g1/G1-IP15-LH/checks.md",
+   "sha256": "5f6f1c5a6e4b80abfc979aeeeff94df687b4acb2c371d98c66c94270c6b5fb2b",
+   "bytes": 999
+  },
+  {
+   "file": "cad/exports/g1/G1-IP15-LH/frames.json",
+   "sha256": "61f67fdc66f711bb9d9b88e94881fa197618f435841d42eef5cad776e9a4984e",
+   "bytes": 2790
+  },
+  {
+   "file": "cad/exports/g1/G1-IP15-LH/mass_report.json",
+   "sha256": "061c19e4fade649971cfc40834825a3ddd123b87e8d55849efd219b94a6d0fd2",
+   "bytes": 8930
+  },
+  {
+   "file": "cad/exports/g1/G1-IP15-LH/mass_report.md",
+   "sha256": "37b8e917a92464c962fa02bff3503c839400587331b7a5a323d9a8241dab4344",
+   "bytes": 1187
+  },
+  {
+   "file": "cad/exports/g1/G1-IP15-LH/parts.json",
+   "sha256": "81613163d309994bbbf614c1842d31c40befab1c98c515ae502ab462ca1ee413",
+   "bytes": 49072
+  },
+  {
+   "file": "cad/exports/g1/G1-IP15-RH/G1-IP15-RH_assembly.step.gz",
+   "sha256": "a2af99287edf5446700481fe75e6cdc95b637979d63cb66d7e0a6ebb9e42be9e",
+   "bytes": 11604920
+  },
+  {
+   "file": "cad/exports/g1/G1-IP15-RH/G1-IP15-RH_assembly.stl.gz",
+   "sha256": "c4523bb2486f495d07a04fe7c6b84826473a02411163fa53cb3c29953316cd71",
+   "bytes": 555173
+  },
+  {
+   "file": "cad/exports/g1/G1-IP15-RH/checks.json",
+   "sha256": "6ed794aa974314bb85a96ca0cafacb802c95f43d731a213ba4892f6aa6e6e2af",
+   "bytes": 7644
+  },
+  {
+   "file": "cad/exports/g1/G1-IP15-RH/checks.md",
+   "sha256": "a9940d107e8aacfdaaecd8ec4cc82837676ac8e96ddc52a796af1bf034a6fabf",
+   "bytes": 1244
+  },
+  {
+   "file": "cad/exports/g1/G1-IP15-RH/frames.json",
+   "sha256": "61f67fdc66f711bb9d9b88e94881fa197618f435841d42eef5cad776e9a4984e",
+   "bytes": 2790
+  },
+  {
+   "file": "cad/exports/g1/G1-IP15-RH/mass_report.json",
+   "sha256": "9c088b22c92dc799504f29710ffa208172fa144c01dd54d40de4dc1866c5f455",
+   "bytes": 8932
+  },
+  {
+   "file": "cad/exports/g1/G1-IP15-RH/mass_report.md",
+   "sha256": "dfbf41f8d02530c432b407420c73399e9b340f472fc28f63062fbbeff1529815",
+   "bytes": 1187
+  },
+  {
+   "file": "cad/exports/g1/G1-IP15-RH/parts.json",
+   "sha256": "084d15607af11691f944e0f507567075d5c96d5a6896a6e8e2ad560b96f5fbf5",
+   "bytes": 49047
+  },
+  {
+   "file": "cad/exports/g1/export_verification.json",
+   "sha256": "20376a5c5a12cf6e45b6d7eee512bebc3566ca34f5b332115f5fd393f4034fca",
+   "bytes": 49090
+  },
+  {
+   "file": "cad/exports/g1/parts/A-BACKSTRAP-L.step",
+   "sha256": "5e9e3d724bc5c81940383c46ee5952d914c455d01600001b94ba02a6e009598f",
+   "bytes": 17292332
+  },
+  {
+   "file": "cad/exports/g1/parts/A-BACKSTRAP-L.stl",
+   "sha256": "a108c36f178a9914a4def8aab35a8590ba49c8b756787e41cb0db301ba294ca1",
+   "bytes": 215384
+  },
+  {
+   "file": "cad/exports/g1/parts/A-BACKSTRAP-LH.step",
+   "sha256": "99088ad3f1d3d43e4657e8a22cd8a7c80aaa67e5c9c35837e43db5f141d13fdc",
+   "bytes": 17415309
+  },
+  {
+   "file": "cad/exports/g1/parts/A-BACKSTRAP-LH.stl",
+   "sha256": "05b25ecbe4d0c49c03f1fdc8781bff03c46f63e848a1e8a4b45c6f76c6890098",
+   "bytes": 213784
+  },
+  {
+   "file": "cad/exports/g1/parts/A-BACKSTRAP-S.step",
+   "sha256": "f3698db48059d16dd5bac0dd1ad3ed5c21b5724eef60032f06143ab8cd21e460",
+   "bytes": 17304334
+  },
+  {
+   "file": "cad/exports/g1/parts/A-BACKSTRAP-S.stl",
+   "sha256": "ff0a4601cc9fb8a6a21e30beab24e612a1879c34f429ff4df873eab33c365224",
+   "bytes": 209984
+  },
+  {
+   "file": "cad/exports/g1/parts/A-BACKSTRAP.step",
+   "sha256": "20fed62563bfe172e865876b3a660eec47ecbc1e581460061ff89c3b8f143d91",
+   "bytes": 17406116
+  },
+  {
+   "file": "cad/exports/g1/parts/A-BACKSTRAP.stl",
+   "sha256": "98472af33ba76e9dd50763df7e340603561afccd0f0732cc62ac64f676e58b34",
+   "bytes": 213784
+  },
+  {
+   "file": "cad/exports/g1/parts/A-GRIP-CORE-LH.step",
+   "sha256": "08d5c8f113dacd97db83e2085b20c9210f16d037c069de0cf7e7c4dea6972d76",
+   "bytes": 12018890
+  },
+  {
+   "file": "cad/exports/g1/parts/A-GRIP-CORE-LH.stl",
+   "sha256": "b78fa1ace16c688e5b98195dfc751e85bc46d339403e3b6453c95036faae8df7",
+   "bytes": 323884
+  },
+  {
+   "file": "cad/exports/g1/parts/A-GRIP-CORE.step",
+   "sha256": "b1c638a5b073f01fe3ebc7d78463a090153b0582c8360305e16402067060c7fc",
+   "bytes": 12005180
+  },
+  {
+   "file": "cad/exports/g1/parts/A-GRIP-CORE.stl",
+   "sha256": "1a35919301b5932918d43c12aef691abf2782a2b1b5115d28686dc28f1abd200",
+   "bytes": 323884
+  },
+  {
+   "file": "cad/exports/g1/parts/A-GRIP-PANEL-L-LH.step",
+   "sha256": "f0c0a962a4fcaee81e3abd7962e23013b05cc9f950806a4fa097f17d895f75ec",
+   "bytes": 6450150
+  },
+  {
+   "file": "cad/exports/g1/parts/A-GRIP-PANEL-L-LH.stl",
+   "sha256": "a8c0d583088be9eac6b6684b7f53a8ee7ba7d8547191181b5252eb4d426ac399",
+   "bytes": 475784
+  },
+  {
+   "file": "cad/exports/g1/parts/A-GRIP-PANEL-L.step",
+   "sha256": "ce8e2026c69ff9893b4344052f06b6525edc0097875208168c95e7bc0a3bbd59",
+   "bytes": 6443458
+  },
+  {
+   "file": "cad/exports/g1/parts/A-GRIP-PANEL-L.stl",
+   "sha256": "02f081878807541a5f1ee28fb151f44f9cd9e23695d0b2b021c5b4186cd9efda",
+   "bytes": 475784
+  },
+  {
+   "file": "cad/exports/g1/parts/A-GRIP-PANEL-R-LH.step",
+   "sha256": "8bd516ab768e57b505f03be20d17b66112544689bde4bb5f5db9557ccf5d950a",
+   "bytes": 6257190
+  },
+  {
+   "file": "cad/exports/g1/parts/A-GRIP-PANEL-R-LH.stl",
+   "sha256": "4796cdb33a8aa8059e85850dde443a37f3f7bef05d39839d47f160d958c3da3d",
+   "bytes": 305184
+  },
+  {
+   "file": "cad/exports/g1/parts/A-GRIP-PANEL-R.step",
+   "sha256": "8be086bd6f47045a952c08cc683614f1165be45656963dbc1aed43a49921fca9",
+   "bytes": 6253222
+  },
+  {
+   "file": "cad/exports/g1/parts/A-GRIP-PANEL-R.stl",
+   "sha256": "602ddc470cf58fec1cd93932f20aa68c3bfdb05a3f8273e547e97a706054cba0",
+   "bytes": 305184
+  },
+  {
+   "file": "cad/exports/g1/parts/A-HOUSING-COUPLER.step",
+   "sha256": "fb747ddee9be099801a923f39b4ed1dc35e33784954d8f68e1284970017db981",
+   "bytes": 46696
+  },
+  {
+   "file": "cad/exports/g1/parts/A-HOUSING-COUPLER.stl",
+   "sha256": "171ed9bacc6433cdaff64396d8cfe5212d726d6941d7decbb531bf54ae66a460",
+   "bytes": 27284
+  },
+  {
+   "file": "cad/exports/g1/parts/A-HOUSING-F.step",
+   "sha256": "f488e147d8c28f1059abf36c70b97cbf829af9a9fe04ab4910568836ebe342a8",
+   "bytes": 61696
+  },
+  {
+   "file": "cad/exports/g1/parts/A-HOUSING-F.stl",
+   "sha256": "10c2b079ab20bc6582fc0de6d3595951e04ec94e86bae6ccef34562c1e75a604",
+   "bytes": 52684
+  },
+  {
+   "file": "cad/exports/g1/parts/A-HOUSING-R.step",
+   "sha256": "7e95bbcd0259bac007a4120e6c6d156b565df8865631711d8eb6c78b54363252",
+   "bytes": 2866076
+  },
+  {
+   "file": "cad/exports/g1/parts/A-HOUSING-R.stl",
+   "sha256": "2bb65221d01483130d98812f5c45a8ad57b25a7bd156be4d267353da59c750d2",
+   "bytes": 1316684
+  },
+  {
+   "file": "cad/exports/g1/parts/A-NOSE.step",
+   "sha256": "f2b446373c23cb9b7e625e7a147d10f4bf916b783ff2105356990db67a4efeb1",
+   "bytes": 54362
+  },
+  {
+   "file": "cad/exports/g1/parts/A-NOSE.stl",
+   "sha256": "743aba9cf5d2a43c566227effa341fa547367582ccc143e2654c10442a962e4d",
+   "bytes": 448584
+  },
+  {
+   "file": "cad/exports/g1/parts/A-PALM-SHELF-LH.step",
+   "sha256": "13db734e93393254a2e39017c12a7ac9066806530e6121b9c43f01b320ff30fb",
+   "bytes": 356464
+  },
+  {
+   "file": "cad/exports/g1/parts/A-PALM-SHELF-LH.stl",
+   "sha256": "695af6a8d1e123c683975165889c9d52abfa61fb7ae4b66a16b455d0a39c5654",
+   "bytes": 112584
+  },
+  {
+   "file": "cad/exports/g1/parts/A-PALM-SHELF-M5DEG.step",
+   "sha256": "aeae8644de2e7a36d041bf18c06fed69f55ba744f343467ac406b8b152af33d4",
+   "bytes": 356368
+  },
+  {
+   "file": "cad/exports/g1/parts/A-PALM-SHELF-M5DEG.stl",
+   "sha256": "c3111b36270848c8fb7f269be8ecc8372b437e00776b19ecfd447f113bf828df",
+   "bytes": 112584
+  },
+  {
+   "file": "cad/exports/g1/parts/A-PALM-SHELF-P5DEG.step",
+   "sha256": "89145c225207ff76ff3ad334008dc161b5dca9d089d39d6f37fc3fafea7e72d0",
+   "bytes": 356369
+  },
+  {
+   "file": "cad/exports/g1/parts/A-PALM-SHELF-P5DEG.stl",
+   "sha256": "ae016425c7d8fffc0a0b2710de59f995274e8199d7dbf5e632182e527022cfb7",
+   "bytes": 112584
+  },
+  {
+   "file": "cad/exports/g1/parts/A-PALM-SHELF.step",
+   "sha256": "63443c1ea8d1cd2186f768afb6417f3b3fcc0a5e87574f6cc7d139a1d33e2183",
+   "bytes": 356014
+  },
+  {
+   "file": "cad/exports/g1/parts/A-PALM-SHELF.stl",
+   "sha256": "e74404b61beae96f2bd79926c64561ed68d8622dda979832841f5037f430b8d6",
+   "bytes": 112584
+  },
+  {
+   "file": "cad/exports/g1/parts/A-RAIL.step",
+   "sha256": "e71aca5ad4188e0c59308ddb21bf47ecf9699b022e99c841a1c39e064ea9d1be",
+   "bytes": 722357
+  },
+  {
+   "file": "cad/exports/g1/parts/A-RAIL.stl",
+   "sha256": "24e2eeab6fd32f996a16e95dab8bd22dc5260b618dcd4e254385f10fa86d154a",
+   "bytes": 228684
+  },
+  {
+   "file": "cad/exports/g1/parts/A-SERVICE-PLATE.step",
+   "sha256": "49fc149c04fb21d6ebdb9ef10845aae0d1170629782eef206bea0e955aa03412",
+   "bytes": 91606
+  },
+  {
+   "file": "cad/exports/g1/parts/A-SERVICE-PLATE.stl",
+   "sha256": "cff2a5bdeedf063e132062bd505d2b5089811ea31ee18bb4eb042fbc9b7c711f",
+   "bytes": 29484
+  },
+  {
+   "file": "cad/exports/g1/parts/A-TRIGGER-GUARD.step",
+   "sha256": "af8b4eb2f96cc6685d68147a4889520842bc957f08003b5ff0cc05067d3d8f99",
+   "bytes": 54776
+  },
+  {
+   "file": "cad/exports/g1/parts/A-TRIGGER-GUARD.stl",
+   "sha256": "476f314bc4bd832cce92abd9cf5b575c5a05fa41299ca96fe355a3a4f1e020ce",
+   "bytes": 28284
+  },
+  {
+   "file": "cad/exports/g1/parts/B-ANGLE-DIAL-L.step",
+   "sha256": "e45ae7f4c142e05aeba3be9731946d1619f431ff6fb9e072bd0ecc05d12c147c",
+   "bytes": 216621
+  },
+  {
+   "file": "cad/exports/g1/parts/B-ANGLE-DIAL-L.stl",
+   "sha256": "3aef842071441d8e8ef521dfc22131e1767ba5b131befda82c6b66d7fed91222",
+   "bytes": 128084
+  },
+  {
+   "file": "cad/exports/g1/parts/B-ANGLE-DIAL-R.step",
+   "sha256": "620671a6738dcd6a28a4b89c8799707ac430b5978ff737e6052775ad22d942c5",
+   "bytes": 217018
+  },
+  {
+   "file": "cad/exports/g1/parts/B-ANGLE-DIAL-R.stl",
+   "sha256": "50beb471647931a318682b3ea7d4ccd0c245be9cc6ecc13f97e58e523454da4d",
+   "bytes": 128084
+  },
+  {
+   "file": "cad/exports/g1/parts/B-CRADLE-PLACEHOLDER-ANDROID-163X76.step",
+   "sha256": "6031b54f0cb87f996ca0a550e28c2fd0c3a01c7d8f187ff51f29e792e06c8391",
+   "bytes": 128527
+  },
+  {
+   "file": "cad/exports/g1/parts/B-CRADLE-PLACEHOLDER-ANDROID-163X76.stl",
+   "sha256": "1a3d72b4f842058b4ae30326b26a4f963812f1df672f28841b8f83399265c095",
+   "bytes": 99084
+  },
+  {
+   "file": "cad/exports/g1/parts/B-CRADLE.step",
+   "sha256": "6393273d15b2dd8860c514b6dd6d842446cb69feff480064d74e630ca4dac36c",
+   "bytes": 128288
+  },
+  {
+   "file": "cad/exports/g1/parts/B-CRADLE.stl",
+   "sha256": "cd6f1ea1a093af114835da5b2d4348784b32d6fe70f2a6851c423d36fed45f1c",
+   "bytes": 94684
+  },
+  {
+   "file": "cad/exports/g1/parts/B-PAD-BACK-1-PLACEHOLDER-ANDROID-163X76.step",
+   "sha256": "84257a953fd36e5ae1474c8798347660a991e135e1b6fcebf31422240efa1499",
+   "bytes": 15451
+  },
+  {
+   "file": "cad/exports/g1/parts/B-PAD-BACK-1-PLACEHOLDER-ANDROID-163X76.stl",
+   "sha256": "76f814b9093c5d765a3872b04bba9d225fb04d0586bae908802c8ecd7302af80",
+   "bytes": 684
+  },
+  {
+   "file": "cad/exports/g1/parts/B-PAD-BACK-1.step",
+   "sha256": "c943c402dd99c163b6779da26ceece333431a77e5cdbc4e5cf87a3b5eb1e5321",
+   "bytes": 15451
+  },
+  {
+   "file": "cad/exports/g1/parts/B-PAD-BACK-1.stl",
+   "sha256": "76f814b9093c5d765a3872b04bba9d225fb04d0586bae908802c8ecd7302af80",
+   "bytes": 684
+  },
+  {
+   "file": "cad/exports/g1/parts/B-PAD-BACK-2-PLACEHOLDER-ANDROID-163X76.step",
+   "sha256": "e9a2925a9611e0ced6fa348ee3234b3a73a241fc5ca28378b9652babd231e9e8",
+   "bytes": 15477
+  },
+  {
+   "file": "cad/exports/g1/parts/B-PAD-BACK-2-PLACEHOLDER-ANDROID-163X76.stl",
+   "sha256": "f15d99f37b42e789d02311f7ab2eaebacb59289f25a0775dee26e3537f12303b",
+   "bytes": 684
+  },
+  {
+   "file": "cad/exports/g1/parts/B-PAD-BACK-2.step",
+   "sha256": "75f62a4e81c388bd97f0bbdccfca085318a267fdcc56f04cd090bf43fb0168eb",
+   "bytes": 15477
+  },
+  {
+   "file": "cad/exports/g1/parts/B-PAD-BACK-2.stl",
+   "sha256": "f15d99f37b42e789d02311f7ab2eaebacb59289f25a0775dee26e3537f12303b",
+   "bytes": 684
+  },
+  {
+   "file": "cad/exports/g1/parts/B-PAD-BACK-3-PLACEHOLDER-ANDROID-163X76.step",
+   "sha256": "b9e47b9522b76fe1925c568226f14689b122a5f0e043e0a046d787796e14a31e",
+   "bytes": 15468
+  },
+  {
+   "file": "cad/exports/g1/parts/B-PAD-BACK-3-PLACEHOLDER-ANDROID-163X76.stl",
+   "sha256": "aaec03f66512ffc31c3abb03b9bed72c6d4c4335379c8819ca7d2158c73a2e2d",
+   "bytes": 684
+  },
+  {
+   "file": "cad/exports/g1/parts/B-PAD-BACK-3.step",
+   "sha256": "e7319a0411172e060b186c1b1ba6e55c5164e9b3143493a43c29ccce00f60c36",
+   "bytes": 15494
+  },
+  {
+   "file": "cad/exports/g1/parts/B-PAD-BACK-3.stl",
+   "sha256": "fc232b206e4ef97f23c42be0da92bc6e78ec8b64629d69d4d963bf2cbd4f4b57",
+   "bytes": 684
+  },
+  {
+   "file": "cad/exports/g1/parts/B-PAD-LEDGE-1-PLACEHOLDER-ANDROID-163X76.step",
+   "sha256": "8354ac583e7f1d2107fd0a89906c709e0242ac88d0f5c579cff694f3237377c0",
+   "bytes": 15503
+  },
+  {
+   "file": "cad/exports/g1/parts/B-PAD-LEDGE-1-PLACEHOLDER-ANDROID-163X76.stl",
+   "sha256": "05cc9ded66cc09535a15079e419479cc20a6b6c27533925543487514dcb12895",
+   "bytes": 684
+  },
+  {
+   "file": "cad/exports/g1/parts/B-PAD-LEDGE-1.step",
+   "sha256": "13450df5118ec9b6b70e152d6b54a2b157067b3f67b354b41f05ccb131f74d7a",
+   "bytes": 15503
+  },
+  {
+   "file": "cad/exports/g1/parts/B-PAD-LEDGE-1.stl",
+   "sha256": "8fa576f6f185e68918bbaf16fc78817bf210161bc5a546cf8b3be7df4b260c14",
+   "bytes": 684
+  },
+  {
+   "file": "cad/exports/g1/parts/B-PAD-LEDGE-2-PLACEHOLDER-ANDROID-163X76.step",
+   "sha256": "dc299e19feaae4a4ef38429c3ce054f7b03da606f83f3f3035dd2f75ab57b57e",
+   "bytes": 15529
+  },
+  {
+   "file": "cad/exports/g1/parts/B-PAD-LEDGE-2-PLACEHOLDER-ANDROID-163X76.stl",
+   "sha256": "3c8c8065bbfc8c65f9dd8379865785a4c3d08e7f5215325545ea3cc0d03b573f",
+   "bytes": 684
+  },
+  {
+   "file": "cad/exports/g1/parts/B-PAD-LEDGE-2.step",
+   "sha256": "ad2dd391fb9c08b303bfabaf1317a3af8b0b4b6fed09acc4ec076058f4403c5f",
+   "bytes": 15529
+  },
+  {
+   "file": "cad/exports/g1/parts/B-PAD-LEDGE-2.stl",
+   "sha256": "b34f14c3bc2bbb2d113d5d437a928ad8a2f855f93b8b7d1f84829f13f9df2133",
+   "bytes": 684
+  },
+  {
+   "file": "cad/exports/g1/parts/B-RETAINER-R-PLACEHOLDER-ANDROID-163X76.step",
+   "sha256": "6ff75b502efd8133a2b6dade8abf5b4f4d98c14993490d04205b607fbd607096",
+   "bytes": 38719
+  },
+  {
+   "file": "cad/exports/g1/parts/B-RETAINER-R-PLACEHOLDER-ANDROID-163X76.stl",
+   "sha256": "4673ebaf4f136296cf728c5dbad201dbcd5c0a2201aea570d80a98b8d0abc14c",
+   "bytes": 26884
+  },
+  {
+   "file": "cad/exports/g1/parts/B-RETAINER-R.step",
+   "sha256": "fd508b6fd0268d1acecd38c70436d4ae7b379f26a1f5320ae7ff297ff353b8ad",
+   "bytes": 38720
+  },
+  {
+   "file": "cad/exports/g1/parts/B-RETAINER-R.stl",
+   "sha256": "8fdde86df403ea45eea3b8ba741e1c25c247fafcd551404c303a085f54ce08cc",
+   "bytes": 26884
+  },
+  {
+   "file": "cad/exports/g1/parts/B-RETAINER-TOP-PLACEHOLDER-ANDROID-163X76.step",
+   "sha256": "e5b4c438abdfbc38900bcf2bc0d973609bc30dfee24625d2e30b374941b8ae69",
+   "bytes": 32921
+  },
+  {
+   "file": "cad/exports/g1/parts/B-RETAINER-TOP-PLACEHOLDER-ANDROID-163X76.stl",
+   "sha256": "d4771bc941c815965f25987ee0f9fde991da3eefc8e7f36d50aef347eb905c93",
+   "bytes": 26684
+  },
+  {
+   "file": "cad/exports/g1/parts/B-RETAINER-TOP.step",
+   "sha256": "96ae7455c2473c1c948acc0fc06a17c6c4425ac1355c30ee0a1d87a380b47cd9",
+   "bytes": 43041
+  },
+  {
+   "file": "cad/exports/g1/parts/B-RETAINER-TOP.stl",
+   "sha256": "a028122e6855371769e4e5605e5b2c70057c1aacb1c1afe49620c75f400780e4",
+   "bytes": 27284
+  },
+  {
+   "file": "cad/exports/g1/parts/B-YOKE.step",
+   "sha256": "5b6899762af48367fdc49cd345e85a30ea16904a6fc5ccdff51f58e26cf26f47",
+   "bytes": 87306
+  },
+  {
+   "file": "cad/exports/g1/parts/B-YOKE.stl",
+   "sha256": "92760652a90b007eb2b4f369d3f5f0f92178097b54c557225396122bb15cfbbe",
+   "bytes": 129884
+  },
+  {
+   "file": "cad/exports/g1/parts/C-X-CAP.step",
+   "sha256": "2279da63428b88c029e6adfdf054c7a5722bd97c32d6abc29d97426b50fb83b9",
+   "bytes": 286166
+  },
+  {
+   "file": "cad/exports/g1/parts/C-X-CAP.stl",
+   "sha256": "fc1b889a507123ae434ecad9b10a8942079a762818037f953ae5b9f5588cabe9",
+   "bytes": 14284
+  },
+  {
+   "file": "cad/exports/g1/parts/C-X-CASSETTE.step",
+   "sha256": "7b91f0f8ccfb2808d41690411cb24aaac085b75013de8434dd0cfddf15ddd2a5",
+   "bytes": 41643
+  },
+  {
+   "file": "cad/exports/g1/parts/C-X-CASSETTE.stl",
+   "sha256": "0c5f8fe3bcacc5d82df0f1f073fe015adbcc6b1e4ba3eb3a15549bed9068a91f",
+   "bytes": 78884
+  },
+  {
+   "file": "cad/exports/g1/parts/C-X-CHANNEL.step",
+   "sha256": "b4b9402e12663a9f7cacb8061f358b444153f1469dae56a0dfff203561fe8ea2",
+   "bytes": 458294
+  },
+  {
+   "file": "cad/exports/g1/parts/C-X-CHANNEL.stl",
+   "sha256": "1d217f32b8072ce4d8d05281206e64c7e9db14abc335a08d990baf431bfbe171",
+   "bytes": 279484
+  },
+  {
+   "file": "cad/exports/g1/parts/C-X-STOP-F.step",
+   "sha256": "4a4b91d852143a43e48238f370946d87aed55f3da81d8dbc21232a8e2447caaf",
+   "bytes": 44978
+  },
+  {
+   "file": "cad/exports/g1/parts/C-X-STOP-F.stl",
+   "sha256": "785bab3a0d6aa39e2600fcebe1f14ad198f54882d926ecb005fc66cb19ae6d12",
+   "bytes": 2284
+  },
+  {
+   "file": "cad/exports/g1/parts/C-Z-CASSETTE.step",
+   "sha256": "79681a1b8a4f763c402d4b83d866d354a671e13b832e7ce246208dddc721bfa3",
+   "bytes": 10360
+  },
+  {
+   "file": "cad/exports/g1/parts/C-Z-CASSETTE.stl",
+   "sha256": "c8b0ef44faec77c15b3793672f34c2daa86ad408603dd41e32cde5ba480014a9",
+   "bytes": 50284
+  },
+  {
+   "file": "cad/exports/g1/parts/C-Z-SPACER-B.step",
+   "sha256": "edb18b24bf795043e2ea2d208fdaa7d08e20bc7c1fbd524b70e15e52ab12d69f",
+   "bytes": 8020
+  },
+  {
+   "file": "cad/exports/g1/parts/C-Z-SPACER-B.stl",
+   "sha256": "f7def4108017b4e71f3e7b24b954117dadaf870ab898d5972692199cb5a403a0",
+   "bytes": 25484
+  },
+  {
+   "file": "cad/exports/g1/parts/D-SWITCH-BLADE.step",
+   "sha256": "633f5d08b6f8f5f3806c3bbeed20ac94c778a0c58ab094f40d446b7f2f7fd441",
+   "bytes": 41322
+  },
+  {
+   "file": "cad/exports/g1/parts/D-SWITCH-BLADE.stl",
+   "sha256": "95d714a811b84d248acfe536f4c7fc38953adf61b17cbadc2854a88014f43ba6",
+   "bytes": 2084
+  },
+  {
+   "file": "cad/exports/g1/parts/S-FRONT-BASE.step",
+   "sha256": "e291ccff4e8fcb227c254eb3496e73e5f1fe4698ae6b03a31b12b7dbdaf6e2ef",
+   "bytes": 71125
+  },
+  {
+   "file": "cad/exports/g1/parts/S-FRONT-BASE.stl",
+   "sha256": "225b87edb7c65e31ae6adee28e58db14cf3ba692f5fc06a3af675403f1047f9a",
+   "bytes": 3884
+  },
+  {
+   "file": "cad/exports/g1/parts/S-FRONT-BLADE.step",
+   "sha256": "f975ac31cadb57b7dcbefca400f5d622f30a608eaea4378fe55bf1b1ab71e07f",
+   "bytes": 15474
+  },
+  {
+   "file": "cad/exports/g1/parts/S-FRONT-BLADE.stl",
+   "sha256": "b5776c138a0bb40910a7c28d4c3ef9d322abccfff29cb231b0dee95ae0fb2602",
+   "bytes": 684
+  },
+  {
+   "file": "cad/exports/g1/parts/S-FRONT-CARRIER.step",
+   "sha256": "edf03d29a125dced13320ebfa84e239375203f24e357479d2c6d2519c4cbe5d9",
+   "bytes": 19146
+  },
+  {
+   "file": "cad/exports/g1/parts/S-FRONT-CARRIER.stl",
+   "sha256": "4d2765a28d09424f8924482a53f26b010247f6eb6f3ce22bca9de1e69576fd4b",
+   "bytes": 26084
+  },
+  {
+   "file": "cad/exports/g1/parts/S-FRONT-LSHIM-L.step",
+   "sha256": "10ec09ff36fc61af3ed0e41a414d773165e3d5b4a5e563f0a13ac997baa50f8b",
+   "bytes": 19140
+  },
+  {
+   "file": "cad/exports/g1/parts/S-FRONT-LSHIM-L.stl",
+   "sha256": "5783ef7f942afa1df9c5aa1a77ef73e63b2884de29a96d1e63ec7d0ea694a6dc",
+   "bytes": 26084
+  },
+  {
+   "file": "cad/exports/g1/parts/S-FRONT-LSHIM-R.step",
+   "sha256": "5a0e6d757a50fe0b5475162a3b2f156ea080934061ada22a6eeb33aea80d4c02",
+   "bytes": 19176
+  },
+  {
+   "file": "cad/exports/g1/parts/S-FRONT-LSHIM-R.stl",
+   "sha256": "859ab9f535c42d2bc63625315aff7c0e33cb479e96e3a037b38f607749ac779f",
+   "bytes": 26084
+  },
+  {
+   "file": "cad/exports/g1/parts/S-FRONT-SHIM-2MM.step",
+   "sha256": "1c3b5dfe5a5edc557df9a5f0ec9ba49ef36077cac6fdbb3630a706780c063431",
+   "bytes": 15456
+  },
+  {
+   "file": "cad/exports/g1/parts/S-FRONT-SHIM-2MM.stl",
+   "sha256": "447ffe04bfacc47a16e88486f3346ff6839300863dcc4086e61d3ab7eb5cd6b8",
+   "bytes": 684
+  },
+  {
+   "file": "cad/exports/g1/parts/S-FRONT-SHIM.step",
+   "sha256": "b0828f2ce1c9b8f4e247c0188e0e7d65f7be68ee909e273e9504aaa39c5965b7",
+   "bytes": 15456
+  },
+  {
+   "file": "cad/exports/g1/parts/S-FRONT-SHIM.stl",
+   "sha256": "012ebb28d237644ea176f3cfa0160bd1dd6e17a4ef881802077580840c5a2eae",
+   "bytes": 684
+  },
+  {
+   "file": "cad/exports/g1/parts/S-REAR-BASE.step",
+   "sha256": "3980dc1a0c4db9c55907c5be97fdd7e98416df26b53eab6f1713af8e886ebcea",
+   "bytes": 62440
+  },
+  {
+   "file": "cad/exports/g1/parts/S-REAR-BASE.stl",
+   "sha256": "7d7da48cad810d07b4256fd4d85dc144d1b9406cf57d5b0872dbe469e0d98d44",
+   "bytes": 53484
+  },
+  {
+   "file": "cad/exports/g1/parts/S-REAR-LEAF.step",
+   "sha256": "f55fded86342c93bba2cfe0fe82055e1edadd42f0efd35387693f7d50a28ca71",
+   "bytes": 57970
+  },
+  {
+   "file": "cad/exports/g1/parts/S-REAR-LEAF.stl",
+   "sha256": "685e9b4e76af8388b8560c0373cd7da2834537b54f5b3e28b3365d569521245f",
+   "bytes": 103684
+  },
+  {
+   "file": "cad/exports/g1/parts/S-REAR-NOTCH.step",
+   "sha256": "fa41d7ba16912fbab77ca6d81bda550a20d854c984c04d444f092aa0c8f9737b",
+   "bytes": 28930
+  },
+  {
+   "file": "cad/exports/g1/parts/S-REAR-NOTCH.stl",
+   "sha256": "91dc4fa2017c8a720ca25421741000b52b14d5e5a770d2b3e0e80b3f58ccf7af",
+   "bytes": 1484
+  },
+  {
+   "file": "cad/exports/g1/parts/S-REAR-SLIDE.step",
+   "sha256": "7b22c78caeb7716c3f4667adfdc2e7d1f6c31363abbe4d6cdc9734b857234423",
+   "bytes": 15494
+  },
+  {
+   "file": "cad/exports/g1/parts/S-REAR-SLIDE.stl",
+   "sha256": "350620b581451b4e6996004d754f70e43ffbc11c041963ebc3a33d6a0e585d74",
+   "bytes": 684
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/C-FIXED-BAR-1.step",
+   "sha256": "807808981172b565f10e6960b51c1611821f92e0ed6f669fd337e2850dc6fede",
+   "bytes": 15563
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/C-FIXED-BAR-1.stl",
+   "sha256": "ff0e1c19c5c3faba6289f520dba0e663b459024e62cf9cdef9e05f5dc542ed45",
+   "bytes": 684
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/C-FIXED-BAR-2.step",
+   "sha256": "b0b4eaa1a3d50c22a8e1abe0bd2bf2a9a634310e2bca8425ee887c569a9f7d3a",
+   "bytes": 15563
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/C-FIXED-BAR-2.stl",
+   "sha256": "e87ab419949d7e531d35f691a88caa80520c6a82dc307b1788ed743c06762330",
+   "bytes": 684
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/C-XSLUG-1.step",
+   "sha256": "3166725a70379b914cc3f3b6035124dff636add39053faf3b10950b68ef473d6",
+   "bytes": 5895
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/C-XSLUG-1.stl",
+   "sha256": "d22873357bd8fe5abf613a4d2b00bd07670bc258cd67ba947e9468817dae91c0",
+   "bytes": 25084
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/C-XSLUG-2.step",
+   "sha256": "adbc5e6a638ee71ce1fe12667a933fafcf842a6f7e8317bfb08fec51c0db1cd5",
+   "bytes": 5895
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/C-XSLUG-2.stl",
+   "sha256": "49818119da25e7f87fe2a8f3fb914e472b91a169edba29954ab78c08c6fd0b7a",
+   "bytes": 25084
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/C-XSLUG-3.step",
+   "sha256": "55013930d40c409c8db2e839fc3258a86308d0d23c5aa53a2295b0b4893845b6",
+   "bytes": 5895
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/C-XSLUG-3.stl",
+   "sha256": "8cc679563615c09840aba46dc0ffae82dab67155348585abad073ff16dc7c122",
+   "bytes": 25084
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/C-XSLUG-4.step",
+   "sha256": "f7484cd186a77b9a2439bc647580359bccf9a0fd069f3ff177d8d1f85730a7a1",
+   "bytes": 5895
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/C-XSLUG-4.stl",
+   "sha256": "4b0005524c98870a41c1513db06881c7cb110d95e0c843c6956784481e58b412",
+   "bytes": 25084
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/C-ZSLUG-1.step",
+   "sha256": "72c5c13d6066b5e69f36ea9ce5b8f5e0752573de1bc08ecd930948a999bbe219",
+   "bytes": 6108
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/C-ZSLUG-1.stl",
+   "sha256": "0977ab155df5e370c76c3d5df22af73b306359fad5982364b5013f5ccccd71cd",
+   "bytes": 25084
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/C-ZSLUG-2.step",
+   "sha256": "4d80fb7f6b2f6bdb009ce35a1c7322c843ec7733c1350704949cb1b8258e53b3",
+   "bytes": 6111
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/C-ZSLUG-2.stl",
+   "sha256": "275c2102771395f1606fb55249d767724e7c1725eace5dc2f8c57d393245ecdc",
+   "bytes": 25084
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/C-ZSLUG-3.step",
+   "sha256": "1c9c8331407621171cb2f9c6e2c6e2d880fbda274767e31b439a8dfa6005aae7",
+   "bytes": 6111
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/C-ZSLUG-3.stl",
+   "sha256": "9a616a50c0951324b5116bb079cf948b2e13ae3a214664f8bba74fe1d7c19529",
+   "bytes": 25084
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/C-ZSLUG-4.step",
+   "sha256": "bb8e6b44e9872785a0aecd522527f8a3e7b80788fb7c2928f8f9fa2aa3a2a1ff",
+   "bytes": 6111
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/C-ZSLUG-4.stl",
+   "sha256": "60fdc23c6292f75cdbf99f4ca1902b38b752ef18aa94ba653ea2cdb6b4bc93a2",
+   "bytes": 25084
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/C-ZSLUG-5.step",
+   "sha256": "5106105322128ea11ddfb2b6db99b7e5dced5ad2fefc7ea393ebbc118c13e69f",
+   "bytes": 6111
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/C-ZSLUG-5.stl",
+   "sha256": "023fc1188a381e66f5f653e839546b9bd72acda87d940232e3bab7530e2f7c6a",
+   "bytes": 25084
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/H-ANGLE-KNOB-L.step",
+   "sha256": "601b040a499a8027d09cfaef197833ff4b3b6259e5a9efd2d893cb197be03e96",
+   "bytes": 225941
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/H-ANGLE-KNOB-L.stl",
+   "sha256": "02903e2ceb0d65882f97bf63b9fda1976ad4122ddbe919f089bf72b66b4e05b3",
+   "bytes": 36484
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/H-ANGLE-KNOB-R.step",
+   "sha256": "012e48409baac1671a8241cab7d5219e5ecf153fae3874fe729e6c132fd9b1f1",
+   "bytes": 226301
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/H-ANGLE-KNOB-R.stl",
+   "sha256": "47c0f7db209d1767e680e7e7e74388a6577ed04618642a12d59131c04171a7b4",
+   "bytes": 36484
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/H-BACKSTRAP-SCREW-1.step",
+   "sha256": "61b80a9cf0f91cb29e6a6cc9ea2013c164b75b456da74959bc8cc7734b1ed66f",
+   "bytes": 5973
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/H-BACKSTRAP-SCREW-1.stl",
+   "sha256": "1eb30f779245d979021d94afb8c32f7dfba57f13bff5442b083c5bdf64042ce2",
+   "bytes": 25084
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/H-BACKSTRAP-SCREW-2.step",
+   "sha256": "218f82ab456438f2b24b7aa4dac12dbc71b401a9418dd5971453cb07b8db9f76",
+   "bytes": 5973
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/H-BACKSTRAP-SCREW-2.stl",
+   "sha256": "adbb0feb6af861629e919ab0653a86d7b1bf4d9533d7bbeb7f8f858d0a7a7ad8",
+   "bytes": 25084
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/H-DETENT-L.step",
+   "sha256": "4fb1a59aaf8f6b5de826b19253417370017c143e17940cd27a6208b72a27a4a9",
+   "bytes": 5736
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/H-DETENT-L.stl",
+   "sha256": "0bdb23043dcfb9207a4c8a8f3c6eafdbc5001bd9d9bbd883a70fe17a23401c4e",
+   "bytes": 25084
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/H-DETENT-R.step",
+   "sha256": "108b18f1fec0eaa715d2f4bbc5e17697bfdef36c0b7f494ce2b5c824e783a06b",
+   "bytes": 5748
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/H-DETENT-R.stl",
+   "sha256": "b73423f20121343f5c7c88db56f8b16caeb3b6981a59b65dae97d41d36ff467c",
+   "bytes": 25084
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/H-FRONT-CLAMP.step",
+   "sha256": "edc7d2c4227dabf5bb4d296293b9e39fcfe4724ac5f2d717ade5dde6d37b5ed1",
+   "bytes": 5734
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/H-FRONT-CLAMP.stl",
+   "sha256": "19fbe67e13bc93565ecfef3d3a8614e37bc6076b0ce35edb1aadc6bfb5f859ea",
+   "bytes": 25084
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/H-GRIP-SCREW-1.step",
+   "sha256": "1faef3045c570c8278185e0c6ddb68942e983af3b9dc62ab400a7a7d0acadb1b",
+   "bytes": 9581
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/H-GRIP-SCREW-1.stl",
+   "sha256": "2ce211a1c6fcdf6daf5c13e2d291c1f6f35154bcf782b58adef3e5bc11c3fa6a",
+   "bytes": 50284
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/H-GRIP-SCREW-2.step",
+   "sha256": "bb43609a9377485701ca8d74ea8976fb9d4cfbc86b8c584f6b253a0d7cbede83",
+   "bytes": 9581
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/H-GRIP-SCREW-2.stl",
+   "sha256": "0f697055fa994e43fc338983082bc24ac9d9be954766defba3870c7ad62240c8",
+   "bytes": 50284
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/H-PANEL-BOLT-1.step",
+   "sha256": "de98d82280256c367d52944aed00c1b0fc8433037ce761841538070a980ec36e",
+   "bytes": 5938
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/H-PANEL-BOLT-1.stl",
+   "sha256": "f2fb25deb5e6696a050f1a44d662b730b6978b5ab922f181a8d5a10cade63d10",
+   "bytes": 25084
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/H-PANEL-BOLT-2.step",
+   "sha256": "d149768ba7d945c0e16810b62b73428952cf707a28d84b1a2e6f91324edef2ce",
+   "bytes": 5946
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/H-PANEL-BOLT-2.stl",
+   "sha256": "08c2eecf7960fb653208e932ba93b6a5fc88dc3544fba9966883b9b6aee3a9fb",
+   "bytes": 25084
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/H-PIVOT-SHAFT.step",
+   "sha256": "962db91420e41b1597e0806a4200b204b3ec7012b05913efef23dbc70cca4868",
+   "bytes": 5726
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/H-PIVOT-SHAFT.stl",
+   "sha256": "ed0611e175079c2073aa7c4ceb44a61f20c580f317d10f473dddbea17cb7e00f",
+   "bytes": 25084
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/H-REAR-ELEV-KNOB.step",
+   "sha256": "1151412ca3567add167b34b7f089b3ba36ef749334646af44a6dad9acea69e06",
+   "bytes": 219268
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/H-REAR-ELEV-KNOB.stl",
+   "sha256": "95cfbba63b9536921437528034d25f70ce34db3a2f752cfb20257ac283126647",
+   "bytes": 36484
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/H-REAR-ELEV.step",
+   "sha256": "2e5150ab6204d4a239f9273f8e82b5929ea99158e8100910a16f75236282abf2",
+   "bytes": 5685
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/H-REAR-ELEV.stl",
+   "sha256": "4afbbd12c5f7ba2c62202ae49de4ba80e6f0ab6b9ef8e40f5a91b4f846410227",
+   "bytes": 25084
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/H-REAR-PIN.step",
+   "sha256": "675976873a5247febbe231212dc519216d93cadd566bbc94eadbc3fec3168a5e",
+   "bytes": 5734
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/H-REAR-PIN.stl",
+   "sha256": "c9f3b2b65b4891c89d2c842b31aab5a16a281afc8535ff81f76844fbe30fe2d5",
+   "bytes": 25084
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/H-REAR-SPRING.step",
+   "sha256": "d7dea9683deeb302eca26de76ab681752f3fea80c9c2cb84d7a4c3fd719ad3c3",
+   "bytes": 9339
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/H-REAR-SPRING.stl",
+   "sha256": "8668832aebf1b1451457a23d357aa4e506c41862bd562c52d51ee54891621918",
+   "bytes": 50484
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/H-REAR-WIND-KNOB.step",
+   "sha256": "6456e478349238d518daa38fb5356324e5c40a64dc6ca1a4dffcb0b5ce9e93a3",
+   "bytes": 222667
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/H-REAR-WIND-KNOB.stl",
+   "sha256": "019016bcb2b29fc038229db57a6326be5999609a1edcda914b67aa9862bc2a12",
+   "bytes": 11084
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/H-REAR-WIND.step",
+   "sha256": "4b20f4dcef3ce3c0e0c97a82fbc43b26b0fbbb03488a5b7104e1a8602c4641bb",
+   "bytes": 5739
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/H-REAR-WIND.stl",
+   "sha256": "757d024d241d21009c264364fe8fbc99181eea08f1dde6c335ab64f4a506c1aa",
+   "bytes": 25084
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/H-RET-R-KNOB.step",
+   "sha256": "7b1d2db51b14000f9dc7fb966503f842c1b73b3ee94343144a135ae278e669a4",
+   "bytes": 226862
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/H-RET-R-KNOB.stl",
+   "sha256": "b777d0c7a3c5ba263bb6163a18fdd8a715a6e804d46baeace990dcbb1f4088f3",
+   "bytes": 36484
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/H-RET-R-SCREW.step",
+   "sha256": "f8313e084b491915e5ccc1400e7d207c6fc7f70e01d7507d800bd072fe9188b4",
+   "bytes": 5745
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/H-RET-R-SCREW.stl",
+   "sha256": "d4dbca4d4a1884d43f5e9dcf70979d767022243102873d898d3165d0e90f076e",
+   "bytes": 25084
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/H-RET-TOP-KNOB.step",
+   "sha256": "38647aa9f0f9ccd9abd3cabb631174ffb7e406929404aaf241a0b1b8a2a58348",
+   "bytes": 219775
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/H-RET-TOP-KNOB.stl",
+   "sha256": "aa4550c9210124fe583a2d1687d373c3fe012e891e02252ac78082aece3689d4",
+   "bytes": 36484
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/H-RET-TOP-SCREW.step",
+   "sha256": "2823c19e781b2ef3c8135d57b2a2b323a00f14f195299c77a7991b5b64a83d0d",
+   "bytes": 5690
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/H-RET-TOP-SCREW.stl",
+   "sha256": "1a14fac3c1fef17230fb3e7b062f40997249ed1554773c1bc3678271e4e6fb1c",
+   "bytes": 25084
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/H-SHELF-PIN.step",
+   "sha256": "dfed9da7df658d1251c7d6139e3ead960f2d114080c7d3586e28c28056cd3206",
+   "bytes": 5941
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/H-SHELF-PIN.stl",
+   "sha256": "e7fe69cc10d057ee2e9dbebf770881ce916241223552187ed3dd96e740f5d1d9",
+   "bytes": 25084
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/H-X-LOCK-KNOB.step",
+   "sha256": "c34ac12d452effb2fac8fc125f161cae8350a254c2602ba728e7e17b6487d51c",
+   "bytes": 222666
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/H-X-LOCK-KNOB.stl",
+   "sha256": "f68ec97f8272862ab8f7122c298a44a1305b23eb682548be88ed41a6af5726fe",
+   "bytes": 11084
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/H-X-LOCK.step",
+   "sha256": "13f09ee7f383eef7e94a699eeb85270c06492f4d9cf940025fa9b6d11768e0ee",
+   "bytes": 5746
+  },
+  {
+   "file": "cad/exports/g1/parts/hardware/H-X-LOCK.stl",
+   "sha256": "515388b070fe9b7b2a22e36afe5e1a9ee84241b4cfd2b49384573c5c88da07c2",
+   "bytes": 25084
+  },
+  {
+   "file": "cad/exports/g1/parts/reference/D-SWITCH-BODY.step",
+   "sha256": "6fe6d640886e2b8c2e6ba980abdb20272e9867e9dc8a93bd75c6a0ee88480101",
+   "bytes": 29938
+  },
+  {
+   "file": "cad/exports/g1/parts/reference/D-SWITCH-BODY.stl",
+   "sha256": "62810a33081f20fa3bf697c9b164ad52332cdf6d890ac121752f9fa42439ac7d",
+   "bytes": 1484
+  },
+  {
+   "file": "cad/exports/g1/parts/reference/E-ELECTRONICS.step",
+   "sha256": "63a782b2aa3c214e276aaf4371eb504ea71cb485dc62ac5f705f5e1f7b2a874e",
+   "bytes": 15525
+  },
+  {
+   "file": "cad/exports/g1/parts/reference/E-ELECTRONICS.stl",
+   "sha256": "869255813073cf67e363107f7d8d69f1f81eb077224b1b202369202a8726c27f",
+   "bytes": 684
+  },
+  {
+   "file": "cad/exports/g1/parts/reference/PHONE.step",
+   "sha256": "8ab015cc926ceb5b84c73ad19e665d4d9d714840b78f814d6de9c200f29e6e9b",
+   "bytes": 69997
+  },
+  {
+   "file": "cad/exports/g1/parts/reference/PHONE.stl",
+   "sha256": "2804708bc8b8c038e8a554620f52cb39ac83ab79970c160844080c87aa254d1d",
+   "bytes": 871084
+  }
+ ]
+}

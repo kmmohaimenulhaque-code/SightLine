@@ -1,0 +1,179 @@
+{
+ "config_id": "G1-IP15-LH",
+ "profile": "apple-iphone-15",
+ "hand": "left",
+ "solids_valid": {
+  "status": "PASS",
+  "invalid": [],
+  "n_parts": 80
+ },
+ "collision_matrix": {
+  "status": "PASS",
+  "pairs_tested": 161,
+  "interferences": [],
+  "allowed_contacts": "face contact and equal-diameter threaded/press engagement (common volume \u2264 0.05 mm\u00b3); the elevation spring is compliant and excluded"
+ },
+ "camera_keepout": {
+  "status": "PASS",
+  "regions": 2,
+  "hits": [],
+  "note": "camera centre/protrusion/FOV PENDING; both short-end zones kept empty"
+ },
+ "sight_line_clear": {
+  "status": "PASS",
+  "hits": [],
+  "note": "2 \u00d7 1 mm corridor from 800 mm behind the instrument to the front blade, 0.3 mm above the line of sight"
+ },
+ "active_sights": {
+  "status": "PASS",
+  "blade_top_z": 20.0,
+  "notch_part": "S-REAR-NOTCH",
+  "rear_sight_origin_K": [
+   61.25,
+   0.0,
+   20.0
+  ],
+  "front_sight_origin_K": [
+   279.5,
+   0.0,
+   20.0
+  ],
+  "sight_radius_mm": 218.25,
+  "nominal_sight_height_above_housing_mm": 20.0,
+  "reference_alignment_axis_K": [
+   1.0,
+   0.0,
+   0.0
+  ],
+  "rear_elevation_range_mm": [
+   -1.0,
+   1.0
+  ],
+  "rear_elevation_range_mrad": 4.58,
+  "rear_leaf_angle_range_deg": 4.32,
+  "rear_windage_range_mm": [
+   -1.5,
+   1.5
+  ],
+  "rear_windage_range_mrad": 6.87,
+  "front_elevation_shim_mm": [
+   0.0,
+   2.0
+  ],
+  "front_shim_step_mm": 0.5,
+  "front_lateral_shim_offset_mm": [
+   -0.8000000000000002,
+   0.8000000000000002
+  ],
+  "front_blade_width_mm": 4.0,
+  "rear_notch_width_mm": 3.6,
+  "sight_picture_at_assumed_eye_distance": {
+   "eye_distance_mm": 700.0,
+   "status": "ASSUMED (arm-length hold, for the sight-picture estimate only)",
+   "blade_mrad": 4.36,
+   "notch_mrad": 5.14,
+   "light_gap_each_side_mrad": 0.39
+  },
+  "evidence": "MODEL OUTPUT (geometry); sight-alignment performance UNVERIFIED"
+ },
+ "transform_chain": {
+  "status": "PASS",
+  "phone_centroid_error_mm": 0.0,
+  "chain": "PHONE BODY \u2192 ADAPTER (Q) \u2192 YOKE (Y) \u2192 CHASSIS (K1) \u2192 GRIP DATUM (G)"
+ },
+ "phone_orientation": {
+  "status": "PASS",
+  "phone_long_axis_K": [
+   0.0,
+   1.0,
+   0.0
+  ],
+  "screen_normal_K": [
+   -1.0,
+   -0.0,
+   -0.0
+  ],
+  "rear_camera_axis_K": [
+   1.0,
+   0.0,
+   0.0
+  ],
+  "operator_view_dir_K": [
+   1,
+   0,
+   0
+  ],
+  "target_dir_K": [
+   1,
+   0,
+   0
+  ],
+  "cradle_angle_deg": 0.0,
+  "phone_bbox_K": [
+   21.2,
+   29.0,
+   -73.8,
+   73.8,
+   54.0,
+   125.6
+  ],
+  "phone_bottom_above_sight_line_mm": 34.0,
+  "phone_behind_rear_sight": true,
+  "rule": "landscape: long axis along Y; screen faces the shooter (\u2212X); rear cameras face the target (+X); phone above the sight line at the operator end",
+  "camera_sensing": "NOT CLAIMED \u2014 camera position, protrusion and field of view are PENDING measurement"
+ },
+ "printability": {
+  "status": "PASS",
+  "bed_mm": 256.0,
+  "too_large": []
+ },
+ "moving_interfaces": {
+  "phone_angle_positions": {
+   "status": "PASS",
+   "cases": [
+    {
+     "angle_deg": -10.0,
+     "collisions": [],
+     "keepout_hits": [],
+     "sight_line_hits": []
+    },
+    {
+     "angle_deg": 0.0,
+     "collisions": [],
+     "keepout_hits": [],
+     "sight_line_hits": []
+    },
+    {
+     "angle_deg": 10.0,
+     "collisions": [],
+     "keepout_hits": [],
+     "sight_line_hits": []
+    }
+   ],
+   "lock": "detent pin in each upright engages the dial holes; knurled knobs clamp"
+  }
+ },
+ "moving_interfaces_summary": {
+  "status": "PASS"
+ },
+ "summary": {
+  "PASS": 10,
+  "FAIL": 0,
+  "runtime_s": 74.7
+ },
+ "solver_cad_consistency": {
+  "status": "PASS",
+  "configured_mass_g": 1060.1,
+  "solver_mass_g_for_configured_setting": 1060.11,
+  "configured_com_K": [
+   124.57,
+   -0.39,
+   -15.41
+  ],
+  "solver_com_K": [
+   124.57,
+   -0.39,
+   -15.41
+  ]
+ }
+}

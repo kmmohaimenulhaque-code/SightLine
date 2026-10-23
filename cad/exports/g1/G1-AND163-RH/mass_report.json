@@ -1,0 +1,502 @@
+{
+ "generator": "sightline_g1 g1-1.0.0",
+ "source_commit": "2b718f0a021dd40179d358a8f2ffa5a648efebbe+dirty",
+ "summary": {
+  "config_id": "G1-AND163-RH",
+  "profile": "placeholder-android-163x76",
+  "mass_g": 1033.3,
+  "mass_sigma_g": 40.6,
+  "com_K_mm": [
+   116.03,
+   -0.66,
+   -9.1
+  ],
+  "com_G_mm": [
+   61.03,
+   -0.66,
+   30.9
+  ],
+  "inertia_about_com_K_gmm2": [
+   [
+    5437784.0,
+    -43778.0,
+    2162358.0
+   ],
+   [
+    -43778.0,
+    14366084.0,
+    13523.0
+   ],
+   [
+    2162358.0,
+    13523.0,
+    10125108.0
+   ]
+  ],
+  "status": "MODEL OUTPUT (CAD estimate: printed parts volume \u00d7 density with a wall/infill model, steel solid, phone at its box centre with manufacturer/placeholder mass, electronics PLACEHOLDER). Not measured.",
+  "sigma_basis": "1\u03c3 from phone mass \u03c3, \u00b110 % on printed-part mass, \u00b16 g hardware/electronics (ESTIMATED)",
+  "by_group": {
+   "ballast_x": 358.8,
+   "ballast_z": 37.4,
+   "cradle": 105.3,
+   "grip": 128.6,
+   "housing": 154.8,
+   "interfaces": 31.7,
+   "phone": 200.0,
+   "sights": 16.8
+  }
+ },
+ "solver": {
+  "config_id": "G1-AND163-RH",
+  "profile": "placeholder-android-163x76",
+  "phone_mass": {
+   "v": 200.0,
+   "s": "PLACEHOLDER",
+   "sigma": 10.0
+  },
+  "envelope": {
+   "mass_g": [
+    684.1,
+    1251.1
+   ],
+   "com_x_K_mm": [
+    68.3,
+    143.9
+   ],
+   "com_y_K_mm": [
+    -0.99,
+    -0.54
+   ],
+   "com_z_K_mm": [
+    -13.7,
+    7.3
+   ],
+   "settings": 6912
+  },
+  "grip_datum_K": [
+   55.0,
+   0.0,
+   -40.0
+  ],
+  "targets": [
+   {
+    "target_id": "DEMO-INFEASIBLE",
+    "target_mass_g": 1500.0,
+    "target_com_mm": [
+     null,
+     null,
+     null
+    ],
+    "com_axes_used": [],
+    "frame_notes": [
+     "COM-x 120.0 mm given in the G0 frame K \u2014 not transferable to K1, not used"
+    ],
+    "status": "INFEASIBLE",
+    "reasons": [
+     "insufficient ballast"
+    ],
+    "mass_tolerance_g": 10.0,
+    "com_tolerance_mm": 1.0,
+    "inertia_target": "UNKNOWN \u2014 not used",
+    "best": [
+     {
+      "fixed_bars": 3,
+      "x_slugs": 5,
+      "x_position_mm": 174.0,
+      "z_slugs": 5,
+      "z_index_mm": 6.0,
+      "mass_g": 1251.1,
+      "com_K_mm": [
+       134.29,
+       -0.54,
+       -13.29
+      ],
+      "com_G_mm": [
+       79.29,
+       -0.54,
+       26.71
+      ],
+      "inertia_diag_about_com_gmm2": [
+       5705366.0,
+       16821918.0,
+       12322152.0
+      ]
+     },
+     {
+      "fixed_bars": 3,
+      "x_slugs": 5,
+      "x_position_mm": 162.0,
+      "z_slugs": 5,
+      "z_index_mm": 6.0,
+      "mass_g": 1251.1,
+      "com_K_mm": [
+       132.61,
+       -0.54,
+       -13.29
+      ],
+      "com_G_mm": [
+       77.61,
+       -0.54,
+       26.71
+      ],
+      "inertia_diag_about_com_gmm2": [
+       5705366.0,
+       16535837.0,
+       12036071.0
+      ]
+     },
+     {
+      "fixed_bars": 3,
+      "x_slugs": 5,
+      "x_position_mm": 192.0,
+      "z_slugs": 5,
+      "z_index_mm": 6.0,
+      "mass_g": 1251.1,
+      "com_K_mm": [
+       136.8,
+       -0.54,
+       -13.29
+      ],
+      "com_G_mm": [
+       81.8,
+       -0.54,
+       26.71
+      ],
+      "inertia_diag_about_com_gmm2": [
+       5705366.0,
+       17332307.0,
+       12832541.0
+      ]
+     },
+     {
+      "fixed_bars": 3,
+      "x_slugs": 5,
+      "x_position_mm": 156.0,
+      "z_slugs": 5,
+      "z_index_mm": 6.0,
+      "mass_g": 1251.1,
+      "com_K_mm": [
+       131.77,
+       -0.54,
+       -13.29
+      ],
+      "com_G_mm": [
+       76.77,
+       -0.54,
+       26.71
+      ],
+      "inertia_diag_about_com_gmm2": [
+       5705366.0,
+       16409051.0,
+       11909285.0
+      ]
+     },
+     {
+      "fixed_bars": 3,
+      "x_slugs": 5,
+      "x_position_mm": 204.0,
+      "z_slugs": 5,
+      "z_index_mm": 6.0,
+      "mass_g": 1251.1,
+      "com_K_mm": [
+       138.48,
+       -0.54,
+       -13.29
+      ],
+      "com_G_mm": [
+       83.48,
+       -0.54,
+       26.71
+      ],
+      "inertia_diag_about_com_gmm2": [
+       5705366.0,
+       17726745.0,
+       13226979.0
+      ]
+     }
+    ]
+   },
+   {
+    "target_id": "STEYR-LP10-manual-03-2005",
+    "target_mass_g": 968.0,
+    "target_com_mm": [
+     null,
+     0.0,
+     null
+    ],
+    "com_axes_used": [
+     "y"
+    ],
+    "frame_notes": [],
+    "status": "NO VERDICT (tolerance TBD)",
+    "reasons": [],
+    "mass_tolerance_g": "TBD",
+    "com_tolerance_mm": "TBD",
+    "inertia_target": "UNKNOWN \u2014 not used",
+    "best": [
+     {
+      "fixed_bars": 2,
+      "x_slugs": 0,
+      "x_position_mm": 204.0,
+      "z_slugs": 4,
+      "z_index_mm": 0.0,
+      "mass_g": 968.3,
+      "com_K_mm": [
+       112.51,
+       -0.7,
+       -5.14
+      ],
+      "com_G_mm": [
+       57.51,
+       -0.7,
+       34.86
+      ],
+      "inertia_diag_about_com_gmm2": [
+       5166983.0,
+       13820007.0,
+       9846734.0
+      ]
+     },
+     {
+      "fixed_bars": 2,
+      "x_slugs": 0,
+      "x_position_mm": 192.0,
+      "z_slugs": 4,
+      "z_index_mm": 0.0,
+      "mass_g": 968.3,
+      "com_K_mm": [
+       112.16,
+       -0.7,
+       -5.14
+      ],
+      "com_G_mm": [
+       57.16,
+       -0.7,
+       34.86
+      ],
+      "inertia_diag_about_com_gmm2": [
+       5166983.0,
+       13737201.0,
+       9763927.0
+      ]
+     },
+     {
+      "fixed_bars": 2,
+      "x_slugs": 0,
+      "x_position_mm": 216.0,
+      "z_slugs": 4,
+      "z_index_mm": 0.0,
+      "mass_g": 968.3,
+      "com_K_mm": [
+       112.86,
+       -0.7,
+       -5.14
+      ],
+      "com_G_mm": [
+       57.86,
+       -0.7,
+       34.86
+      ],
+      "inertia_diag_about_com_gmm2": [
+       5166983.0,
+       13910708.0,
+       9937435.0
+      ]
+     },
+     {
+      "fixed_bars": 2,
+      "x_slugs": 0,
+      "x_position_mm": 186.0,
+      "z_slugs": 4,
+      "z_index_mm": 0.0,
+      "mass_g": 968.3,
+      "com_K_mm": [
+       111.99,
+       -0.7,
+       -5.14
+      ],
+      "com_G_mm": [
+       56.99,
+       -0.7,
+       34.86
+      ],
+      "inertia_diag_about_com_gmm2": [
+       5166983.0,
+       13698757.0,
+       9725484.0
+      ]
+     },
+     {
+      "fixed_bars": 2,
+      "x_slugs": 0,
+      "x_position_mm": 168.0,
+      "z_slugs": 4,
+      "z_index_mm": 0.0,
+      "mass_g": 968.3,
+      "com_K_mm": [
+       111.47,
+       -0.7,
+       -5.14
+      ],
+      "com_G_mm": [
+       56.47,
+       -0.7,
+       34.86
+      ],
+      "inertia_diag_about_com_gmm2": [
+       5166983.0,
+       13595267.0,
+       9621994.0
+      ]
+     }
+    ]
+   },
+   {
+    "target_id": "STEYR-LP10-manual-older-edition",
+    "target_mass_g": 1060.0,
+    "target_com_mm": [
+     null,
+     0.0,
+     null
+    ],
+    "com_axes_used": [
+     "y"
+    ],
+    "frame_notes": [],
+    "status": "NO VERDICT (tolerance TBD)",
+    "reasons": [],
+    "mass_tolerance_g": "TBD",
+    "com_tolerance_mm": "TBD",
+    "inertia_target": "UNKNOWN \u2014 not used",
+    "best": [
+     {
+      "fixed_bars": 2,
+      "x_slugs": 4,
+      "x_position_mm": 180.0,
+      "z_slugs": 0,
+      "z_index_mm": 0.0,
+      "mass_g": 1060.4,
+      "com_K_mm": [
+       124.22,
+       -0.64,
+       -8.85
+      ],
+      "com_G_mm": [
+       69.22,
+       -0.64,
+       31.15
+      ],
+      "inertia_diag_about_com_gmm2": [
+       5247300.0,
+       14507177.0,
+       10459128.0
+      ]
+     },
+     {
+      "fixed_bars": 2,
+      "x_slugs": 4,
+      "x_position_mm": 204.0,
+      "z_slugs": 0,
+      "z_index_mm": 0.0,
+      "mass_g": 1060.4,
+      "com_K_mm": [
+       127.52,
+       -0.64,
+       -8.85
+      ],
+      "com_G_mm": [
+       72.52,
+       -0.64,
+       31.15
+      ],
+      "inertia_diag_about_com_gmm2": [
+       5247300.0,
+       15171083.0,
+       11123034.0
+      ]
+     },
+     {
+      "fixed_bars": 2,
+      "x_slugs": 4,
+      "x_position_mm": 192.0,
+      "z_slugs": 0,
+      "z_index_mm": 0.0,
+      "mass_g": 1060.4,
+      "com_K_mm": [
+       125.87,
+       -0.64,
+       -8.85
+      ],
+      "com_G_mm": [
+       70.87,
+       -0.64,
+       31.15
+      ],
+      "inertia_diag_about_com_gmm2": [
+       5247300.0,
+       14821041.0,
+       10772992.0
+      ]
+     },
+     {
+      "fixed_bars": 2,
+      "x_slugs": 4,
+      "x_position_mm": 186.0,
+      "z_slugs": 0,
+      "z_index_mm": 0.0,
+      "mass_g": 1060.4,
+      "com_K_mm": [
+       125.05,
+       -0.64,
+       -8.85
+      ],
+      "com_G_mm": [
+       70.05,
+       -0.64,
+       31.15
+      ],
+      "inertia_diag_about_com_gmm2": [
+       5247300.0,
+       14659586.0,
+       10611537.0
+      ]
+     },
+     {
+      "fixed_bars": 2,
+      "x_slugs": 4,
+      "x_position_mm": 174.0,
+      "z_slugs": 0,
+      "z_index_mm": 0.0,
+      "mass_g": 1060.4,
+      "com_K_mm": [
+       123.4,
+       -0.64,
+       -8.85
+      ],
+      "com_G_mm": [
+       68.4,
+       -0.64,
+       31.15
+      ],
+      "inertia_diag_about_com_gmm2": [
+       5247300.0,
+       14363812.0,
+       10315763.0
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "settings": {
+  "fixed_bars": 2,
+  "x": {
+   "position_mm": 180.0,
+   "slugs": 2
+  },
+  "z": {
+   "index_mm": 0.0,
+   "slugs": 5
+  }
+ }
+}
