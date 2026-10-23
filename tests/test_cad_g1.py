@@ -64,7 +64,7 @@ def test_active_sight_geometry(asm):
     top = asm.get("S-FRONT-BLADE").shape.BoundingBox().zmax
     assert top == pytest.approx(asm.P.sight.line_z, abs=1e-3)
     nb = asm.get("S-REAR-NOTCH").shape.BoundingBox()
-    assert nb.zmax > asm.P.sight.line_z
+    assert nb.zmax == pytest.approx(asm.P.sight.line_z, abs=1e-3)   # notch shoulders define the line of sight
     assert g["sight_picture_at_assumed_eye_distance"]["light_gap_each_side_mrad"] > 0
 
 

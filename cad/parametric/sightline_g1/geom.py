@@ -229,8 +229,16 @@ def rear_sight_parts(P, elev=0.0, wind=0.0) -> list:
     top = leaf_z0 + 4
     nx0, nx1 = s.rear_notch_x
     slide = box(56.0, nx0, -10 + wind, 10 + wind, top, top + 1.5)
-    notch = box(nx0, nx1, -11.0 + wind, 11.0 + wind, top, zs + s.notch_depth)
-    notch = notch.cut(box(nx0 - 1, nx1 + 1, -s.notch_w / 2 + wind, s.notch_w / 2 + wind, zs, zs + 10))
+    # line_z is the line of sight: the notch SHOULDERS sit on it and the front blade top meets it (Patridge picture);
+    # the notch is cut notch_depth below it.  The shoulders slope 1.2 mm down outward so they frame, not hide, the blade.
+    notch = box(nx0, nx1, -11.0 + wind, 11.0 + wind, top, zs)
+    notch = notch.cut(box(nx0 - 1, nx1 + 1, -s.notch_w / 2 + wind, s.notch_w / 2 + wind, zs - s.notch_depth, zs + 10))
+    for sg in (1, -1):
+        hw = s.notch_w / 2
+        wedge = (cq.Workplane("YZ", origin=(nx0 - 1, 0, 0))
+                 .polyline([(sg * hw + wind, zs), (sg * 11.5 + wind, zs - 1.2), (sg * 11.5 + wind, zs + 1.0),
+                            (sg * hw + wind, zs + 1.0)]).close().extrude(nx1 - nx0 + 2).val())
+        notch = notch.cut(wedge)
     pin = cyl((hx, -9, pin_z), (0, 1, 0), 18, 1.25)
     escrew = cyl((s.rear_elev_screw_x, 0, ra.h + 0.5), (0, 0, 1), top - ra.h + 1.0, 1.5)
     eknob = knurl((s.rear_elev_screw_x, 0, top), (0, 0, 1), min(2.8, zs - 0.5 - top), 4.0).cut(
@@ -275,6 +283,13 @@ def front_sight_parts(P, shim=None, lat=0.0) -> list:
         base = base.fuse(box(bx0, bx1, sg * wi, sg * 8, 6, 12))
     slot = box(274.4, 277.6, -9, 9, 6.9, 11.1)
     base = base.cut(slot)
+    # protective wings either side of the blade (tactical profile); inner top edge chamfered 2 mm so the light gaps stay
+    # open; they stand 1 mm above the line of sight, outside the rear notch's field (checked by sight_line_clear)
+    for sg in (1, -1):
+        wing = (cq.Workplane("YZ", origin=(276.0, 0, 0))
+                .polyline([(sg * wi, 12.0), (sg * 8.0, 12.0), (sg * 8.0, zs + 1.0), (sg * wi, zs - 1.0)]).close()
+                .extrude(7.0).val())
+        base = base.fuse(wing)
     c0 = 6 + t
     shim_p = box(274, 285, -ch, ch, 6, c0) if t > 1e-6 else None
     carrier = box(274, 285, -ch + lat, ch + lat, c0, c0 + 4)
@@ -289,7 +304,7 @@ def front_sight_parts(P, shim=None, lat=0.0) -> list:
     screw = cyl((276, -9.5, c0 + 2), (0, 1, 0), 19, 1.5)
     mv = "sight_front"
     out = [
-        Part("S-FRONT-BASE", "Front sight base (U-channel, screwed to the housing)", "sights", "printed", "PETG",
+        Part("S-FRONT-BASE", "Front sight base (U-channel with protective wings, screwed to the housing)", "sights", "printed", "PETG",
              solid(base), DARK),
         Part("S-FRONT-CARRIER", "Front blade carrier", "sights", "printed", "PETG", solid(carrier), DARK, moving=mv),
         Part("S-FRONT-BLADE", f"Front blade {s.blade_w:g} mm, high-contrast, replaceable", "sights", "printed", "PETG",

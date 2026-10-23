@@ -48,9 +48,9 @@ compact cradle on a pivot yoke.
 A phone lying flat would point its camera upward, so the phone stands in the YZ plane instead. That creates a
 second conflict: a phone standing behind the rear sight blocks the line of sight. G1 resolves it geometrically:
 
-* The phone's lower edge is **34 mm above the sight line**. The eye looks under the phone, through the notch, to
+* The phone's lower edge is **55 mm above the sight line** (pivot raised 2026-10-23 so the cradle hub and shaft clear a 35 mrad window above the notch at an ASSUMED 700 mm eye position; MODEL OUTPUT, PENDING regeneration). The eye looks under the phone, through the notch, to
   the blade.
-* The yoke has **two uprights at y = ±16…22 mm** that straddle the sight line. The pivot hub sits 5 mm above the
+* The yoke has **two uprights at y = ±16…22 mm** that straddle the sight line. The pivot sits 33 mm above the
   line.
 * The check `sight_line_clear` runs a 2 × 1 mm corridor from 800 mm behind the instrument to the front blade. The
   corridor is empty at the nominal angle and at both angle limits.
@@ -70,8 +70,8 @@ All values are DESIGN unless marked otherwise. Performance is UNVERIFIED.
 | Rear notch origin (K1) | (61.25, 0, 20) mm |
 | Front blade origin (K1) | (279.5, 0, 20) mm |
 | Sight radius | 218.25 mm |
-| Sight height above housing top | 20 mm (notch bottom = blade top) |
-| Rear notch / front blade width | 3.6 mm / 4.0 mm (replaceable notch insert and blade) |
+| Sight height above housing top | 23.5 mm: the line of sight runs over the rear notch shoulders and meets the front blade top (Patridge picture); the 3.5 mm notch is cut below it. Until 2026-10-23 the line sat at the notch bottom, which hid the blade |
+| Rear notch / front blade width | 3.6 mm / 4.0 mm (replaceable notch insert and blade); rear shoulders slope 1.2 mm down outward; front blade framed by two protective wings (1 mm above the line, inner edge chamfered) |
 | Rear elevation | ±1.0 mm at the notch, set by an M3 screw on a hinged leaf (±4.3°); return spring |
 | Rear windage | ±1.5 mm, M3 screw on a slide, knurled knob on the right |
 | Front elevation | shims 0…2 mm in 0.5 mm steps (nominal 1.0 mm) |

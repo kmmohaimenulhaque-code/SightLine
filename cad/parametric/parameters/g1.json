@@ -52,7 +52,8 @@
   },
   "sight": {
     "status": "DESIGN",
-    "line_z": 20.0,
+    "line_z": 23.5,
+    "line_z_note": "line of sight = rear notch shoulders = front blade top (owner decision 2026-10-23); was 20.0 at the notch BOTTOM, which hid the blade",
     "rear_base_x": [
       44.0,
       72.0
