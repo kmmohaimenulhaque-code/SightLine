@@ -71,7 +71,7 @@ All values are DESIGN unless marked otherwise. Performance is UNVERIFIED.
 | Front blade origin (K1) | (279.5, 0, 20) mm |
 | Sight radius | 218.25 mm |
 | Sight height above housing top | 23.5 mm: the line of sight runs over the rear notch shoulders and meets the front blade top (Patridge picture); the 3.5 mm notch is cut below it. Until 2026-10-23 the line sat at the notch bottom, which hid the blade |
-| Rear notch / front blade width | 3.6 mm / 4.0 mm (replaceable notch insert and blade); rear shoulders slope 1.2 mm down outward; front blade framed by two protective wings (1 mm above the line, inner edge chamfered) |
+| Rear notch / front blade width | 4.8 mm (widened from 3.6 mm on 2026-10-23) / 4.0 mm (replaceable notch insert and blade); rear shoulders slope 1.2 mm down outward; front blade framed by two protective wings (1 mm above the line, inner edge chamfered) |
 | Rear elevation | ±1.0 mm at the notch, set by an M3 screw on a hinged leaf (±4.3°); return spring |
 | Rear windage | ±1.5 mm, M3 screw on a slide, knurled knob on the right |
 | Front elevation | shims 0…2 mm in 0.5 mm steps (nominal 1.0 mm) |

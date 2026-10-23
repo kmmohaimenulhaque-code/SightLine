@@ -63,7 +63,8 @@
       60.0,
       62.5
     ],
-    "notch_w": 3.6,
+    "notch_w": 4.8,
+    "notch_w_note": "widened 3.6 -> 4.8 mm (owner decision 2026-10-23): light gap about 1.1 mrad each side of the 4 mm blade at the ASSUMED 700 mm eye position",
     "notch_depth": 3.5,
     "rear_elev_screw_x": 68.5,
     "rear_elev_range_mm": 1.0,
