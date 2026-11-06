@@ -1,10 +1,4 @@
 {
-  ".claude/settings.json": {
-    "mtime": 1793715603.4123704,
-    "seen": 1793715942.3878653,
-    "ast_hash": "d57c7bba3bc7c980ea0b64e65ac8037e",
-    "semantic_hash": "d57c7bba3bc7c980ea0b64e65ac8037e"
-  },
   "app/__init__.py": {
     "mtime": 1792721475.5414321,
     "seen": 1793715942.387876,
@@ -725,12 +719,6 @@
     "ast_hash": "b1d4f2f2e4239eca17768d304f63424f",
     "semantic_hash": "b1d4f2f2e4239eca17768d304f63424f"
   },
-  ".claude/CLAUDE.md": {
-    "mtime": 1793715603.4113212,
-    "seen": 1793715942.3881207,
-    "ast_hash": "9b31786b637be3c13978bec4c2330752",
-    "semantic_hash": "9b31786b637be3c13978bec4c2330752"
-  },
   "APPLY.md": {
     "mtime": 1792721475.537432,
     "seen": 1793715942.3881216,
@@ -748,12 +736,6 @@
     "seen": 1793715942.388124,
     "ast_hash": "5c1d0956f88c0425d3bbb04e2fb71a2c",
     "semantic_hash": "5c1d0956f88c0425d3bbb04e2fb71a2c"
-  },
-  "CLAUDE.md": {
-    "mtime": 1793715603.4116123,
-    "seen": 1793715942.3881252,
-    "ast_hash": "67d88e9d0760c3ba54c75dfd9551c1c5",
-    "semantic_hash": "67d88e9d0760c3ba54c75dfd9551c1c5"
   },
   "DATASETS.md": {
     "mtime": 1792721475.537432,
@@ -1269,6 +1251,12 @@
     "mtime": 1792753109.2851686,
     "seen": 1793715951.999294,
     "ast_hash": "d89693578553acb6a3b3c856135ddb12",
+    "semantic_hash": ""
+  },
+  "SHIP_CHECKLIST.md": {
+    "mtime": 1793962793.5930567,
+    "seen": 1793962805.3072886,
+    "ast_hash": "a61612af8cbd2a55e2cb526e9bfc326a",
     "semantic_hash": ""
   }
 }
